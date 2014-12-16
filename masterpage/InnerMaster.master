@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="InnerMaster.master.cs"
-    Inherits="masterpage_HomeMaster"  %>
+    Inherits="masterpage_HomeMaster" %>
 
 <%@ Register Src="rightUC1.ascx" TagName="rightUC1" TagPrefix="uc1" %>
 <%@ Register Src="leftUC1.ascx" TagName="leftUC1" TagPrefix="uc2" %>
@@ -13,7 +13,7 @@
 
     <script type="text/javascript" src="../Js/tabview.js"></script>
 
-    <link rel="stylesheet" id="css_gen" type="text/css" runat="server"  />
+    <link rel="stylesheet" id="css_gen" type="text/css" runat="server" />
     <link href="../css/StyleSheet.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/custMenu.css" type="text/css" />
     <link rel="stylesheet" href="../css/jjquery-ui.css" type="text/css" />
@@ -306,7 +306,7 @@
 
 </head>
 <body class="bg">
-    <form id="form2" runat="server">
+    <form id="form2" runat="server" defaultbutton="Button1">
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
     <div class="top">
@@ -314,7 +314,7 @@
     <center>
         <div class="container" runat="server">
             <div class="top_menu">
-                <div class="top_menu_left"  runat="server" id="divtop_menu_left">
+                <div class="top_menu_left" runat="server" id="divtop_menu_left">
                     <table class="top_menu_left">
                         <tr runat="server">
                             <td id="Td1" class="text_header" runat="server">
@@ -341,24 +341,23 @@
                 <div class="top_menu_right" id="divtop_menu_right" runat="server">
                     <table width="95%" height="46" border="0" cellpadding="2" cellspacing="2">
                         <tr>
-                            <td id="frtd" runat="server" >
-                                <asp:LinkButton ID="LinkButton1" Visible="False"  runat="server" style="color:#e9d3b9;font-family:tahoma;
-                                    font-size:11px;text-decoration:none;text-align:center;"  OnClick="FrLinkButton_Click"
-                                    ValidationGroup="LangLinks">Francais</asp:LinkButton>
+                            <td id="frtd" runat="server">
+                                <asp:LinkButton ID="LinkButton1" Visible="False" runat="server" Style="color: #e9d3b9;
+                                    font-family: tahoma; font-size: 11px; text-decoration: none; text-align: center;"
+                                    OnClick="FrLinkButton_Click" ValidationGroup="LangLinks">Francais</asp:LinkButton>
                             </td>
                             <td id="frensep" runat="server" style="width: 20px;">
                             </td>
-                            <td id="entd" runat="server" >
-                                <asp:LinkButton ID="LinkButton2" Visible="False" style="color:#e9d3b9;font-family:tahoma;
-                                    font-size:11px;text-decoration:none;text-align:center;"   runat="server" OnClick="EnLinkButton_Click"
+                            <td id="entd" runat="server">
+                                <asp:LinkButton ID="LinkButton2" Visible="False" Style="color: #e9d3b9; font-family: tahoma;
+                                    font-size: 11px; text-decoration: none; text-align: center;" runat="server" OnClick="EnLinkButton_Click"
                                     ValidationGroup="LangLinks">English</asp:LinkButton>
                             </td>
-                            <td  id="arensep" runat="server" style="width: 21px;">
+                            <td id="arensep" runat="server" style="width: 21px;">
                             </td>
                             <td id="artd" runat="server">
-                                <asp:LinkButton ID="LinkButton3" style="color:#e9d3b9;font-family:tahoma;
-                                    font-size:11px;text-decoration:none;text-align:center;" 
-                                runat="server" OnClick="ArLinkButton_Click"
+                                <asp:LinkButton ID="LinkButton3" Style="color: #e9d3b9; font-family: tahoma; font-size: 11px;
+                                    text-decoration: none; text-align: center;" runat="server" OnClick="ArLinkButton_Click"
                                     ValidationGroup="LangLinks">عربي</asp:LinkButton>
                             </td>
                         </tr>
@@ -368,53 +367,51 @@
             <div class="_page" runat="server">
                 <div class="_page_banner" id="pagebannerdiv" runat="server">
                     <div class="_page_banner_search">
-                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                                <ContentTemplate>
-                        <div style="margin-top: 2">
-                            <asp:LinkButton ID="Button1" BorderStyle="None" Style='<%$Resources:Master, btnsrshbg%>' CssClass="text_search_btn"
-                                runat="server"  OnClick="Button1_Click" >
-                                <asp:Label ID="srshlit" runat="server" style="display: table-cell;height:25px;vertical-align: middle;" Text='<%$Resources:Master, srsh%>'></asp:Label>
-                                </asp:LinkButton>
-                                
-                        </div>
-                        <div runat="server"  style='<%$Resources:Master, srshbg%>'>
-                            
-                                    <asp:TextBox runat="server" ID="txt_sr2" onKeyDown="submitButton(event)" style='<%$Resources:Master, txtsrshbg%>' CssClass="text_search"></asp:TextBox>
-                        </div>
-                        </ContentTemplate>
-                            </asp:UpdatePanel>
+                        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                            <ContentTemplate>
+                                <div style="margin-top: 2">
+                                    <asp:LinkButton ID="Button1" BorderStyle="None" Style='<%$Resources: Master, btnsrshbg%>'
+                                        CssClass="text_search_btn" runat="server" OnClick="Button1_Click">
+                                        <asp:Label ID="srshlit" runat="server" Style="display: table-cell; height: 25px;
+                                            vertical-align: middle;" Text='<%$Resources:Master, srsh%>'></asp:Label>
+                                    </asp:LinkButton>
+                                </div>
+                                <div runat="server" style='<%$Resources: Master, srshbg%>'>
+                                    <asp:TextBox runat="server" ID="txt_sr2" onKeyDown="submitButton(event)" Style='<%$Resources: Master, txtsrshbg%>'
+                                        CssClass="text_search"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_sr2"></asp:RequiredFieldValidator>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
                     </div>
                 </div>
                 <div style="height: 15px; float: left; width: 970px;">
-               
                 </div>
                 <div>
                     <tm1:topmenu ID="topmenu1" runat="server" />
                 </div>
                 <div style="height: 35px; float: left; width: 970px;">
-                 <table width="100%" border="0" cellspacing="0" cellpadding="0" runat="server" id="nav_bar">
-                                <tr>
-                                    <td  align = "<%$Resources:Master, align%>" style="font-family: Tahoma, Geneva, sans-serif;font-size: 10px;font-weight: 800;color: #ad7c54;padding-right: 8px;
-	padding-left: 8px;
-	padding-bottom: 7px;
-	padding-top: 7px;">
-                                        <a id="hypSiteMap1" runat="server" class="out_links3" href="~/general/Default.aspx" style="text-decoration: none">
-                                            <asp:Literal ID="Literal1" runat="server" Text="<%$Resources:Master, title_main%>" />
-                                             
-                                            </a><a id="hypSiteMap2" runat="server" class="out_links3" visible="false"
-                                                style="text-decoration: none"></a><a id="hypSiteMap3" runat="server" class="out_links3"
-                                                    visible="false" style="text-decoration: none"></a><a id="hypSiteMap4" runat="server"
-                                                        class="out_links3" visible="false" style="text-decoration: none">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" runat="server" id="nav_bar">
+                        <tr>
+                            <td align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>" style="font-family: Tahoma, Geneva, sans-serif;
+                                font-size: 10px; font-weight: 800; color: #ad7c54; padding-right: 8px; padding-left: 8px;
+                                padding-bottom: 7px; padding-top: 7px;">
+                                <a id="hypSiteMap1" runat="server" class="out_links3" href="~/general/Default.aspx"
+                                    style="text-decoration: none">
+                                    <asp:Literal ID="Literal1" runat="server" Text="<%$Resources:Master, title_main%>" />
+                                </a><a id="hypSiteMap2" runat="server" class="out_links3" visible="false" style="text-decoration: none">
+                                    <asp:Literal ID="Literal2" runat="server" Text="" /></a><a id="hypSiteMap3" runat="server"
+                                        class="out_links3" visible="false" style="text-decoration: none"></a><a id="hypSiteMap4"
+                                            runat="server" class="out_links3" visible="false" style="text-decoration: none">
                                         </a><a id="hypSiteMap5" runat="server" class="out_links3" visible="false" style="text-decoration: none">
                                         </a>
-                                    </td>
-                                </tr>
-                            </table>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="_page_body" style="padding-bottom: 130px" id="div_page_body" runat="server">
                     <div class="_inner_page_body_left" runat="server" id="body_left">
                         <div class="_inner_page_body_left_right" runat="server" id="body_left_right">
-                            
                             <div style="height: auto;" runat="server" id="maindiv">
                                 <div align="center">
                                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -426,31 +423,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="divrightUC11" runat="server" >
-                        <uc1:rightUC1 ID="rightUC11" runat="server" />
+                        <div id="divrightUC11" runat="server">
+                            <uc1:rightUC1 ID="rightUC11" runat="server" />
                         </div>
                     </div>
-                    <div id="divleftUC11" runat="server" >
-                    <uc2:leftUC1 ID="leftUC11" runat="server" />
+                    <div id="divleftUC11" runat="server">
+                        <uc2:leftUC1 ID="leftUC11" runat="server" />
                     </div>
                 </div>
                 <center>
                     <div class="_page_body_bottom">
-                        <table width="95%" height="90%" border="0" cellpadding="2" cellspacing="2"  runat="server" style='<%$Resources:Master, tbldir%>' >
+                        <table width="95%" height="90%" border="0" cellpadding="2" cellspacing="2" runat="server"
+                            style='<%$Resources: Master, tbldir%>'>
                             <tr>
-                                <td style="width:104px">
+                                <td style="width: 104px">
                                     <div align="center">
-                                        <a href="#" class="footer_text_dark">  
-                                        <asp:Label ID="Label9" runat="server" Text="<%$Resources:Master, privacypolicy%>"></asp:Label>
-                                                            </a>
-                                                 </div>
+                                        <a href="#" class="footer_text_dark">
+                                            <asp:Label ID="Label9" runat="server" Text="<%$Resources:Master, privacypolicy%>"></asp:Label>
+                                        </a>
+                                    </div>
                                 </td>
-                                <td style="width:104px">
-                                    <div  class="footer_text_dark">
-                                     <a href="#" class="footer_text_dark">  
-                                       <asp:Label ID="Label10" runat="server" Text="<%$Resources:Master, terms%>"></asp:Label>
-                                       </a>
-                                    
+                                <td style="width: 104px">
+                                    <div class="footer_text_dark">
+                                        <a href="#" class="footer_text_dark">
+                                            <asp:Label ID="Label10" runat="server" Text="<%$Resources:Master, terms%>"></asp:Label>
+                                        </a>
                                     </div>
                                 </td>
                                 <td>
@@ -475,11 +472,11 @@
                                 </td>
                                 <td>
                                     <div align="center" class="footer_text_dark">
-                                       <asp:Label ID="Labelrgth" runat="server" Text="<%$Resources:Master, rights1%>"></asp:Label>
-                               </div>
+                                        <asp:Label ID="Labelrgth" runat="server" Text="<%$Resources:Master, rights1%>"></asp:Label>
+                                    </div>
                                     <div align="center" class="footer_text_dark">
                                         <asp:Label ID="Label8" runat="server" Text="<%$Resources:Master, rights2%>"></asp:Label>
-                               </div>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -491,7 +488,7 @@
     <div class="footer">
         <center>
             <div style="width: 766px;">
-                <table width="95%" border="0" cellspacing="2" cellpadding="2" runat="server" style='<%$Resources:Master, tbldir%>'>
+                <table width="95%" border="0" cellspacing="2" cellpadding="2" runat="server" style='<%$Resources: Master, tbldir%>'>
                     <tr>
                         <td>
                             <div id="Div1" class="footer_text" runat="server">

@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 
 public partial class sheikhs_Default : BasePage
 {
-    public static DataTable dt_char_list;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -38,7 +38,7 @@ public partial class sheikhs_Default : BasePage
                       new SqlParameter("@content_type", CDataConverter.ConvertToInt(HttpContext.Current.Session["content_type"].ToString())),
                       new SqlParameter("@content_id", CDataConverter.ConvertToInt(HttpContext.Current.Session["content_id"].ToString())),
                     new SqlParameter("@lang", menus_update.get_current_lang().ToString()),
-                    new SqlParameter("@char_type",CDataConverter.ConvertToInt(HttpUtility.HtmlEncode(Request["type"].ToString()))),
+                    new SqlParameter("@char_type",CDataConverter.ConvertToInt(HttpUtility.HtmlEncode(Request["char_type"].ToString()))),
  
                     };
 
@@ -54,7 +54,7 @@ public partial class sheikhs_Default : BasePage
 
                     //    DataTable char_list = new DataTable();
                     // char_list = DatabaseFunctions.SelectData(sqlParams55, "get_characters_content");
-                    dt_char_list = char_list;
+                    Session["char_list"] = char_list;
                     ViewCharacterList(char_list);
                     viewImageList(char_list);
                 }
@@ -69,7 +69,7 @@ public partial class sheikhs_Default : BasePage
 
                     DataTable char_list = new DataTable();
                     char_list = DatabaseFunctions.SelectData(sqlParams, "get_characters_content");
-                    dt_char_list = char_list;
+                    Session["char_list"] = char_list;
                     ViewCharacterList(char_list);
                     viewImageList(char_list);
                 }
@@ -110,25 +110,25 @@ public partial class sheikhs_Default : BasePage
 
         char_list = new DataTable();
         char_list = DatabaseFunctions.SelectData(sqlParams, "get_characters_content");
-        dt_char_list = char_list;
+        Session["char_list"] = char_list;
 
         Get_subpath obj = new Get_subpath();
-        if (obj.URLIsExist("sheikhs/Default.aspx?type"))
+        if (obj.URLIsExist("sheikhs/Default.aspx?char_type"))
         {
-            if (CDataConverter.ConvertToInt(Request["type"].ToString()) > 0 && CDataConverter.ConvertToInt(Request["type"].ToString()) != 0)
+            if (CDataConverter.ConvertToInt(Request["char_type"].ToString()) > 0 && CDataConverter.ConvertToInt(Request["char_type"].ToString()) != 0)
             {
                 SqlParameter[] sqlParams55 = new SqlParameter[] 
                     { 
                       new SqlParameter("@content_type", CDataConverter.ConvertToInt(HttpContext.Current.Session["content_type"].ToString())),
                       new SqlParameter("@content_id", CDataConverter.ConvertToInt(HttpContext.Current.Session["content_id"].ToString())),
                     new SqlParameter("@lang", menus_update.get_current_lang().ToString()),
-                    new SqlParameter("@char_type",CDataConverter.ConvertToInt(HttpUtility.HtmlEncode(Request["type"].ToString()))),
+                    new SqlParameter("@char_type",CDataConverter.ConvertToInt(HttpUtility.HtmlEncode(Request["char_type"].ToString()))),
  
                     };
 
                 char_list = new DataTable();
                 char_list = DatabaseFunctions.SelectData(sqlParams55, "get_characters_content_by_type");
-                dt_char_list = char_list;
+                Session["char_list"] = char_list;
                 ViewCharacterList(char_list);
                 viewImageList(char_list);
             }
@@ -166,8 +166,11 @@ public partial class sheikhs_Default : BasePage
             foreach (ListViewDataItem Titem in ListView1.Items)
             {
                 LinkButton Linklist = (LinkButton)Titem.FindControl("Linklist1");
-                Linklist.Text = char_list.Rows[Titem.DataItemIndex]["name"].ToString();// +"  " + char_list.Rows[count]["other_names"].ToString();
-                Linklist.PostBackUrl = "~/sheikhs/characterdetails.aspx?id=" + char_list.Rows[Titem.DataItemIndex]["id"].ToString();
+                if (!string.IsNullOrEmpty(char_list.Rows[Titem.DataItemIndex]["other_names"].ToString()))
+                {
+                    Linklist.Text = char_list.Rows[Titem.DataItemIndex]["other_names"].ToString();// +"  " + char_list.Rows[count]["other_names"].ToString();
+                }
+                    Linklist.PostBackUrl = "~/sheikhs/characterdetails.aspx?id=" + char_list.Rows[Titem.DataItemIndex]["id"].ToString();
 
                 if (char_list.Rows[Titem.DataItemIndex]["id"].ToString() != "")
                 {
@@ -202,7 +205,7 @@ public partial class sheikhs_Default : BasePage
             foreach (ListViewDataItem Titem in ListView2.Items)
             {
                 LinkButton Linklist = (LinkButton)Titem.FindControl("Linklist3");
-                Linklist.Text = char_list.Rows[Titem.DataItemIndex]["name"].ToString();// +"  " + charimg_list.Rows[count]["other_names"].ToString();
+                Linklist.Text = char_list.Rows[Titem.DataItemIndex]["other_names"].ToString();// +"  " + charimg_list.Rows[count]["other_names"].ToString();
                 ImageButton Imagelist = (ImageButton)Titem.FindControl("Imagelist");
                 //Imagelist.ImageUrl = "../images/sheikhs/" + char_list.Rows[Titem.DataItemIndex]["image_name"].ToString();
                 Imagelist.ImageUrl = "../img/char.jpg";
@@ -216,6 +219,7 @@ public partial class sheikhs_Default : BasePage
                 {
                     Linklist.PostBackUrl = "~/sheikhs/characterdetails.aspx?id=" + char_list.Rows[Titem.DataItemIndex]["id"].ToString();
                     Imagelist.ImageUrl = "../img/char.jpg";
+                    Imagelist.PostBackUrl = "~/sheikhs/characterdetails.aspx?id=" + char_list.Rows[Titem.DataItemIndex]["id"].ToString();
                 }
 
             }
@@ -252,25 +256,25 @@ public partial class sheikhs_Default : BasePage
             {
 
                 var result = from record in char_list.AsEnumerable()
-                             where record.Field<string>("name").Trim().Substring(0, 1) == lnk.Text
+                             where record.Field<string>("other_names").Trim().Substring(0, 1) == lnk.Text
                              select record;
 
                 var result1 = from record in char_list.AsEnumerable()
-                              where record.Field<string>("name").Trim().Substring(0, 1) == "أ"
+                              where record.Field<string>("other_names").Trim().Substring(0, 1) == "أ"
                               select record;
 
                 var result2 = result.Concat(result1);
 
 
                 var result3 = from record in char_list.AsEnumerable()
-                              where record.Field<string>("name").Trim().Substring(0, 1) == "إ"
+                              where record.Field<string>("other_names").Trim().Substring(0, 1) == "إ"
                               select record;
 
                 var result4 = result2.Concat(result3);
 
 
                 var result5 = from record in char_list.AsEnumerable()
-                              where record.Field<string>("name").Trim().Substring(0, 1) == "آ"
+                              where record.Field<string>("other_names").Trim().Substring(0, 1) == "آ"
                               select record;
 
                 var result6 = result4.Concat(result5);
@@ -282,7 +286,7 @@ public partial class sheikhs_Default : BasePage
                 if (result6.Count() > 0)
                 {
                     char_list = result6.CopyToDataTable();
-                    dt_char_list = char_list;
+                    Session["char_list"] = char_list;
                     ViewCharacterList(char_list);
 
                     viewImageList(char_list);
@@ -291,7 +295,7 @@ public partial class sheikhs_Default : BasePage
                 {
                     char_list = new DataTable();
 
-                    dt_char_list = char_list;
+                    Session["char_list"] = char_list;
                     ViewCharacterList(char_list);
 
                     viewImageList(char_list);
@@ -301,7 +305,7 @@ public partial class sheikhs_Default : BasePage
             else
             {
                 var result = from record in char_list.AsEnumerable()
-                             where record.Field<string>("name").Trim().Substring(0, 1) == lnk.Text
+                             where record.Field<string>("other_names").Trim().Substring(0, 1) == lnk.Text
                              select record;
 
                 tableList.Visible = true;
@@ -309,7 +313,7 @@ public partial class sheikhs_Default : BasePage
                 if (result.Count() > 0)// in case h never inter here why ?
                 {
                     char_list = result.CopyToDataTable();
-                    dt_char_list = char_list;
+                    Session["char_list"] = char_list;
                     ViewCharacterList(char_list);
 
                     viewImageList(char_list);
@@ -318,7 +322,7 @@ public partial class sheikhs_Default : BasePage
                 {
                     char_list = new DataTable();
 
-                    dt_char_list = char_list;
+                    Session["char_list"] = char_list;
                     ViewCharacterList(char_list);
 
                     viewImageList(char_list);
@@ -333,11 +337,11 @@ public partial class sheikhs_Default : BasePage
             string temp2 = temp1.ToString();
 
             var result1 = from record in char_list.AsEnumerable()
-                          where record.Field<string>("name").Trim().Substring(0, 1) == lnk.Text
+                          where record.Field<string>("other_names").Trim().Substring(0, 1) == lnk.Text
                           select record;
 
             var result2 = from record in char_list.AsEnumerable()
-                          where record.Field<string>("name").Trim().Substring(0, 1) == temp2
+                          where record.Field<string>("other_names").Trim().Substring(0, 1) == temp2
                           select record;
             var result3 = result1.Concat(result2);
 
@@ -346,7 +350,7 @@ public partial class sheikhs_Default : BasePage
             if (result3.Count() > 0)
             {
                 char_list = result3.CopyToDataTable();
-                dt_char_list = char_list;
+                Session["char_list"] = char_list;
                 ViewCharacterList(char_list);
 
                 viewImageList(char_list);
@@ -355,7 +359,7 @@ public partial class sheikhs_Default : BasePage
             {
                 char_list = new DataTable();
 
-                dt_char_list = char_list;
+                Session["char_list"] = char_list;
                 ViewCharacterList(char_list);
 
                 viewImageList(char_list);
@@ -374,12 +378,12 @@ public partial class sheikhs_Default : BasePage
     }
     protected void ListPager1_PreRender(object sender, EventArgs e)
     {
-        ViewCharacterList((DataTable)dt_char_list);
+        ViewCharacterList((DataTable)Session["char_list"]);
     }
     protected void ListPager2_PreRender(object sender, EventArgs e)
     {
 
-        viewImageList((DataTable)dt_char_list);
+        viewImageList((DataTable)Session["char_list"]);
     }
 
 }

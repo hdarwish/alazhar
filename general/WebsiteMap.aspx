@@ -8,10 +8,12 @@
             
             <td style="vertical-align:top">
                 <table width="100%">
-                    <tr id="Tr1" runat="server" class="text_Brown_10pt_bold" align="<%$Resources:Master, align%>"
+                    <tr id="Tr1" runat="server"  align="<%$Resources:Master, align%>"
                         valign="top">
                         <td id="Td1" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
+                            <span class="<%$Resources:Master, pagetitle%>" id="Span1" runat="server">
                             <asp:Label ID="Label53" runat="server" Text="<%$Resources:Master, plan%>"></asp:Label>
+                            </span>
                         </td>
                     </tr>
                     <tr id="Tr2" runat="server" align="<%$Resources:Master, align%>" valign="top">
@@ -68,7 +70,7 @@
                                     </td>
                                     <td id="Td6" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
                                         <asp:LinkButton ID="LinkButton9" class="books_title_text" runat="server" PostBackUrl="~/sheikhs/Default.aspx?type=1"
-                                            Text="<%$Resources:Master, title_alazhar%>"></asp:LinkButton>
+                                            Text="شيوخ الأزهر"></asp:LinkButton>
                                     </td>
                                     
                                 </tr>
@@ -80,7 +82,7 @@
                                     </td>
                                     <td id="Td7" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
                                         <asp:LinkButton ID="LinkButton10" class="books_title_text" runat="server" PostBackUrl="~/sheikhs/Default.aspx?type=2"
-                                            Text="<%$Resources:Master, title_mufti%>"></asp:LinkButton>
+                                            Text="المفتون"></asp:LinkButton>
                                     </td>
                                     
                                 </tr>
@@ -92,12 +94,23 @@
                                     </td>
                                     <td id="Td8" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
                                         <asp:LinkButton ID="LinkButton11" class="books_title_text" runat="server" PostBackUrl="~/sheikhs/Default.aspx?type=3"
-                                            Text="<%$Resources:Master, title_scholar%>"></asp:LinkButton>
+                                            Text="العلماء"></asp:LinkButton>
                                     </td>
                                     
                                 </tr>
                             </table>
-
+                                <table id="Table2" width="100%"  runat="server" dir="<%$Resources:Master, dir%>" align="<%$Resources:Master, align%>">
+                                <tr id="Tr24" runat="server" align="<%$Resources:Master, align%>" valign="top">
+                                   <td id="Td24" runat="server" align="<%$Resources:Master, align%>" valign="top" style="width:20%">
+                                        &nbsp;
+                                    </td>
+                                    <td id="Td25" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
+                                        <asp:LinkButton ID="LinkButton23" class="books_title_text" runat="server" PostBackUrl="~/sheikhs/Default.aspx?type=4"
+                                            Text="الأعلام"></asp:LinkButton>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
                             <table width="100%"  runat="server" dir="<%$Resources:Master, dir%>" align="<%$Resources:Master, align%>">
                                 <tr id="Tr9" runat="server" align="<%$Resources:Master, align%>" valign="top">
                                     <td id="Td9" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
@@ -189,7 +202,7 @@
                                     </td>
                                     <td id="Td16" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
                                         <asp:LinkButton ID="LinkButton17" class="books_title_text" runat="server" PostBackUrl="~/Elzakera/List_theses.aspx"
-                                            Text="<%$Resources:Master, title_theses%>"></asp:LinkButton>
+                                            Text="الأطروحات"></asp:LinkButton>
                                     </td>
                                     
                                 </tr>
@@ -249,7 +262,7 @@
                                     </td>
                                     <td id="Td21" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
                                      <asp:LinkButton ID="LinkButton20" class="books_title_text" runat="server" PostBackUrl="~/media/listPhotos.aspx"
-                                    Text="<%$Resources:Master, title_media%>"></asp:LinkButton>
+                                    Text="ألبوم الصور"></asp:LinkButton>
                                     </td>
                                     
                                 </tr>
@@ -273,8 +286,8 @@
                                         &nbsp;
                                     </td>
                                     <td id="Td23" runat="server" align="<%$Resources:Master, align%>" dir="<%$Resources:Master, dir%>">
-                                        <asp:LinkButton ID="LinkButton22" runat="server" class="books_title_text" PostBackUrl="~/media/tvAudioList.aspx" Text="<%$Resources:Master, title_video%>">
-                                        </asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton22" runat="server" class="books_title_text" 
+                                            PostBackUrl="~/media/tvAudioList.aspx" Text="التسجيلات تليفزيونية"></asp:LinkButton>
                                     </td>
                                     
                                 </tr>

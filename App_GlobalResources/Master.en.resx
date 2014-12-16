@@ -1763,7 +1763,7 @@ The site is available in both Arabic and English.</value>
     <value>The co-organizations Content</value>
   </data>
   <data name="Q&amp;A_details" xml:space="preserve">
-    <value>Questions &amp; Answers Content</value>
+    <value>This content will be available soon.</value>
   </data>
   <data name="banner" xml:space="preserve">
     <value>../images/banner_en.jpg</value>
@@ -1788,5 +1788,8 @@ The site is available in both Arabic and English.</value>
   </data>
   <data name="email" xml:space="preserve">
     <value>Email address</value>
+  </data>
+  <data name="Lbl_character_name" xml:space="preserve">
+    <value>Character name</value>
   </data>
 </root>

@@ -26,8 +26,9 @@
                 <table cellpadding="0" cellspacing="0" runat="server">
                     <tr>
                         <td colspan="3">
+                         <span class="<%$Resources:Master, pagetitle%>" id="Span1" runat="server">
                             <asp:Label ID="Label53" runat="server" Text="<%$ Resources:Master, key_AlAzhar %>"
-                                class="text_Brown_10pt_bold"></asp:Label>
+                                ></asp:Label></span>
                             <span class="pagetitle"></span>
                         </td>
                     </tr>
@@ -44,7 +45,7 @@
                         <td style="width: 5px">
                         </td>
                         <td>
-                            <span style="font-family: tahoma; color: #815e28; font-size: 13px; text-decoration: none;">
+                             <span id="Span2" class="<%$Resources:Master, links_des%>" runat="server"  dir="<%$Resources:Master, dir%>">
                                 <asp:Label ID="Label1" runat="server" Text="<%$ Resources:Master, key_dece_address %>"></asp:Label>
                             </span>
                         </td>
@@ -67,7 +68,7 @@
                     </tr>
                     <tr>
                         <td nowrap>
-                            <span style="font-family: tahoma; color: #000000; font-size: 14px;">
+                             <span id="Span3" class="<%$Resources:Master, links_des%>" runat="server"  dir="<%$Resources:Master, dir%>">
                                 <asp:Label ID="Label4" runat="server" Text="<%$ Resources:Master, email %>"></asp:Label>
                             </span>
                         </td>

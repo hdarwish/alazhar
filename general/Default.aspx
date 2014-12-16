@@ -1,8 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="general_Default"
-    MaintainScrollPositionOnPostback="true" Title="ذاكرة الأزهر"  %>
+    MaintainScrollPositionOnPostback="true" Title="ذاكرة الأزهر" %>
 
 <%@ Register Src="~/masterpage/topMenu.ascx" TagName="topmenu" TagPrefix="tm1" %>
-<%@ Register Src="TimeLineShow.ascx" TagName=" Show" TagPrefix="uc1" %>
+<%@ Register Src="TimeLineShow.ascx" TagName="TimeLineShow" TagPrefix="uc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -16,7 +16,7 @@
     <link href="../CSS/div.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../CSS/custMenu.css" type="text/css">
 
-    <script type="text/javascript" src="../Js/tabview.js"></script>
+    <script type="text/javascript" src="../Js/tabview.js"></script> 
 
     <script type="text/javascript">
         function click_div(orderId, divid) {
@@ -60,6 +60,11 @@
 
             }
 
+        }
+        function submitButton(event) {
+            if (event.which == 13) {
+                $('#Button1').trigger('click');
+            }
         }
 	   
     </script>
@@ -105,25 +110,26 @@
                 <div class="top_menu_right" runat="server" id="divtop_menu_right">
                     <table width="95%" height="46" border="0" cellpadding="2" cellspacing="2">
                         <tr>
-                            <td id="frtd" runat="server">
-                                <asp:LinkButton ID="LinkButton1" Visible="False" runat="server" Style="color: #e9d3b9; font-family: tahoma;
-                                    font-size: 11px; text-decoration: none; text-align: center;" OnClick="FrLinkButton_Click"
-                                    ValidationGroup="LangLinks">Francais</asp:LinkButton>
+                           <%-- <td id="frtd" runat="server">
+                                <asp:LinkButton ID="LinkButton1" Visible="False" runat="server" Style="color: #e9d3b9;
+                                    font-family: tahoma; font-size: 11px; text-decoration: none; text-align: center;"
+                                    OnClick="FrLinkButton_Click" ValidationGroup="LangLinks">Francais</asp:LinkButton>
                             </td>
                             <td id="frensep" runat="server" style="width: 20px;">
                             </td>
                             <td id="entd" runat="server">
-                                <asp:LinkButton ID="LinkButton2" Visible="False" Style="color: #e9d3b9; font-family: tahoma; font-size: 11px;
-                                    text-decoration: none; text-align: center;" runat="server" OnClick="EnLinkButton_Click"
+                                <asp:LinkButton ID="LinkButton2" Visible="False" Style="color: #e9d3b9; font-family: tahoma;
+                                    font-size: 11px; text-decoration: none; text-align: center;" runat="server" OnClick="EnLinkButton_Click"
                                     ValidationGroup="LangLinks">English</asp:LinkButton>
                             </td>
                             <td id="arensep" runat="server" style="width: 21px;">
-                            </td>
-                            <td id="artd" runat="server">
+                            </td>--%>
+                            <td id="artd" runat="server"  style="text-align: center;">
                                 <asp:LinkButton ID="LinkButton3" Style="color: #e9d3b9; font-family: tahoma; font-size: 11px;
                                     text-decoration: none; text-align: center;" runat="server" OnClick="ArLinkButton_Click"
-                                    ValidationGroup="LangLinks">عربي</asp:LinkButton>
+                                    ValidationGroup="LangLinks">النسخة العربية</asp:LinkButton>
                             </td>
+                          
                         </tr>
                     </table>
                 </div>
@@ -131,17 +137,21 @@
             <div class="_page" runat="server">
                 <div class="_page_banner" runat="server">
                     <div class="_page_banner_search">
-                        <div style="margin-top: 2">
-                            <asp:LinkButton ID="Button1" BorderStyle="None" Style='<%$Resources: Master, btnsrshbg%>'
-                                CssClass="text_search_btn" runat="server" OnClick="Button1_Click">
-                                <asp:Label ID="srshlit" runat="server" Style="display: block; height: 25px; vertical-align: middle;
-                                    margin-top: 5px" Text='<%$Resources:Master, srsh%>'></asp:Label>
-                            </asp:LinkButton>
-                        </div>
-                        <div runat="server" style='<%$Resources: Master, srshbg%>'>
-                            <asp:TextBox runat="server" ID="txt_sr2" Style='<%$Resources: Master, txtsrshbg%>'
-                                CssClass="text_search"></asp:TextBox>
-                        </div>
+                        <asp:Panel ID="Panel1" runat="server" DefaultButton="Button1">
+                            <div style="margin-top: 2">
+                                <asp:LinkButton ID="Button1" BorderStyle="None" Style='<%$Resources: Master, btnsrshbg%>'
+                                    CssClass="text_search_btn" runat="server" OnClick="Button1_Click">
+                                    <asp:Label ID="srshlit" runat="server" Style="display: block; height: 25px; vertical-align: middle;
+                                        margin-top: 5px" Text='<%$Resources:Master, srsh%>'></asp:Label>
+                                </asp:LinkButton>
+                            </div>
+                            <div runat="server" style='<%$Resources: Master, srshbg%>'>
+                                <asp:TextBox runat="server" ID="txt_sr2" Style='<%$Resources: Master, txtsrshbg%>'
+                                    CssClass="text_search" onKeyDown="submitButton(event)"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_sr2"></asp:RequiredFieldValidator>
+
+                            </div>
+                        </asp:Panel>
                     </div>
                 </div>
                 <div style="height: 15px; float: left; width: 976px;">
@@ -247,12 +257,12 @@
                                     background-color: #F3EEDB" runat="server">
                                     <div class="Page" id="dvpage" runat="server">
                                         <div class="Pad" id="divpad" runat="server">
-                                            <div dir="rtl" style="width: 388px; float: right; display: none" id="div0" runat="server">
+                                            <div dir="rtl" style="width: 50%; float: right; display: none" id="div0" runat="server">
                                                 <!-- *** Page1 Start *** -->
                                                 <table id="Table0" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
-                                                    cellpadding="3" cellspacing="4">
+                                                    cellpadding="3" cellspacing="4" width="360px">
                                                     <tr align="right">
-                                                        <td align="right" valign="top" >
+                                                        <td align="right" valign="top">
                                                             <%--    <p runat="server" style="font: tahoma;vertical-align:top"  id="palign"> </p>--%>
                                                             <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="td_img"
                                                                 runat="server" />
@@ -266,7 +276,7 @@
                                                     <tr>
                                                         <td colspan="2">
                                                             <asp:Label ID="td_brief" Style="float: right; text-align: right; padding-top: 5px"
-                                                                runat="server" Font-Size="13px" Font-Names="tahoma" ForeColor="#302618"></asp:Label>
+                                                                Width="360" runat="server" Font-Size="13px" Font-Names="tahoma" ForeColor="#302618"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -279,95 +289,89 @@
                                                     </tr>
                                                 </table>
                                             </div>
-                                            <div dir="rtl" style="width: 388px; float: right; display: none" id="div1" runat="server">
+                                            <div dir="rtl" style="width: 50%; float: right; display: none" id="div1" runat="server">
                                                 <!-- *** Page1 Start *** -->
-                                                
-                                                 <table id="Table1" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
-                                                    cellpadding="3" cellspacing="4">
+                                                <table id="Table1" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                    cellpadding="3" cellspacing="4" width="360px">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td1">
                                                             <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img4"
                                                                 src="~/img/Azhar_Mosque.jpg" runat="server" />
                                                         </td>
                                                         <td valign="top">
-                                                              <asp:Label ID="Label1" Style="width: 260px; float: right; text-align: right; vertical-align: top"
+                                                            <asp:Label ID="Label1" Style="width: 260px; float: right; text-align: right; vertical-align: top"
                                                                 runat="server" Font-Size="13" Font-Bold="true" ForeColor="#C37D54" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                               <asp:Label ID="PplaceBrief" Style="float: right; text-align: right; padding-top: 5px"
+                                                            <asp:Label ID="PplaceBrief" Style="float: right; text-align: right; padding-top: 5px"
                                                                 runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                                <a style="width: 100px; float: left; text-align: left" id="A1" runat="server" class="a"
+                                                            <a style="width: 100px; float: left; text-align: left" id="A1" runat="server" class="a"
                                                                 href="#" visible="true">
                                                                 <asp:Literal ID="Literal3" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                
-                                                
                                             </div>
                                             <div dir="rtl" style="width: 388px; float: right; display: none" id="div2" runat="server">
                                                 <!-- *** Page1 Start *** -->
-                                                
-                                                 <table id="Table3" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                <table id="Table3" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
                                                     cellpadding="3" cellspacing="4">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td2">
                                                             <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img8"
-                                                                    runat="server" />
+                                                                runat="server" />
                                                         </td>
                                                         <td valign="top">
-                                                              <asp:Label ID="event_link2" runat="server" Font-Size="13" Font-Bold="true" ForeColor="#C37D54"
-                                                                    Font-Names="tahoma" Style="width: 260px; float: right; text-align: right; vertical-align: top"></asp:Label>
+                                                            <asp:Label ID="event_link2" runat="server" Font-Size="13" Font-Bold="true" ForeColor="#C37D54"
+                                                                Font-Names="tahoma" Style="width: 260px; float: right; text-align: right; vertical-align: top"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                               <asp:Label ID="PEventsBrief" Style="float: right; text-align: right; padding-top: 5px"
-                                                                    runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label> 
+                                                            <asp:Label ID="PEventsBrief" Style="float: right; text-align: right; padding-top: 5px"
+                                                                runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                               <a style="width: 100px; float: left; text-align: left" id="A8" runat="server" class="a"
-                                                                    href="" visible="true">
-                                                                    <asp:Literal ID="Literal4" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>  
+                                                            <a style="width: 100px; float: left; text-align: left" id="A8" runat="server" class="a"
+                                                                href="" visible="true">
+                                                                <asp:Literal ID="Literal4" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                
                                             </div>
                                             <div dir="rtl" style="width: 388px; float: right; display: none" id="div3" runat="server">
                                                 <!-- *** Page1 Start *** -->
-                                               
-                                                 <table id="Table4" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                <table id="Table4" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
                                                     cellpadding="3" cellspacing="4">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td3">
-                                                             <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img3"
-                                                                    src="~/img/kanon1961.jpg" runat="server" />
+                                                            <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img3"
+                                                                src="~/img/kanon1961.jpg" runat="server" />
                                                         </td>
                                                         <td valign="top">
-                                                               <asp:Label ID="Label2" runat="server" Style="width: 260px; float: right; text-align: right;
-                                                                    vertical-align: top" Font-Size="13" Font-Bold="true" ForeColor="#C37D54" Font-Names="tahoma"></asp:Label> 
+                                                            <asp:Label ID="Label2" runat="server" Style="width: 260px; float: right; text-align: right;
+                                                                vertical-align: top" Font-Size="13" Font-Bold="true" ForeColor="#C37D54" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                             <asp:Label ID="PTopicsBrief" Style="float: right; text-align: right; padding-top: 5px"
-                                                                    runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label> 
+                                                            <asp:Label ID="PTopicsBrief" Style="float: right; text-align: right; padding-top: 5px"
+                                                                runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
                                                             <a style="width: 100px; float: left; text-align: left" id="A3" runat="server" class="a"
-                                                                    href="#" visible="true">
-                                                                    <asp:Literal ID="Literal5" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>  
+                                                                href="#" visible="true">
+                                                                <asp:Literal ID="Literal5" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -427,127 +431,120 @@
                                     <!-- *** Page2 Start *** -->
                                     <div class="Page" id="dvpage1" runat="server">
                                         <div class="Pad" id="divpad1" runat="server">
-                                            <div dir="rtl" style="width: 388px; float: right; display: none" id="div4" runat="server">
+                                            <div dir="rtl" style="width: 360px; float: right; display: none" id="div4" runat="server">
                                                 <!-- *** Page1 Start *** -->
-                                                
-                                                  <table id="Table2" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                <table id="Table2" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
                                                     cellpadding="3" cellspacing="4">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td4">
-                                                              <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img2"
-                                                                    runat="server" />
+                                                            <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img2"
+                                                                runat="server" />
                                                         </td>
                                                         <td valign="top">
-                                                             <asp:Label ID="Label3" runat="server" Font-Size="13" Font-Bold="true" Font-Names="tahoma"
-                                                                    Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"></asp:Label>  
+                                                            <asp:Label ID="Label3" runat="server" Font-Size="13" Font-Bold="true" Font-Names="tahoma"
+                                                                Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                             <asp:Label ID="mchar_brief" runat="server" Style="text-align: right; padding-top: 5px"
-                                                                    Font-Size="10" Font-Names="tahoma"></asp:Label>
+                                                            <asp:Label ID="mchar_brief" runat="server" Style="text-align: right; padding-top: 5px"
+                                                                Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                             <a style="width: 100px; float: left; text-align: left" id="A4" runat="server" class="a"
-                                                                    href="#" visible="true">
-                                                                    <asp:Literal ID="Literal6" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
+                                                            <a style="width: 100px; float: left; text-align: left" id="A4" runat="server" class="a"
+                                                                href="#" visible="true">
+                                                                <asp:Literal ID="Literal6" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                
                                             </div>
-                                            <div dir="rtl" style="width: 388px; float: right; display: none" id="div5" runat="server"
+                                            <div dir="rtl" style="width: 360px; float: right; display: none" id="div5" runat="server"
                                                 cellpadding="5" cellspacing="5">
                                                 <!-- *** Page1 Start *** -->
-                                             
-                                                 <table id="Table5" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                <table id="Table5" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
                                                     cellpadding="3" cellspacing="4">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td5">
                                                             <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img5"
-                                                                    src="~/img/place1.png" runat="server" />   
+                                                                src="~/img/place1.png" runat="server" />
                                                         </td>
                                                         <td valign="top">
                                                             <asp:Label ID="Label4" runat="server" Text="" Font-Size="13" Font-Bold="true" Font-Names="tahoma"
-                                                                    Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"></asp:Label>  
+                                                                Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
                                                             <asp:Label ID="Pplacesvisited" Style="float: right; text-align: right; padding-top: 5px"
-                                                                    runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
+                                                                runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
                                                             <a style="width: 100px; float: left; text-align: left" id="A5" runat="server" class="a"
-                                                                    href="#" visible="true">
-                                                                    <asp:Literal ID="Literal7" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
+                                                                href="#" visible="true">
+                                                                <asp:Literal ID="Literal7" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                
                                             </div>
-                                            <div dir="rtl" style="width: 388px; float: right; display: none" id="div6" runat="server">
+                                            <div dir="rtl" style="width: 360px; float: right; display: none" id="div6" runat="server">
                                                 <!-- *** Page1 Start *** -->
-                                          
-                                                
-                                                 <table id="Table6" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                <table id="Table6" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
                                                     cellpadding="3" cellspacing="4">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td6">
-                                                           <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img6"
-                                                                    src="" runat="server" />
+                                                            <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img6"
+                                                                src="" runat="server" />
                                                         </td>
                                                         <td valign="top">
                                                             <asp:Label ID="Label5" runat="server" Font-Size="13" Font-Bold="true" Font-Names="tahoma"
-                                                                    Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"
-                                                                    Text=""></asp:Label>
+                                                                Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"
+                                                                Text=""></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                             <asp:Label ID="pEventsvisited" Style="float: right; text-align: right; padding-top: 5px"
-                                                                    runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
+                                                            <asp:Label ID="pEventsvisited" Style="float: right; text-align: right; padding-top: 5px"
+                                                                runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
                                                             <a style="width: 100px; float: left; text-align: left" id="A6" runat="server" class="a"
-                                                                    href="" visible="true">
-                                                                    <asp:Literal ID="Literal8" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
+                                                                href="" visible="true">
+                                                                <asp:Literal ID="Literal8" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </div>
-                                            <div dir="rtl" style="width: 388px; float: right; display: none" id="div7" runat="server">
+                                            <div dir="rtl" style="width: 360px; float: right; display: none" id="div7" runat="server">
                                                 <!-- *** Page1 Start *** -->
-                                                
-                                                 <table id="Table7" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
+                                                <table id="Table7" style="float: right; vertical-align: top; padding-top: 0;" runat="server"
                                                     cellpadding="3" cellspacing="4">
                                                     <tr align="right">
                                                         <td align="right" valign="top" runat="server" id="td7">
-                                                         <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img7"
-                                                                    src="~/img/sub.jpg" runat="server" />
+                                                            <img style="width: 100px; padding-left: 5px; padding-right: 2px; float: right" id="Img7"
+                                                                src="~/img/sub.jpg" runat="server" />
                                                         </td>
                                                         <td valign="top">
-                                                             <asp:Label ID="Label6" runat="server" Text="" Font-Size="13" Font-Bold="true" Font-Names="tahoma"
-                                                                    Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"></asp:Label>
+                                                            <asp:Label ID="Label6" runat="server" Text="" Font-Size="13" Font-Bold="true" Font-Names="tahoma"
+                                                                Style="width: 260px; float: right; text-align: right; vertical-align: top" ForeColor="#C37D54"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                          <asp:Label ID="ptopvisited" Style="float: right; text-align: right; padding-top: 5px"
-                                                                    runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
+                                                            <asp:Label ID="ptopvisited" Style="float: right; text-align: right; padding-top: 5px"
+                                                                runat="server" Font-Size="10" Font-Names="tahoma"></asp:Label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2">
-                                                          <a style="width: 100px; float: left; text-align: left" id="A7" runat="server" class="a"
-                                                                    href="#" visible="true">
-                                                                    <asp:Literal ID="Literal9" runat="server" Text="<%$Resources:Master, more%>"></asp:Literal></a>
+                                                            <a style="width: 100px; float: left;font-bold:true; text-align: left" id="A7" runat="server" class="a"
+                                                                href="#" visible="true">
+                                                                <asp:Literal ID="Literal9" runat="server"  Text="<%$Resources:Master, more%>"></asp:Literal></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -580,8 +577,8 @@
                                                             <asp:Label ID="Label58" runat="server" Font-Size="10px" Font-Names="tahoma" Text="<%$Resources:Master, title_event%>"></asp:Label>
                                                         </div>
                                                         <br />
-                                                        <div id="divev" runat="server" class="lnkbutton" style="cursor: hand; float: right;" align="right"
-                                                            onclick="click_div('6','div6');">
+                                                        <div id="divev" runat="server" class="lnkbutton" style="cursor: hand; float: right;"
+                                                            align="right" onclick="click_div('6','div6');">
                                                             <asp:Label ID="mevent_title" runat="server" Text="" Font-Size="12px" Font-Names="tahoma"
                                                                 ForeColor="#52442E" Font-Bold="true" Font-Underline="false"></asp:Label>
                                                         </div>
@@ -618,9 +615,19 @@
                         <br />
                         <br />
                         <br />
-                        <p runat="server" width="800px" height="120px">
-                            <a href="ver 25.swf" target="_blank" class="books_title">
+                        <p id="time_ar" runat="server" width="800px" height="120px" visible="false">
+                            <a href="timeline.html" target="_blank" class="books_title">
                                 <asp:Image ID="Image1" runat="server" ImageUrl="../img/flash_pic.png" />
+                            </a>
+                        </p>
+                        <p id="time_en" runat="server" width="800px" height="120px" visible="false">
+                            <a href="ver 14.swf" target="_blank" class="books_title">
+                                <asp:Image ID="Image2" runat="server" ImageUrl="../img/flash_pic.png" />
+                            </a>
+                        </p>
+                        <p id="time_fr" runat="server" width="800px" height="120px" visible="false">
+                            <a href="ver 7.swf" target="_blank" class="books_title">
+                                <asp:Image ID="Image3" runat="server" ImageUrl="../img/flash_pic.png" />
                             </a>
                         </p>
                         <br />
@@ -630,7 +637,7 @@
                             <div class="text_Dark_Brown_10pt_bold">
                                 <img src="../img/Bullet.png" />
                                 <asp:Label ID="Literal2" runat="server" Height="21px" Style="vertical-align: top"
-                                    Text="<%$Resources:Master, fromlibrary%>" /></div>
+                                    Text="<%$Resources:Master, fromlibrary%>" Width="150px" nowrap /></div>
                             <br />
                             <div id="slider" style="width: 632px; height: 152px; float: right" align="center">
                                 <div id="nav_arrow_right" style="width: 22px; height: 152px; float: right; background-color: #D5D0BA">
@@ -641,11 +648,13 @@
                                         <tr runat="server">
                                             <td valign="top" style="height: 44px; padding-top: 2px" runat="server" align="<%$Resources:Master, align%>">
                                                 <div runat="server" align="<%$Resources:Master, align%>" class="text_orange_8pt_bold">
-                                                    <asp:Label ID="Label62" runat="server" Text="<%$Resources:Master, from_book%>"></asp:Label>
+                                                    <asp:Label ID="Label62" Font-Size="13px" Font-Bold="true" runat="server" Text="<%$Resources:Master, from_book%>"></asp:Label>
                                                 </div>
                                                 <br />
-                                                <div align="<%$Resources:Master, align%>" class="text_Dark_Brown_10pt_bold" runat="server"
-                                                    id="div_title" style="margin-top: -13pt" dir="rtl">
+                                                <div align="<%$Resources:Master, align%>" runat="server" style="margin-top: -13pt"
+                                                    dir="rtl" font-size="13px">
+                                                    <a id="div_title" runat="server" class="text_Dark_Brown_10pt_bold" style="margin-top: -13pt;
+                                                        text-decoration: none" dir="rtl"></a>
                                                 </div>
                                             </td>
                                             <td style="height: 44px; padding-top: 2px;" align="<%$Resources:Master, align%>"
@@ -677,11 +686,11 @@
                                             <td valign="top" runat="server" align="<%$Resources:Master, align%>" style="height: 44px;
                                                 padding-top: 2px; margin-right: 2px">
                                                 <div runat="server" align="<%$Resources:Master, align%>" class="text_orange_8pt_bold">
-                                                    <asp:Label ID="Label63" runat="server" Text="<%$Resources:Master, from_doc%>"></asp:Label>
+                                                    <asp:Label ID="Label63" runat="server" Text="<%$Resources:Master, from_doc%>" Font-Size="13px" Font-Bold="true"></asp:Label>
                                                 </div>
-                                                <br />
-                                                <div align="<%$Resources:Master, align%>" class="text_Dark_Brown_10pt_bold" runat="server"
-                                                    id="div_title1" style="margin-top: -13pt" dir="rtl">
+                                                <div align="<%$Resources:Master, align%>" runat="server" dir="rtl" font-size="13px">
+                                                    <a runat="server" id="div_title1" class="text_Dark_Brown_10pt_bold" style="text-decoration: none">
+                                                    </a>
                                                 </div>
                                             </td>
                                             <td style="height: 44px; padding-top: 2px" runat="server" align="<%$Resources:Master, align%>">
@@ -710,11 +719,13 @@
                                         <tr align="<%$Resources:Master, align%>" runat="server">
                                             <td valign="top" style="height: 44px; margin-right: 2px" runat="server" align="<%$Resources:Master, align%>">
                                                 <div align="<%$Resources:Master, align%>" class="text_orange_8pt_bold" runat="server">
-                                                    <asp:Label ID="Label64" runat="server" Text="<%$Resources:Master, from_manuscript%>"></asp:Label>
+                                                    <asp:Label ID="Label64" runat="server" Text="<%$Resources:Master, from_manuscript%>" Font-Size="13px" Font-Bold="true"></asp:Label>
                                                 </div>
                                                 <br />
                                                 <div align="<%$Resources:Master, align%>" class="text_Dark_Brown_10pt_bold" runat="server"
-                                                    id="div_title2" style="margin-top: -13pt" dir="rtl">
+                                                    style="margin-top: -13pt" dir="rtl" font-size="13px">
+                                                    <a runat="server" id="div_title2" class="text_Dark_Brown_10pt_bold" style="text-decoration: none">
+                                                    </a>
                                                 </div>
                                             </td>
                                             <td style="height: 44px">
@@ -767,37 +778,37 @@
                                                 <!-- *** Page1 Start *** -->
                                                 <div style="width: 235px; height: 152px; margin-top: 20px" runat="server" align="center">
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_1_1" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_1_1" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_1_1" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div id="Div14" runat="server" style="width: 70px; height: 70px; display: inline"
                                                         float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_1_2" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_1_2" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_1_2" AlternateText="" BorderWidth="0" Width="70px" Height="70px"
                                                                 ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align_img%>">
-                                                        <a href="" id="a_1_3" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_1_3" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_1_3" AlternateText="" BorderWidth="0" Width="70px" Height="70px"
                                                                 ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div runat="server" style="width: 70px; height: 70px; display: inline" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_1_4" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_1_4" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_1_4" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div id="Div15" style="width: 70px; height: 70px; display: inline" runat="server"
                                                         float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_1_5" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_1_5" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_1_5" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" float="<%$Resources:Master, align_img%>"
                                                         runat="server">
-                                                        <a href="" id="a_1_6" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_1_6" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_1_6" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
@@ -817,39 +828,42 @@
                                             <div class="Pad" style="width: 235px" runat="server" dir="<%$Resources:Master, dir%>"
                                                 align="<%$Resources:Master, align%>">
                                                 <div runat="server" style="width: 235px; height: 152px; margin-top: 20px" align="center">
+                                                    <div>
+                                                        <asp:Label ID="Lbl_nodatatv" Visible="false" CssClass="text_Brown_10pt_bold" runat="server"
+                                                            Text="سيتم توفير هذا المحتوى قريباً"></asp:Label></div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_2_1" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_2_1" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_2_1" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_2_2" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_2_2" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_2_2" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align_img%>">
-                                                        <a href="" id="a_2_3" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_2_3" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_2_3" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_2_4" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_2_4" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_2_4" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_2_5" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_2_5" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_2_5" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align_img%>">
-                                                        <a href="" id="a_2_6" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_2_6" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_2_6" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div runat="server" align="<%$Resources:Master, align_img%>" style="border: 0; padding-left: 5px;
-                                                    padding-top: 2px">
+                                                    padding-top: 2px" visible="false">
                                                     <a href="../media/tvAudioList.aspx" id="A12">
                                                         <img id="imgvids" runat="server" src="<%$Resources:Master, imgbtn%>" style="border: 0"
                                                             alt="المزيد" />
@@ -863,33 +877,35 @@
                                                 align="<%$Resources:Master, align%>">
                                                 <!-- *** Page3 Start *** -->
                                                 <div style="width: 235px; height: 152px; margin-top: 20px" align="center">
+                                                    <asp:Label ID="Lbl_nodatad" Visible="false" CssClass="text_Brown_10pt_bold" runat="server"
+                                                        Text="سيتم توفير هذا المحتوى قريباً"></asp:Label>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_3_1" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_3_1" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_3_1" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_3_2" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_3_2" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_3_2" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align_img%>">
-                                                        <a href="" id="a_3_3" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_3_3" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_3_3" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_3_4" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_3_4" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_3_4" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align%>">
-                                                        <a href="" id="a_3_5" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_3_5" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_3_5" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
                                                     <div style="width: 70px; height: 70px; display: inline" runat="server" float="<%$Resources:Master, align_img%>">
-                                                        <a href="" id="a_3_6" runat="server" style="text-decoration:none">
+                                                        <a href="" id="a_3_6" runat="server" style="text-decoration: none">
                                                             <asp:Image ID="img_3_6" AlternateText="" Width="70px" Height="70px" ToolTip="" runat="server" />
                                                         </a>
                                                     </div>
@@ -921,7 +937,8 @@
                             </div>
                             <div class="_page_body_right_box_contaier_empty" style="margin-top: 20px">
                                 <div style="width: 253px; height: 89px; cursor: hand; text-align: center; margin-left: 10px">
-                                    <a style="width: 100px" id="A10" runat="server" class="a" href="#" visible="true">
+                                    <a style="width: 100px" id="A10" runat="server" class="a" href="../AzharPanorama/Parking.html"
+                                        visible="true" target="_blank">
                                         <img src="<%$ Resources:Master, img_gawla%>" style="border: 0" runat="server" id="img_gawla" />
                                     </a>
                                 </div>
@@ -950,36 +967,36 @@
                         <tr>
                             <td style="width: 104px">
                                 <div align="center">
-                                    <a href="#" class="footer_text_dark">
+                                    <a href="../general/Privacy_Policy.aspx" class="footer_text_dark">
                                         <asp:Label ID="Label9" runat="server" Text="<%$Resources:Master, privacypolicy%>"></asp:Label>
                                     </a>
                                 </div>
                             </td>
                             <td style="width: 104px">
                                 <div align="center">
-                                    <a href="#" class="footer_text_dark">
+                                    <a href="../general/Terms_of_use.aspx" class="footer_text_dark">
                                         <asp:Label ID="Label10" runat="server" Text="<%$Resources:Master, terms%>"></asp:Label>
                                     </a>
                                 </div>
                             </td>
                             <td>
                                 <div align="center">
-                                    <a href="#">
+                                    <a href="http://www.cultnat.org">
                                         <img src="../img/clutnat_logo.png" width="59" height="32" border="0" /></a></div>
                             </td>
                             <td>
                                 <div align="center">
-                                    <a href="#">
+                                    <a href="http://alazharlibrary.gov.eg">
                                         <img src="../img/azhar_mtbaa.png" width="47" height="46" border="0" /></a></div>
                             </td>
                             <td>
                                 <div align="center">
-                                    <a href="#">
+                                    <a href="http://www.mcit.gov.eg/Ar">
                                         <img src="../img/eagle_logo.png" width="31" height="43" border="0" /></a></div>
                             </td>
                             <td>
                                 <div align="center">
-                                    <a href="#">
+                                    <a href="http://www.alazhar-alsharif.gov.eg">
                                         <img src="../img/azhar_logo.png" width="55" height="55" border="0" /></a></div>
                             </td>
                             <td>
@@ -1009,13 +1026,13 @@
                         </td>
                         <td>
                             <div class="footer_text" runat="server">
-                                <a href="#" class="footer_text">
+                                <a href="../general/AddContent.aspx" class="footer_text">
                                     <asp:Label ID="Label51" runat="server" Text="<%$Resources:Master,add_content_link%>"></asp:Label></a>
                             </div>
                         </td>
                         <td>
                             <div class="footer_text" runat="server">
-                                <a href="FAQ.aspx" class="footer_text">
+                                <a href="nodata.aspx" class="footer_text">
                                     <asp:Label ID="Label50" runat="server" Text="<%$Resources:Master, Q&A%>"></asp:Label></a>
                             </div>
                         </td>

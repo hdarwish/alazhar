@@ -178,16 +178,32 @@
     <value>الهاتف</value>
   </data>
   <data name="AddContent" xml:space="preserve">
-    <value>اضف الي المحتوي</value>
+    <value>أضف إلى المحتوى</value>
   </data>
   <data name="lblContent" xml:space="preserve">
-    <value>المحتوي</value>
+    <value>
+&lt;p&gt;لعل من أهم التحديات والعقبات التي واجهت المشروع هو تشتت التراث الأزهري، سواء بين الأفراد أو المؤسسات من جهة، وسواء على المستوى المحلي أو العالمي من جهة أخرى.&lt;br /&gt;
+هذا ولأن من أهم الأهداف التي يحاول المشروع تحقيقها هو :&lt;br /&gt;
+&lt;b&gt;( تقديم مصدر موثق للمعلومات عن تاريخ الأزهر على الإنترنت، للشباب والناشئة والجمهور العام فضلا عن الباحثين )&lt;/b&gt; &lt;br /&gt;
+فإننا ندعو جميع زوار الموقع إلى المشاركة بأي محتوى مفيد لموقع ذاكرة الأزهر الشريف، وفي أي شكل ممكن، سواء أكانت ترتبط بأعلام الأزهر (صور شخصية، تسجيلات إذاعية أو تلفزيونية، مقالات، وثائق بخط اليد، إلخ) أو ترتبط بالآثار المعمارية الخاصة بالجامع الأزهر أو المعاهد الأزهرية التاريخية، أو ما قد يفيد محاور الموضوعات أو الأحداث التي مرت بالأزهر الشريف على مر العصور.&lt;br /&gt;
+وللمشاركة يرجى التواصل على البريد الإلكتروني:&lt;br /&gt;
+&lt;a href="mailto:alazharmemory@gmail.com"&gt;alazharmemory@gmail.com&lt;/a&gt; &lt;/p&gt;</value>
   </data>
   <data name="plan" xml:space="preserve">
     <value>خريطة الموقع :</value>
   </data>
-  <data name="Terms of Use" xml:space="preserve">
-    <value>شروط الاستخدام</value>
+  <data name="Terms_of_Use" xml:space="preserve">
+    <value>&lt;p&gt;&amp;nbsp;
+
+10/30/2014&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;يكون استخدام هذا الموقع بمثابة موافقة على الشروط والأحكام التالية:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&amp;bull;	يجب استخدام موقع ذاكرة الأزهر الشريف alazharMemory.eg لأغراض يصرح بها القانون وبأسلوب لا يتعدى على حقوق أي فرد في استخدام أو الاستمتاع بمحتوى موقع ذاكرة الأزهر الشريف أو يحد من هذه الحقوق أو يمنعها. &lt;br /&gt;
+&amp;bull;	&lt;b&gt;الملكية الفكرية: &lt;/b&gt;إن حقوق النشر والملكية الفكرية في الموقع والخدمات تعود ملكيتها لـ (الأزهر الشريف - وزارة الاتصالات والمعلومات - مركز توثيق التراث الحضاري والطبيعي). إن الجهات المسئولة عن المشروع هي المالك الوحيد -إلا إذا تمت الإشارة إلى غير ذلك- للأسماء والعلامات التجارية للموقع، وبراءات الاختراع والرسوم والنماذج للموقع، سواء كانت مسجلة أو غير مسجلة، لحقوق النشر وجميع الحقوق النابعة من ترجمة المضامين في الموقع للّغة الإنجليزية والفرنسية، للترجمة والأسرار التجارية المتعلقة بتشغيل الموقع وتوفير الخدمات، بتصميم الموقع، المعلومات التكنولوجية المتعلقة بتشغيله،  بما في ذلك، ولكن ليس على سبيل الحصر، البرمجيات والتطبيقات، الرسومات وغيرها من الملفات، رموز الكمبيوتر والنصوص و / أو المواد الأخرى التي يحتوي عليها.&lt;br /&gt;
+&amp;bull;	لا يجوز نسخ، توزيع، إعادة إنتاج، عرض للجمهور، تعديل، ترجمة، نشر، بث، نقل، بيع، توزيع أو الاستفادة تجارياً أو تقديم المعلومات لطرف ثالث و / أو أي جزء منها، إلا إذا تم الحصول على إذن خطي مسبق من الأزهر الشريف.&lt;br /&gt;
+&amp;bull;	عندما تدعون لتقديم مساهمات إلى موقع ذاكرة الأزهر الشريف بما في ذلك النصوص والصور والرسوم التوضيحية والتسجيلات المصورة أو الصوتية فإنكم توافقون، عبر تقديم مساهماتكم، على منح الأزهر الشريف الحق الدائم في استخدام هذه المساهمات مجانا بأي صورة يراها، بما في ذلك نسخ وتعديل وترجمة وتوزيع وأداء وعرض مساهماتكم وإنتاجها للجمهور. &lt;br /&gt;
+&amp;bull;	يحتفظ الأزهر الشريف بحقه الحصري واستنادا إلى سلطته التقديرية وحده في تعديل أي جانب من جوانب الموقع وأي مادة من المواد أو قصرهما على حدود معينة أو الكف عن توفيرهما. والأزهر الشريف غير مجبر أن يأخذ في هذا الصدد احتياجات أي مستخدم في الاعتبار.&lt;br /&gt;
+&amp;bull;	إن الأزهر الشريف غير ملزم بالتغاضي عن أي حكم من هذه الأحكام والشروط باستثناء ما يحرره خطيا ويوقعه ممثلها المخول على النحو الواجب.&lt;br /&gt;
+&amp;bull;	هذه الشروط محل تغيير دائم وتطوير، وعلى زوار الموقع مراجعة هذه السياسات بشكل دوري. إذا لاحظت أي جزئية مبهمة أو خطأ في تفاصيل هذه السياسة نرجو تنبيهنا لذلك.&lt;/p&gt;</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>سياسة الخصوصية</value>
@@ -199,10 +215,21 @@
     <value>تم التطوير بواسطة وزارة الاتصالات وتكنولوجيا المعلومات</value>
   </data>
   <data name="conditions" xml:space="preserve">
-    <value>الشروط</value>
+    <value>سياسة الخصوصية</value>
   </data>
   <data name="condition1" xml:space="preserve">
-    <value>الشرط الاول</value>
+    <value>&lt;p style="text-align: right;"&gt;&amp;nbsp;
+
+&amp;rlm;30&amp;rlm;/10&amp;rlm;/2014&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;الروابط:&lt;/b&gt;&lt;br /&gt;
+قد يحتوي موقعنا الالكتروني على روابط لمواقع الكترونية أخرى. ولذلك يُرجى العلم بأننا غير مسئولين عن ممارسات الخصوصية و/أو أمان المواقع الالكترونية التي تعمل بواسطة جهات أخرى لا تتبع الأزهر الشريف. ونحن نوصي بقراءة سياسات الخصوصية الخاصة بكل موقع من المواقع الالكترونية التي تقوم بجمع بيانات شخصية عن الزائرين.&lt;/p&gt;
+&lt;p style="text-align: right;"&gt;&lt;b&gt;عند الاتصال بنا:&lt;/b&gt;&lt;br /&gt;
+سيتم التعامل مع كافة البيانات المقدمة من قبلك على أساس أنها سرية. تتطلب طرق التواصل التي يتم تقديمها مباشرة على الشبكة تقديم البيانات التي ستساعدنا في تحسين موقعنا وزيادة محتواه. سيتم استخدام البيانات التي يتم تقديمها من قبلك في الرد على كافة استفساراتك، ملاحظاتك، أو طلباتك من قبل موقعنا هذا.&lt;/p&gt;
+&lt;p style="text-align: right;"&gt;&lt;b&gt;إفشاء المعلومات لأي طرف ثالث:&lt;/b&gt;&lt;br /&gt;
+لن نقوم ببيع، المتاجرة، تأجير، أو إفشاء أية معلومات لمصلحة أي طرف ثالث خارج هذا الموقع. وسيتم الكشف عن المعلومات فقط في حالة صدور أمر بذلك من قبل أي سلطة قضائية أو تنظيمية. &lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;التغييرات في سياسة الخصوصية:&lt;/b&gt;&lt;br /&gt;
+في حالة ما إذا قررنا تغيير سياسة الخصوصية الخاصة بنا، سنقوم بنشر هذه التغييرات على موقعنا الالكتروني بحيث تكون دائماً على دراية بالمعلومات التي نقوم بجمعها، وكيفية استخدام هذه المعلومات، والحالات التي تضطرنا للكشف عنها، إن وجدت. ويجوز لإدارة موقع ذاكرة الأزهر الشريف تعديل سياسة الخصوصية من وقت إلى آخر وحسب تقديرها. ويشكل استخدام الموقع الالكتروني بعد تاريخ نفاذ التعديلات قبولاً صريحاً للشروط والأحكام المعدلة.&lt;/p&gt;</value>
   </data>
   <data name="lblHighlight" xml:space="preserve">
     <value>عنصر مميز </value>
@@ -238,7 +265,22 @@
     <value>pagetitle</value>
   </data>
   <data name="txt1" xml:space="preserve">
-    <value>يهدف موقع ذاكرة الأزهر إلى عرض وإتاحة  تراث الأزهر الشريف وتاريخه من خلال وثائقه، وسيرة ومسيرة أعلامه وشيوخه،وتوثيق الروائع المعمارية للأزهر الشريف، وذلك باستخدام أحدث التقنيات المتاحة</value>
+    <value>&lt;p&gt;&amp;nbsp;يهدف موقع ذاكرة الأزهر إلى عرض وإتاحة تراث الأزهر الشريف وتاريخه من خلال وثائقه، وسيرة ومسيرة أعلامه وشيوخه، وتوثيق الروائع المعمارية للأزهر الشريف، وذلك باستخدام أحدث التقنيات المتاحة.&lt;br /&gt;
+ويقدم الموقع محتوى ديناميكا يتم تحديثه باستمرار، ويتكون من أقسام رئيسة وأخرى تتفرع عنها، ومن أهم أقسامه:&lt;br /&gt;
+&amp;bull;	شيوخ الأزهر: والذي يسجل السيرة الذاتية لشيوخ الأزهر الأجلاء، وشيوخهم الذين تتلمذوا على أيديهم، والمناصب التي تقلدوها، ومؤلفاتهم، ومواقفهم وآرائهم.&lt;br /&gt;
+&amp;bull;	العلماء والأعلام: ويستعرض هذا الجزء أعلام الأزهر من علماء ورؤساء في جميع بقاع الأرض.&lt;br /&gt;
+محاور الذاكرة الأزهرية: ويعد هذا القسم أساسا للموقع، ويتفرع عنه:&lt;br /&gt;
+&amp;bull;	الذاكرة المصورة: وفيه توثيق لتراث الأزهر من الصور النادرة.&lt;br /&gt;
+&amp;bull;	الذاكرة المعمارية: وفيه توثيق معماري للجامع الأزهر، وأهم نماذج التراث المعماري التابعة له، في جميع أنحاء القطر المصري.&lt;br /&gt;
+&amp;bull;	الذاكرة الوثائقية: يحتوي على مجموعة نادرة من الوثائق الأزهرية والكثير منها يتم نشره للمرة الأولى. &lt;br /&gt;
+&amp;bull;	الذاكرة الصحفية: وفيه توثيق للصحافة الأزهرية وتاريخها، سواء صدر في رحاب الدوريات التابعة للأزهر أو غيرها من الصحف العامة.&lt;br /&gt;
+&amp;bull;	الذاكرة المسموعة والمرئية: وفيه توثيق لمختارات من التسجيلات الصوتية النادرة، وتسجيلات الفيديو لشيوخ الأزهر وعلمائه، والتي تتناول الأزهر بشكل رئيس.&lt;br /&gt;
+&amp;bull;	ذاكرة المخطوطات: وفيها عرض لبعض المخطوطات من المكتبة الأزهرية، والتي تتناول الأزهر بشكل أو بآخر.&lt;/p&gt;
+&lt;p&gt;وبجانب ما سبق ذكره فهناك مكونات غاية في الأهمية تثرى المحتوى الذي يقدمه الموقع، ومنها:&lt;br /&gt;
+الخط الزمني: وفيه استعراض زمني للشخصيات والأماكن والأحداث، وعند تحديد عنصر ما على الخط الزمني يتم الانتقال لعرض المعلومات الكاملة للعنصر على الموقع.&lt;br /&gt;
+روائع مقتنيات الأزهر (قطع العرض المتحفي): وفيه عرض متحفي تخيلي لجانب من مقتنيات متحف مكتبة الأزهر الشريف، وغالبها من المخطوطات النفيسة ونادرة المثال.&lt;br /&gt;
+جولة بانورامية للجامع الأزهر: وهي رحلة في داخل الجامع الأزهر وأروقته التاريخية، وهي بمثابة زيارة تخيلية له، وهي مفيدة جدا لمن لا يتيسر لهم الزيارة الحقيقية للجامع الشريف.&lt;br /&gt;
+&lt;/p&gt;</value>
   </data>
   <data name="txt2" xml:space="preserve">
     <value>ويقدم الموقع محتوى ديناميكا يتم تحديثه باستمرار، ويتكون من أقسام رئيسة وأخرى تتفرع عنها، ومن أهم أقسامه الرئيسة:</value>
@@ -1687,7 +1729,7 @@
   <data name="Creator" xml:space="preserve">
     <value>المنشئ </value>
   </data>
-  <data name="Another_title" xml:space="preserve">
+  <data name="t" xml:space="preserve">
     <value>عنوان وثيقة أخر</value>
   </data>
   <data name="Doc_w_total" xml:space="preserve">
@@ -1750,7 +1792,7 @@
     <value>سياسة الخصوصية</value>
   </data>
   <data name="rights1" xml:space="preserve">
-    <value>جميع الحقوق محفوظة للأزهر</value>
+    <value>جميع الحقوق محفوظة للأزهر الشريف</value>
   </data>
   <data name="rights2" xml:space="preserve">
     <value>تم التطوير بواسطة وزارة الاتصالات وتكنولوجيا المعلومات</value>
@@ -1771,10 +1813,15 @@
     <value>موضع استخدام المادة الخام</value>
   </data>
   <data name="co_org_details" xml:space="preserve">
-    <value>مركز التوثيق الحضارى ، الازهر الشريف ، وزارة الاتصالات وتكنولوجيا المعلومات </value>
+    <value>
+&lt;p style="text-align: right;"&gt;تم توقيع برتوكول للتعاون بين &lt;b&gt;الأزهر الشريف و وزارة الاتصالات وتكنولوجيا المعلومات عام 2011&lt;/b&gt; لتنفيذ مشروع &amp;quot;ذاكرة الأزهر الشريف&amp;quot;. &lt;br /&gt;
+وقام بتوقيع البرتوكول فضيلة الإمام الأكبر الدكتور أحمد الطيب &amp;ndash; شيخ الأزهر والأستاذ الدكتور ماجد عثمان وزير الاتصالات وتكنولوجيا المعلومات.&lt;br /&gt;
+هذا وقد قام على تنفيذ هذا المشروع من جانب الأزهر (مكتبة الأزهر الشريف)، ومن جانب وزارة الاتصالات وتكنولوجيا المعلومات (مركز توثيق التراث الحضاري والطبيعي) التابع لمكتبة الإسكندرية ومدعم من وزارة الاتصالات وتكنولوجيا المعلومات.&lt;br /&gt;
+وُقِّع هذا البروتوكول في إطار الجهود الكبيرة للتعريف بدور الأزهر الشريف عبر تاريخه الذي يمتد لأكثر من ألف عام.&lt;br /&gt;
+&amp;nbsp;&lt;/p&gt;</value>
   </data>
   <data name="Q&amp;A_details" xml:space="preserve">
-    <value>محتوى الأسئلة والأجوبة</value>
+    <value>هذا المحتوى سيتم توفيره قريبا</value>
   </data>
   <data name="banner" xml:space="preserve">
     <value>../images/banner.gif</value>
@@ -1799,5 +1846,788 @@
   </data>
   <data name="email" xml:space="preserve">
     <value>البريد الاليكترونى</value>
+  </data>
+  <data name="all_char" xml:space="preserve">
+    <value>كل الشخصيات</value>
+  </data>
+  <data name="Another_title" xml:space="preserve">
+    <value>عنوان اخر</value>
+  </data>
+  <data name="manuscriptNav1" xml:space="preserve">
+    <value>&amp;raquo; المخطوطات</value>
+  </data>
+  <data name="manuscript_tamalok" xml:space="preserve">
+    <value>التملكات</value>
+  </data>
+  <data name="manuscript_tamalok_date" xml:space="preserve">
+    <value>تاريخ التملك</value>
+  </data>
+  <data name="manuscript_tamalok_h" xml:space="preserve">
+    <value>هـ</value>
+  </data>
+  <data name="manuscript_tamalok_m" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="manuscript_tamalok_name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="manuscript_tamalok_name_en" xml:space="preserve">
+    <value>الاسم بالانجليزية</value>
+  </data>
+  <data name="manuscript_tamalok_name_fr" xml:space="preserve">
+    <value>الاسم بالفرنسية</value>
+  </data>
+  <data name="manuscript_tawkeef" xml:space="preserve">
+    <value>التوقيفات</value>
+  </data>
+  <data name="Minutes1" xml:space="preserve">
+    <value>دقيقة </value>
+  </data>
+  <data name="more1" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+  <data name="mostseen1" xml:space="preserve">
+    <value>الأكــثر مشاهدة</value>
+  </data>
+  <data name="name1" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="name_maker1" xml:space="preserve">
+    <value>اسم الصانع </value>
+  </data>
+  <data name="next1" xml:space="preserve">
+    <value>التالية</value>
+  </data>
+  <data name="no1" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="Notes_on_age1" xml:space="preserve">
+    <value>ملاحظات على العصر </value>
+  </data>
+  <data name="no_data1" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+  <data name="org_city1" xml:space="preserve">
+    <value>المدينة </value>
+  </data>
+  <data name="org_country1" xml:space="preserve">
+    <value>الدولة </value>
+  </data>
+  <data name="org_name1" xml:space="preserve">
+    <value>اسم الجهة </value>
+  </data>
+  <data name="org_no1" xml:space="preserve">
+    <value>رقم الحفظ </value>
+  </data>
+  <data name="org_notes1" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="pagenocon1" xml:space="preserve">
+    <value>أرقام الصفحات التي تشغلها من</value>
+  </data>
+  <data name="pagetitle1" xml:space="preserve">
+    <value>pagetitle</value>
+  </data>
+  <data name="page_no1" xml:space="preserve">
+    <value>عدد الصفحات</value>
+  </data>
+  <data name="Page_number_from1" xml:space="preserve">
+    <value>أرقام الصفحات التي تشغلها من</value>
+  </data>
+  <data name="parts_number1" xml:space="preserve">
+    <value>رقم العدد أو الجزء</value>
+  </data>
+  <data name="periodical_title1" xml:space="preserve">
+    <value>عنوان الدورية </value>
+  </data>
+  <data name="pgstitle1" xml:space="preserve">
+    <value>ذاكرة الأزهر</value>
+  </data>
+  <data name="Photographer1" xml:space="preserve">
+    <value>المصور :</value>
+  </data>
+  <data name="Photo_Album1" xml:space="preserve">
+    <value>ألبوم الصور</value>
+  </data>
+  <data name="Photo_Desc1" xml:space="preserve">
+    <value>وصف الصوره </value>
+  </data>
+  <data name="placeNav1" xml:space="preserve">
+    <value>&amp;raquo; الذاكرة المعمارية</value>
+  </data>
+  <data name="Places_Accessories1" xml:space="preserve">
+    <value>الملاحق </value>
+  </data>
+  <data name="Places_Architectural1" xml:space="preserve">
+    <value>الطرز المعمارية</value>
+  </data>
+  <data name="Places_Awning1" xml:space="preserve">
+    <value>أيوانات/ ظلات </value>
+  </data>
+  <data name="Places_Building_materials1" xml:space="preserve">
+    <value>خامات البناء </value>
+  </data>
+  <data name="Places_Ceilings1" xml:space="preserve">
+    <value>الأسقف :</value>
+  </data>
+  <data name="Places_Charity_room1" xml:space="preserve">
+    <value>حجرة السبيل </value>
+  </data>
+  <data name="Places_decorations1" xml:space="preserve">
+    <value>النقوش والزخارف </value>
+  </data>
+  <data name="Places_Desks1" xml:space="preserve">
+    <value>المقاعد </value>
+  </data>
+  <data name="Places_Dooms1" xml:space="preserve">
+    <value>القباب </value>
+  </data>
+  <data name="Places_entrances1" xml:space="preserve">
+    <value>المداخل </value>
+  </data>
+  <data name="Places_evo_through_age1" xml:space="preserve">
+    <value>التطور المعماري والتوسعات للأثر أو المبنى عبر العصور  :</value>
+  </data>
+  <data name="Places_Faces1" xml:space="preserve">
+    <value>الواجهات </value>
+  </data>
+  <data name="Places_fun1" xml:space="preserve">
+    <value>وظيفة الأثر أو المبنى المعماري </value>
+  </data>
+  <data name="Places_Fun_through_age1" xml:space="preserve">
+    <value>وظيفة الأثر أو المبنى المعماري عبر العصور  </value>
+  </data>
+  <data name="Places_head1" xml:space="preserve">
+    <value>إستمارة بيانات الذاكرة المعمارية (الآثار/المبانى المعمارية/الاماكن)</value>
+  </data>
+  <data name="Places_labels_BotanDecorations1" xml:space="preserve">
+    <value>- الزخارف النباتية :</value>
+  </data>
+  <data name="Places_labels_briefDescription1" xml:space="preserve">
+    <value>الوصف المختصر </value>
+  </data>
+  <data name="Places_labels_buildingInside1" xml:space="preserve">
+    <value>الأثر /المبنى المعماري من الداخل </value>
+  </data>
+  <data name="Places_labels_buildingOutside1" xml:space="preserve">
+    <value>الأثر /المبنى المعماري من الخارج</value>
+  </data>
+  <data name="Places_labels_detailDescription1" xml:space="preserve">
+    <value>الوصف التفصيلي </value>
+  </data>
+  <data name="Places_labels_generalNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_labels_generalOutline1" xml:space="preserve">
+    <value>التخطيط العام :</value>
+  </data>
+  <data name="Places_labels_generalView1" xml:space="preserve">
+    <value>- وصف الملامح العامة  :</value>
+  </data>
+  <data name="Places_labels_geomDecorations1" xml:space="preserve">
+    <value>- الزخارف الهندسية :</value>
+  </data>
+  <data name="Places_labels_GNotes1" xml:space="preserve">
+    <value>- ملاحظة</value>
+  </data>
+  <data name="Places_labels_keyWords1" xml:space="preserve">
+    <value>الكلمات الدالة  </value>
+  </data>
+  <data name="Places_labels_notes1" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="Places_labels_originalStyle1" xml:space="preserve">
+    <value>- وصف الملامح العامة  :</value>
+  </data>
+  <data name="Places_labels_otherNames1" xml:space="preserve">
+    <value>اسماء أخرى</value>
+  </data>
+  <data name="Places_labels_plcaeName1" xml:space="preserve">
+    <value>اسم الأثر أو المبنى أو المكان :</value>
+  </data>
+  <data name="Places_labels_writings1" xml:space="preserve">
+    <value>- الكتابات :</value>
+  </data>
+  <data name="Places_lab_AgedetailedDesc1" xml:space="preserve">
+    <value>- الوصف التفصيلي للموقع :</value>
+  </data>
+  <data name="Places_lab_buildingJobNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_lab_buildingNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_lab_currentLocation1" xml:space="preserve">
+    <value>- الموقع الحالى :</value>
+  </data>
+  <data name="Places_lab_detailedLocDescrp1" xml:space="preserve">
+    <value>- الوصف التفصيلي للموقع :</value>
+  </data>
+  <data name="Places_lab_locNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_Main_style1" xml:space="preserve">
+    <value>الطراز الأساسي :</value>
+  </data>
+  <data name="Places_Minarets1" xml:space="preserve">
+    <value>المآذن </value>
+  </data>
+  <data name="Places_Pinpointing1" xml:space="preserve">
+    <value>موقع الأثر المعماري على خريطة مصر   </value>
+  </data>
+  <data name="Places_Playground1" xml:space="preserve">
+    <value>الفناء </value>
+  </data>
+  <data name="Places_restoration1" xml:space="preserve">
+    <value>ترميم الأثر أو المبنى المعماري (الوضع الحالي)   </value>
+  </data>
+  <data name="Places_restoration_through_ages1" xml:space="preserve">
+    <value>ترميم الأثر أو المبنى المعماري عبر العصور  </value>
+  </data>
+  <data name="Places_Rooms_Halls1" xml:space="preserve">
+    <value>القاعات </value>
+  </data>
+  <data name="Places_Site1" xml:space="preserve">
+    <value>موقع الأثر أو المبنى المعماري </value>
+  </data>
+  <data name="Places_Site_through_age1" xml:space="preserve">
+    <value>موقع الأثر أو المبنى المعماري عبر العصور </value>
+  </data>
+  <data name="Places_Sub_style1" xml:space="preserve">
+    <value>الطراز الفرعية :</value>
+  </data>
+  <data name="Places_Windows1" xml:space="preserve">
+    <value>النوافذ </value>
+  </data>
+  <data name="Place_lab_ageProcessNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Plac_lab_ageFullProcessDesc1" xml:space="preserve">
+    <value>- الوصف التفصيلي لعملية الترميم :</value>
+  </data>
+  <data name="Plac_lab_AgeLocNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Plac_lab_ageRestorationResp1" xml:space="preserve">
+    <value>- المسئول عن الترميم :</value>
+  </data>
+  <data name="Plac_lab_ageSharedResp1" xml:space="preserve">
+    <value>- المشاركون في الترميم (يشمل المنفذون للترميم)  :</value>
+  </data>
+  <data name="Plac_Lab_currCondiMonument1" xml:space="preserve">
+    <value>- حالة الأثر أو المبنى المعماري الحالية :</value>
+  </data>
+  <data name="Plac_lab_currConditionRestoration1" xml:space="preserve">
+    <value>- الوضع الحالي من الترميم :</value>
+  </data>
+  <data name="Plac_lab_respOfRestoration1" xml:space="preserve">
+    <value>- المسئول عن الترميم :</value>
+  </data>
+  <data name="Plac_lab_RestorationNotes1" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Plac_lab_sharedRestoration1" xml:space="preserve">
+    <value>- المشاركون في الترميم (يشمل المنفذون للترميم)  :</value>
+  </data>
+  <data name="Plac_lab_siteNotes1" xml:space="preserve">
+    <value> ملاحظة </value>
+  </data>
+  <data name="Plac_lab_siteWrittenDesc1" xml:space="preserve">
+    <value>- وصف نصي للمكان الحالي  :</value>
+  </data>
+  <data name="plan1" xml:space="preserve">
+    <value>خريطة الموقع :</value>
+  </data>
+  <data name="prev1" xml:space="preserve">
+    <value>السابقة</value>
+  </data>
+  <data name="privacypolicy1" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="Publisher1" xml:space="preserve">
+    <value>الناشر</value>
+  </data>
+  <data name="quality_errorname1" xml:space="preserve">
+    <value>نوع الخطأ</value>
+  </data>
+  <data name="quality_fieldname1" xml:space="preserve">
+    <value>اسم الحقل:</value>
+  </data>
+  <data name="reason_timeline1" xml:space="preserve">
+    <value>سبب اختيار هذه السنة</value>
+  </data>
+  <data name="recDate1" xml:space="preserve">
+    <value>تاريخ التسجيل أو الإذاعة </value>
+  </data>
+  <data name="recorded_radio1" xml:space="preserve">
+    <value>تاريخ التسجيل </value>
+  </data>
+  <data name="recording_type1" xml:space="preserve">
+    <value>نوع التسجيل الآذاعى </value>
+  </data>
+  <data name="relate_elemnts1" xml:space="preserve">
+    <value>عناصر مرتبطة</value>
+  </data>
+  <data name="Responsible_Name1" xml:space="preserve">
+    <value>اسم المسئول الفكري (مؤلف/هيئة) </value>
+  </data>
+  <data name="Responsible_Name21" xml:space="preserve">
+    <value>المسئول عن الموقع </value>
+  </data>
+  <data name="Results1" xml:space="preserve">
+    <value>عدد النتائج:</value>
+  </data>
+  <data name="rev_dir1" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="rights11" xml:space="preserve">
+    <value>جميع الحقوق محفوظة للأزهر الشريف</value>
+  </data>
+  <data name="rights21" xml:space="preserve">
+    <value>تم التطوير بواسطة وزارة الاتصالات وتكنولوجيا المعلومات</value>
+  </data>
+  <data name="rwmat1" xml:space="preserve">
+    <value>المادة الخام</value>
+  </data>
+  <data name="rwmatuse1" xml:space="preserve">
+    <value>موضع استخدام المادة الخام</value>
+  </data>
+  <data name="search1" xml:space="preserve">
+    <value>البحــث:</value>
+  </data>
+  <data name="searcher_name1" xml:space="preserve">
+    <value>اسم الباحث</value>
+  </data>
+  <data name="search_lang1" xml:space="preserve">
+    <value>لغه البحث </value>
+  </data>
+  <data name="second1" xml:space="preserve">
+    <value>ثانيه </value>
+  </data>
+  <data name="source1" xml:space="preserve">
+    <value>المصدر</value>
+  </data>
+  <data name="Source_destination_Copyright1" xml:space="preserve">
+    <value>المصدر/ جهة حقوق النشر:</value>
+  </data>
+  <data name="source_side1" xml:space="preserve">
+    <value>جهة المصدر </value>
+  </data>
+  <data name="spsub1" xml:space="preserve">
+    <value>مــوضوعات مميزة</value>
+  </data>
+  <data name="srch11" xml:space="preserve">
+    <value>لاتوجد بيانات للعرض</value>
+  </data>
+  <data name="srsh1" xml:space="preserve">
+    <value>بحـث</value>
+  </data>
+  <data name="srshbg1" xml:space="preserve">
+    <value>width: 192px; height: 26px;  background-image: url('../img/search.jpg');</value>
+  </data>
+  <data name="st1" xml:space="preserve">
+    <value>الأولى</value>
+  </data>
+  <data name="Start_Date1" xml:space="preserve">
+    <value>تاريخ البداية</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>background-repeat: no-repeat; float: right; padding-top: 2px; cursor: hand;text-align: right;vertical-align: middle;</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>الموضوع المباشر</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>المؤلف </value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>محتوى متعلق بالشخصية</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>الموقع متاح بالعديد من اللغات هي العربية والإنجليزية والفرنسية والألمانية والأندونيسية والروسية والأورودية والتركية</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>الموقع متاح باللغات العربية والإنجليزية والفرنسية</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>الموقع متاح باللغتين العربية والإنجليزية</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>الموقع متاح باللغتين العربية والإنجليزية</value>
+  </data>
+  <data name="style11" xml:space="preserve">
+    <value>../img/Row 1.jpg</value>
+  </data>
+  <data name="style2" xml:space="preserve">
+    <value>width:21px;background-image: url('../img/Row 2.jpg'); background-repeat: repeat-y; background-position: left top;</value>
+  </data>
+  <data name="style_bottom1" xml:space="preserve">
+    <value>width: 196px; height: 152px; float:left; background-color: #D5D0BA</value>
+  </data>
+  <data name="subTitle_align1" xml:space="preserve">
+    <value>float:right</value>
+  </data>
+  <data name="supermoshark1" xml:space="preserve">
+    <value>مشرف مشارك </value>
+  </data>
+  <data name="supervisior1" xml:space="preserve">
+    <value>اسم المشرف</value>
+  </data>
+  <data name="supervisor1" xml:space="preserve">
+    <value>المشرف </value>
+  </data>
+  <data name="tab_highlight1" xml:space="preserve">
+    <value>موضوعات مميزة</value>
+  </data>
+  <data name="tab_MostVisited1" xml:space="preserve">
+    <value>الأكثر مشاهدة</value>
+  </data>
+  <data name="tags1" xml:space="preserve">
+    <value>الكلمات الدالة </value>
+  </data>
+  <data name="tawkifat_fname" xml:space="preserve">
+    <value>الموقوف عليه</value>
+  </data>
+  <data name="tawkifat_fname_en" xml:space="preserve">
+    <value>الموقوف عليه بالانجليزية</value>
+  </data>
+  <data name="tawkifat_fname_fr" xml:space="preserve">
+    <value>الموقوف عليه بالفرنسية</value>
+  </data>
+  <data name="tawkifat_name" xml:space="preserve">
+    <value>اسم الواقف</value>
+  </data>
+  <data name="tawkifat_name_en" xml:space="preserve">
+    <value>اسم الواقف بالانجليزية</value>
+  </data>
+  <data name="tawkifat_name_fr" xml:space="preserve">
+    <value>اسم الواقف بالفرنسية</value>
+  </data>
+  <data name="tbldir1" xml:space="preserve">
+    <value>direction: ltr;</value>
+  </data>
+  <data name="td1img1" xml:space="preserve">
+    <value>background-image: url('../img/Row 2.jpg'); background-repeat: repeat-y; background-position: left top</value>
+  </data>
+  <data name="tdimg1" xml:space="preserve">
+    <value>../img/Row 1.jpg</value>
+  </data>
+  <data name="terms1" xml:space="preserve">
+    <value>شروط الاستخدام</value>
+  </data>
+  <data name="theseNav1" xml:space="preserve">
+    <value>&amp;raquo; أطروحة</value>
+  </data>
+  <data name="theses_lang1" xml:space="preserve">
+    <value>لغه الأطروحه </value>
+  </data>
+  <data name="theses_type1" xml:space="preserve">
+    <value>نوع الاطروحة </value>
+  </data>
+  <data name="thesis_main_title1" xml:space="preserve">
+    <value>الأطروحة</value>
+  </data>
+  <data name="thesis_title1" xml:space="preserve">
+    <value>عنوان الأطروحة </value>
+  </data>
+  <data name="tille_elect_library1" xml:space="preserve">
+    <value>من المكتبة الإليكترونية</value>
+  </data>
+  <data name="Time1" xml:space="preserve">
+    <value>العصر الذى يتناوله التسجيل ويدور حوله </value>
+  </data>
+  <data name="timeline_desc1" xml:space="preserve">
+    <value>وصف الحدث </value>
+  </data>
+  <data name="timeline_h1" xml:space="preserve">
+    <value>هـ</value>
+  </data>
+  <data name="timeline_hdate1" xml:space="preserve">
+    <value>هجرى من </value>
+  </data>
+  <data name="timeline_hdateto1" xml:space="preserve">
+    <value>هجرى إلي </value>
+  </data>
+  <data name="timeline_hegry1" xml:space="preserve">
+    <value>تاريخ هجري</value>
+  </data>
+  <data name="timeline_hegryfrom1" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="timeline_hegryto1" xml:space="preserve">
+    <value>إلي</value>
+  </data>
+  <data name="timeline_m1" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="timeline_mdatefrom1" xml:space="preserve">
+    <value>ميلادى من </value>
+  </data>
+  <data name="timeline_mdateto1" xml:space="preserve">
+    <value>ميلادى إلي </value>
+  </data>
+  <data name="timeline_melady1" xml:space="preserve">
+    <value>تاريخ ميلادى</value>
+  </data>
+  <data name="title_alazhar1" xml:space="preserve">
+    <value>شيخ الأزهر</value>
+  </data>
+  <data name="title_article1" xml:space="preserve">
+    <value>المقالة</value>
+  </data>
+  <data name="title_articles1" xml:space="preserve">
+    <value>المقالات</value>
+  </data>
+  <data name="title_artifacts1" xml:space="preserve">
+    <value>القطع المتحفية</value>
+  </data>
+  <data name="title_audio1" xml:space="preserve">
+    <value>إذاعة</value>
+  </data>
+  <data name="title_audios1" xml:space="preserve">
+    <value>التسجيلات الإذاعية</value>
+  </data>
+  <data name="title_book1" xml:space="preserve">
+    <value>الكتب</value>
+  </data>
+  <data name="title_char1" xml:space="preserve">
+    <value>الشخصيات</value>
+  </data>
+  <data name="title_conference1" xml:space="preserve">
+    <value>أبحاث المؤتمرات</value>
+  </data>
+  <data name="title_docs1" xml:space="preserve">
+    <value>الوثائق</value>
+  </data>
+  <data name="title_document1" xml:space="preserve">
+    <value>الوثيقة</value>
+  </data>
+  <data name="title_event1" xml:space="preserve">
+    <value>الأحداث والمواقف</value>
+  </data>
+  <data name="title_glossray1" xml:space="preserve">
+    <value>قاموس المصطلحات</value>
+  </data>
+  <data name="title_library1" xml:space="preserve">
+    <value>المكتبة</value>
+  </data>
+  <data name="title_main1" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="title_manuscript1" xml:space="preserve">
+    <value>المخطوطات</value>
+  </data>
+  <data name="title_manuscripts1" xml:space="preserve">
+    <value>مخطوطات</value>
+  </data>
+  <data name="title_media1" xml:space="preserve">
+    <value>وسائط متعددة</value>
+  </data>
+  <data name="title_mufti1" xml:space="preserve">
+    <value>مفتي</value>
+  </data>
+  <data name="title_other1" xml:space="preserve">
+    <value>أعلام أخرى</value>
+  </data>
+  <data name="title_photo11" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="title_photo2" xml:space="preserve">
+    <value>الصور</value>
+  </data>
+  <data name="title_place1" xml:space="preserve">
+    <value>الذاكرة المعمارية</value>
+  </data>
+  <data name="title_place_home1" xml:space="preserve">
+    <value>الأماكن</value>
+  </data>
+  <data name="title_researches1" xml:space="preserve">
+    <value>أبحاث في مؤتمرات</value>
+  </data>
+  <data name="title_scholar1" xml:space="preserve">
+    <value>عالم</value>
+  </data>
+  <data name="title_Sites1" xml:space="preserve">
+    <value>مواقع </value>
+  </data>
+  <data name="title_theses1" xml:space="preserve">
+    <value>الأطروحة</value>
+  </data>
+  <data name="title_timeline1" xml:space="preserve">
+    <value>الخط الزمني</value>
+  </data>
+  <data name="title_topic1" xml:space="preserve">
+    <value>الموضوعات</value>
+  </data>
+  <data name="title_video1" xml:space="preserve">
+    <value>تسجيلات تليفزيونية</value>
+  </data>
+  <data name="title_website1" xml:space="preserve">
+    <value>المواقع الإلكترونية</value>
+  </data>
+  <data name="topicsNav1" xml:space="preserve">
+    <value>&amp;raquo; الموضوعات</value>
+  </data>
+  <data name="Topics_head1" xml:space="preserve">
+    <value> إستمارة الموضوعات</value>
+  </data>
+  <data name="Topics_Labels_Brief_Descrip1" xml:space="preserve">
+    <value>الوصف المختصر </value>
+  </data>
+  <data name="Topics_labels_detail_descrip1" xml:space="preserve">
+    <value>الوصف التفصيلى </value>
+  </data>
+  <data name="Topics_labels_KeyWords1" xml:space="preserve">
+    <value>الكلمات الدالة  </value>
+  </data>
+  <data name="Topics_labels_notes1" xml:space="preserve">
+    <value>ملاحظات  </value>
+  </data>
+  <data name="Topics_labels_subject_lbl1" xml:space="preserve">
+    <value>عنوان الموضوع </value>
+  </data>
+  <data name="Topics_upload1" xml:space="preserve">
+    <value>تحميل الملف الاستمارة  </value>
+  </data>
+  <data name="topmenucss1" xml:space="preserve">
+    <value>../css/menuCSS.css</value>
+  </data>
+  <data name="txt101" xml:space="preserve">
+    <value>القرارات التاريخية</value>
+  </data>
+  <data name="txt110" xml:space="preserve">
+    <value>يهدف موقع ذاكرة الأزهر إلى عرض وإتاحة  تراث الأزهر الشريف وتاريخه من خلال وثائقه، وسيرة ومسيرة أعلامه وشيوخه،وتوثيق الروائع المعمارية للأزهر الشريف، وذلك باستخدام أحدث التقنيات المتاحة</value>
+  </data>
+  <data name="txt111" xml:space="preserve">
+    <value>الاتفاقيات الدولية</value>
+  </data>
+  <data name="txt121" xml:space="preserve">
+    <value>وثائق تطوير الأزهر منذ القرن المنصرم.</value>
+  </data>
+  <data name="txt131" xml:space="preserve">
+    <value>الذاكرة الصحفية: وفيه توثيق للصحافة الأزهرية وتاريخها، والذي يتمثل في مجلة الأزهر وجريدة صوت الأزهر.</value>
+  </data>
+  <data name="txt141" xml:space="preserve">
+    <value>الذاكرة المسموعة والمرئية: وفيه توثيق لمختارات من التسجيلات الصوتية النادرة، وتسجيلات الفيديو لشيوخ الأزهر وعلمائه، والتي تتناول الأزهر بشكل رئيس.</value>
+  </data>
+  <data name="txt151" xml:space="preserve">
+    <value>ذاكرة المخطوطات: وفيها عرض لبعض المخطوطات من المكتبة الأزهرية، والتي تتناول الأزهر بشكل أو بآخر، فضلا عن قائمة ببليوجرافية حصرية بمقتنيات المكتبة الأزهرية من المخطوطات، ونوادر الكتب وأوائل المطبوعات</value>
+  </data>
+  <data name="txt161" xml:space="preserve">
+    <value>إصدارات الأزهر: ويحتوي على ببليوجرافية شاملة للإنتاج الفكري الصادر عن الأزهر، في شكل قابل للبحث في النصوص الكاملة، فضلا عن نسخة لإلكترونية كاملة من كتاب الجامع الأزهر.</value>
+  </data>
+  <data name="txt171" xml:space="preserve">
+    <value>قالوا عن الأزهر: وفيها مختارات مما قيل في تقريظ الأزهر ورجالاته، على المستويين المحلي والعالمي.</value>
+  </data>
+  <data name="txt181" xml:space="preserve">
+    <value>روائع مقتنيات الأزهر (قطع العرض المتحفي): وفيه عرض متحفي تخيلي لجانب من مقتنيات متحف الأزهر الشريف، وذلك باستخدام أحدث تقنيات التصوير ثلاثي الأبعاد والوسائط المتعددة.</value>
+  </data>
+  <data name="txt191" xml:space="preserve">
+    <value>جولة بانورامية للجامع الأزهر: وهي رحلة في داخل الجامع الأزهر وأروقته التاريخية، وهي بمثابة زيارة تخيلية له، وهي مفيدة جدا لمن لا يتيسر لهم الزيارة الحقيقية للجامع الشريف.</value>
+  </data>
+  <data name="txt201" xml:space="preserve">
+    <value>مواقع مرتبطة: وهو دليل بالمواقع المرتبطة بالأزهر سواء إداريا أو موضوعيا.</value>
+  </data>
+  <data name="txt210" xml:space="preserve">
+    <value>ويقدم الموقع محتوى ديناميكا يتم تحديثه باستمرار، ويتكون من أقسام رئيسة وأخرى تتفرع عنها، ومن أهم أقسامه الرئيسة:</value>
+  </data>
+  <data name="txt211" xml:space="preserve">
+    <value>موقع دارالإفتاء المصرية</value>
+  </data>
+  <data name="txt221" xml:space="preserve">
+    <value>يعرف الموقع بالدار ودورها الذي تقوم به في المجتمع، ومجموعة من المقالات المتخصصة في الدين الإسلامي، كما يقدم العديد من الأقسام التي تعرض لأساس عمليات الفتوى وفروعها وعرض لبعض الفتوى التي تمت الإجابة عليها. كما يقدم إمكانية طلب فتوي مباشرة من على الموقع وإرسال الإجابة عن طريق البريد الإلكتروني لمرسل الفتوي، هذا بالإضافة إلى عرض سريع لمجلة الإفتاء التي تصدرها الدار وعرض لمحتويات كل عدد منها وملخص له ومنافذ البيع التي يمكن الحصول على المجلة منها. </value>
+  </data>
+  <data name="txt231" xml:space="preserve">
+    <value>الموقع الألكترونى:</value>
+  </data>
+  <data name="txt241" xml:space="preserve">
+    <value>موقع الأزهر التعليمي</value>
+  </data>
+  <data name="txt251" xml:space="preserve">
+    <value>يعرف الموقع بالأزهر الشريف وأقسامه المختلفه وشيوخه، هذا بالإضافة إلى إلى عرضه لرؤية الأزهر التعليمية ومعاهده التعليمية، وعرض لأهم الأحداث المتعلقة بالعملية التعليمية وما يخص الطلاب بجميع فئاتهم، والمعلمين وما يخصهم من أخبار، بالإضافة إلى قسم خاص بالمنتديات والتي يمكن من خلالها تبادل الأراء المختلفة لكافة الموضوعات. </value>
+  </data>
+  <data name="txt261" xml:space="preserve">
+    <value>موقع جامعة الأزهر</value>
+  </data>
+  <data name="txt271" xml:space="preserve">
+    <value>موقع جامعة الأزهريعرف الموقع بالجامعة وإداراتها وأقسامها المختلفة وكلياتها ويعرض لأخبارها، والخدمات التي تقدمها للطلابها في الكليات وطلبة الدراسات العليا، هذا بالإضافة إلى التعريف بخدمات التعليم الإلكتروني التي تقدمها الجامعة، ومنشآتها المتعددة التي تقدم خدماتها للطلبة وأعضاء هيئة التدريس في الجامعة.</value>
+  </data>
+  <data name="txt281" xml:space="preserve">
+    <value>موقع المجلس الأعلى للشئون الإسلامية</value>
+  </data>
+  <data name="txt291" xml:space="preserve">
+    <value>موقع جامعة الأزهريعرف الموقع بالجامعة وإداراتها وأقسامها المختلفة وكلياتها ويعرض لأخبارها، والخدمات التي تقدمها للطلابها في الكليات وطلبة الدراسات العليا، هذا بالإضافة إلى التعريف بخدمات التعليم الإلكتروني التي تقدمها الجامعة، ومنشآتها المتعددة التي تقدم خدماتها للطلبة وأعضاء هيئة التدريس في الجامعة.</value>
+  </data>
+  <data name="txt31" xml:space="preserve">
+    <value>تاريخ الأزهر:والذي يتناول المواقف التاريخية للأزهر، ودور الأروقة في مدارسة العلم، ومؤسسات الأزهر</value>
+  </data>
+  <data name="txt41" xml:space="preserve">
+    <value>شيوخ الأزهر: والذي يسجل السيرة الذاتية لشيوخ الأزهر الأجلاء، وشيوخهم الذين تتلمذوا على أيديهم، والمناصب التي تقلدوها، ومؤلفاتهم، ومواقفهم وآرائهم</value>
+  </data>
+  <data name="txt51" xml:space="preserve">
+    <value>العلماء والأعلام: ويستعرض هذا الجزء أعلام الأزهر من علماء ورؤساء في جميع بقاع الأرض.</value>
+  </data>
+  <data name="txt61" xml:space="preserve">
+    <value>محاور الذاكرة الأزهرية: ويعد هذا القسم أساسا للموقع، ويتفرع عنه</value>
+  </data>
+  <data name="txt71" xml:space="preserve">
+    <value>الذاكرة المصورة: وفيه توثيق لتراث الأزهر من الصور النادرة</value>
+  </data>
+  <data name="txt81" xml:space="preserve">
+    <value>الذاكرة المعمارية: وفيه توثيق معماري للجامع الأزهر، والمباني التابعة له، في جميع أنحاء القطر المصري</value>
+  </data>
+  <data name="txt91" xml:space="preserve">
+    <value>الذاكرة الوثائقية: يحتوي على مجموعة نادرة من الوثائق الأزهرية، وهي مقسمة موضوعيا على عدة فئات لعل أهمها</value>
+  </data>
+  <data name="txtsrshbg1" xml:space="preserve">
+    <value>background-color:#8C9AA3;border-style:None;height:18px;width: 160px;margin-right: 2px;</value>
+  </data>
+  <data name="txt_moalf1" xml:space="preserve">
+    <value>اسم مؤلف</value>
+  </data>
+  <data name="university1" xml:space="preserve">
+    <value>الجامعة</value>
+  </data>
+  <data name="URL1" xml:space="preserve">
+    <value>العنوان الإلكتروني (URL) </value>
+  </data>
+  <data name="videosNav1" xml:space="preserve">
+    <value>&amp;raquo; التسجيلات التليفزيونية</value>
+  </data>
+  <data name="webNav1" xml:space="preserve">
+    <value>&amp;raquo; مواقع إلكترونية</value>
+  </data>
+  <data name="website_Desc1" xml:space="preserve">
+    <value>وصف الصفحة </value>
+  </data>
+  <data name="Website_Lang1" xml:space="preserve">
+    <value>لغه الموقع </value>
+  </data>
+  <data name="website_links1" xml:space="preserve">
+    <value>مواقع مرتبطة</value>
+  </data>
+  <data name="website_map1" xml:space="preserve">
+    <value>خريطة الموقع</value>
+  </data>
+  <data name="website_title1" xml:space="preserve">
+    <value>عنوان الموقع </value>
+  </data>
+  <data name="workingPageNo1" xml:space="preserve">
+    <value>أرقام الصفحات التي تشغلها</value>
+  </data>
+  <data name="workType1" xml:space="preserve">
+    <value>نوع العمل </value>
+  </data>
+  <data name="year_timeline1" xml:space="preserve">
+    <value>سنة التمثيل علي الخط الزمني</value>
+  </data>
+  <data name="yes1" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="Lbl_character_name" xml:space="preserve">
+    <value>اسم الشخصية</value>
   </data>
 </root>

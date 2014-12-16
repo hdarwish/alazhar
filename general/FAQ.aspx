@@ -14,12 +14,12 @@
                 <div >
                     <div  id="tr6" runat="server" align="<%$Resources:Master, align%>" dir="<%$ Resources:Master, dir%>">
                         
-                        <span class="text_Brown_10pt_bold">
+                       <span class="<%$Resources:Master, pagetitle%>" id="tr1" runat="server">
                             <asp:Label ID="Label2" runat="server" Text="<%$ Resources:Master, Q&A%>"></asp:Label>
-                        </span>
+                       </span>
                     </div>
                     <div  runat="server" id="tr7" align="<%$Resources:Master, align%>" dir="<%$ Resources:Master, dir%>">
-                        <span class="text_Dark_Brown_10pt">
+                       <span id="Span1" class="<%$Resources:Master, links_des%>" runat="server"  dir="<%$Resources:Master, dir%>">
                             <asp:Label ID="Labpubtitle" runat="server" Text="<%$ Resources:Master, Q&A_details%>"></asp:Label>
                         </span>
                     </div>

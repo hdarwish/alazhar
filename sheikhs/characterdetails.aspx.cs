@@ -36,7 +36,7 @@ public partial class sheikhs_characterdetails : BasePage
                 trhdeathdate.Attributes["class"] = "accordion_title_enfr";
                 trchartype.Attributes["class"] = "accordion_title_enfr";
                 trshohra.Attributes["class"] = "accordion_title_enfr";
-                trothername.Attributes["class"] = "accordion_title_enfr";
+                //trothername.Attributes["class"] = "accordion_title_enfr";
                 tral2ab.Attributes["class"] = "accordion_title_enfr";
                 trtitles.Attributes["class"] = "accordion_title_enfr";
                 trnabtha.Attributes["class"] = "accordion_title_enfr";
@@ -198,8 +198,17 @@ public partial class sheikhs_characterdetails : BasePage
         Image lcImage = (Image)Page.Master.FindControl("leftUC11").FindControl("Image1");
         if (obj.image_name != "")
         {
-
+           
             lcImage.ImageUrl = "../images/sheikhs/" + obj.image_name;
+            if (lcImage.Width.Value > 227)
+            { 
+                lcImage.Width = 227;
+            }
+            if (lcImage.Height.Value > 169)
+            {
+                lcImage.Width = 169;
+            }
+
         }
         else lcImage.ImageUrl = "../img/azhar-char.gif";
         Label lclabel = (Label)Page.Master.FindControl("leftUC11").FindControl("content_txt");
@@ -236,7 +245,8 @@ public partial class sheikhs_characterdetails : BasePage
         }
         else
         {
-            trothername.Visible = trshohra.Visible = false;
+           // trothername.Visible =
+            trshohra.Visible = false;
         }
         //---------------------------------------------------no 5------------------------------------------------------------
 

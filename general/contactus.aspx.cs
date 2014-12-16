@@ -22,6 +22,12 @@ public partial class contactus : BasePage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        HtmlAnchor currentMenu = (HtmlAnchor)Page.Master.FindControl("hypSiteMap2");
+        currentMenu.HRef = "~/general/contactus.aspx";
+        Literal lbl_veiw = (Literal)Page.Master.FindControl("Literal2");
+        currentMenu.Visible = true;
+
+        lbl_veiw.Text = ">> ِإتصل بنا ";
         //if (!IsPostBack)
         //{
            

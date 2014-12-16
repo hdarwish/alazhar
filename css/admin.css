@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.menu
+{
+	background-image:url(../images/bg1.JPG);padding-left:5px;
+	font-family:Arial (Arabic) Courier New;
+	height:20px;
+}
+
+.menu a
+{
+	color:#000000;
+	text-decoration:none;
+}
+
+.menu:hover
+{
+	background-image:url(../images/bground.JPG);padding-left:5px;
+	font-family:Arial (Arabic) Courier New;
+	height:20px;
+}
+
+.menu a:hover
+{
+	color:#ffffff;
+	text-decoration:none;
+}

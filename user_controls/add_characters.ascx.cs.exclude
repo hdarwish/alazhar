@@ -1,0 +1,140 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+
+public partial class user_controls_add_characters : System.Web.UI.UserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            //if (Session["content_type"].ToString() == "0" && Session["content_id"].ToString() != "0")
+            {
+                fillcontrol();
+                fillchar_type();
+            }
+
+        }
+
+    }
+    private void fillchar_type()
+    {
+        char_types_DT obj = new char_types_DT();
+        DataTable obj_db = char_types_DB.SelectAll ();
+        chk_char_type.DataSource = obj_db;
+        chk_char_type.DataTextField = "title_ar";
+        chk_char_type.DataValueField = "id";
+        chk_char_type.DataBind(); 
+          
+    }
+    public void save()
+    {   
+        characters_DT obj_dt = new characters_DT();
+        obj_dt.assigned_to = 0;
+        obj_dt.id = 13;
+        obj_dt.char_type =CDataConverter.ConvertToInt(chk_char_type.SelectedValue);
+        obj_dt.gender = "";
+        obj_dt.highlight =CDataConverter.ConvertToInt(chk_highlight.Checked);
+        obj_dt.highlight_panorama =CDataConverter.ConvertToInt (chk_pano.Checked);
+        obj_dt.image_name = "";
+        obj_dt.status = 0;
+        obj_dt.id = characters_DB.Save(obj_dt);
+        characters_details_DT obj = new characters_details_DT();
+        obj.id = 13;
+        obj.char_id =13;
+        obj.titles = txt_titles.Text;
+        obj.other_names = txt_other_name.Text;
+        obj.name = txt_name.Text;
+        obj.hbirth_date = txt_hbirth_date.Text;
+        obj.birth_date = txt_birth_date.Text;
+        obj.hdeath_date = txt_hdeath_date.Text;
+        obj.death_date = txt_death_date.Text;
+        obj.char_details = txt_char_details.Text;
+        obj.birth_details = txt_birth_details.Text;
+        obj.scientific_life = txt_scientific_life.Text;
+        obj.working_life = txt_working_life.Text;
+        obj.activities = txt_activities.Text;
+        obj.notes = txt_notes.Text;
+        obj.keywords = txt_keywords.Text;
+        obj.written_about = txt_written_about.Text;
+        obj.lang_id = 1;
+        obj.char_brief = "";
+        obj.mashyakha_azhar = "";
+        characters_details_DB.Save(obj);
+        if(txt_achiev.Text !="")
+        {
+        achievements_DT obj_achv = new achievements_DT();
+        obj_achv.char_id = 14;
+        obj_achv.id = 0;
+        obj_achv.type = 1;
+        obj_achv.id = achievements_DB.Save(obj_achv);
+        if (obj_achv.id > 0)
+        {
+
+            achievements_details_DT obj_achve_details = new achievements_details_DT();
+            obj_achve_details.id = 0;
+            obj_achve_details.details = txt_achiev.Text;
+            obj_achve_details.lang_id = 1;
+            obj_achve_details.achiev_id = obj_achv.id;
+            obj_achve_details.id = achievements_details_DB.Save(obj_achve_details);
+        }
+        if (txt_awesma.Text != "")
+        {
+            awsema_DT obj_aws = new awsema_DT();
+            obj_aws.char_id = 14;
+            obj_aws.id = 0;
+            obj_aws.id = awsema_DB.Save(obj_aws);
+            if (obj_aws.id > 0)
+            {
+                awsema_details_DT obj_aws_det = new awsema_details_DT();
+                obj_aws_det.wesam_id = obj_aws.id;
+                obj_aws_det.id = 0;
+                obj_aws_det.lang_id = 1;
+                obj_aws_det.details = txt_awesma.Text;
+                obj_aws_det.id = awsema_details_DB.Save(obj_aws_det);
+            }
+         }
+      }
+    }
+    public void fillcontrol()
+    {
+        characters_details_DT dt = characters_details_DB.SelectByID(CDataConverter.ConvertToInt(Label3.Text));
+        txt_name.Text = dt.name;
+    
+    
+    }
+    private Boolean checked_control()
+    {
+        bool flag = true ;
+        txt_name.Text = "";
+        txt_other_name.Text = "";
+        txt_scientific_life.Text ="";
+        txt_achiev.Text = "" ;
+        txt_char_details.Text = "";
+        txt_death_date.Text = "";
+        txt_hdeath_date.Text = "";
+        txt_keywords.Text = "";
+       if (CDataConverter.ConvertToInt(chk_char_type.SelectedValue) > 0)
+       {flag = true ;}
+       else { flag = false;
+
+       lblerror.Text = "";
+       }
+       return flag;
+      
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        save();
+    }
+    
+}

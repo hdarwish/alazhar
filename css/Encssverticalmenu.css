@@ -1,0 +1,89 @@
+.glossymenu, .glossymenu li ul{
+list-style-type: none;
+margin:0px;
+padding: 0;
+width: 190px; /*WIDTH OF MAIN MENU ITEMS*/
+height: 30px;
+
+float:left;
+}
+
+.glossymenu li
+{
+	border: 0.5px solid #ffffff;
+	position:relative;
+	background: white url(../images/design124_03_05.gif) repeat-y bottom left;
+	height: 30px;
+	width: 190px;
+	float:left;
+	background-color:#C2C2C2;
+}
+
+.glossymenu li a
+{
+	
+	
+	font-family:arial;
+	color:#000000;
+	font-size:12px;
+	display: block;
+	text-align: center;
+	width: 190px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 30px;
+	text-decoration: none;
+}
+
+.glossymenu li ul
+{ /*SUB MENU STYLE*/
+position: absolute;
+width: 190px; /*WIDTH OF SUB MENU ITEMS*/
+left: 0;
+height: 30px;
+top: 0;
+display: none;
+}
+
+.glossymenu li ul li
+{
+	height: 30px;
+float: left;
+}
+
+.glossymenu li ul a{
+width: 190px; /*WIDTH OF SUB MENU ITEMS - 10px padding-left for A elements */
+}
+
+.glossymenu .arrowdiv{
+position: absolute;
+left: 0px;
+}
+
+.glossymenu li a:visited, .glossymenu li a:active{
+color: #000000;
+}
+
+.glossymenu li:hover
+{
+	background-image: url(../images/design124_03_02.gif);
+	background-repeat:no-repeat;
+	background-color:#94CE3C;
+}
+
+.glossymenu li a:hover
+{
+	background-repeat:no-repeat;
+	font-family:arial;
+	color:#ffffff;
+	font-size:12px;
+	
+	
+}
+
+/* Holly Hack for IE \*/
+* html .glossymenu li { float: right; height: 221px; }
+* html .glossymenu li a { height: 224px; }
+/* End */

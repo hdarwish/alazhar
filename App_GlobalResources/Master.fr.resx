@@ -1,0 +1,1727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="main_items" xml:space="preserve">
+    <value>éléments principaux</value>
+  </data>
+  <data name="align" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="key_Artifacts" xml:space="preserve">
+    <value>Artifacts</value>
+  </data>
+  <data name="key_audio" xml:space="preserve">
+    <value>audio</value>
+  </data>
+  <data name="key_Places" xml:space="preserve">
+    <value>lieux</value>
+  </data>
+  <data name="key_Video" xml:space="preserve">
+    <value>vidéo</value>
+  </data>
+  <data name="srch1" xml:space="preserve">
+    <value>Il n'y a pas de données pour montrer</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>recherche:</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>résultats:</value>
+  </data>
+  <data name="title_manuscripts" xml:space="preserve">
+    <value>manuscrits</value>
+  </data>
+  <data name="aboutus" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="AddContent" xml:space="preserve">
+    <value>Ajouter au panier</value>
+  </data>
+  <data name="lblContent" xml:space="preserve">
+    <value>le teneur</value>
+  </data>
+  <data name="plan" xml:space="preserve">
+    <value>Plan du site :</value>
+  </data>
+  <data name="Terms of Use" xml:space="preserve">
+    <value>Conditions d'utilisation</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Tous droits réservés à Al-Azhar en 2011</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>Élaboré par le ministère des Communications et des Technologies de l'information</value>
+  </data>
+  <data name="conditions" xml:space="preserve">
+    <value>conditions</value>
+  </data>
+  <data name="condition1" xml:space="preserve">
+    <value>condition1</value>
+  </data>
+  <data name="Contactus" xml:space="preserve">
+    <value>Contact Usfr :</value>
+  </data>
+  <data name="Labspecial" xml:space="preserve">
+    <value>élément spécial :</value>
+  </data>
+  <data name="lblHighlight" xml:space="preserve">
+    <value>élément spécial :</value>
+  </data>
+  <data name="key_AlAzhar" xml:space="preserve">
+    <value>al-Azhar</value>
+  </data>
+  <data name="key_address" xml:space="preserve">
+    <value>titre</value>
+  </data>
+  <data name="key_dece_address" xml:space="preserve">
+    <value>Parc immortels - Salah Salem - eldarasa - République arabe d'Égypte</value>
+  </data>
+  <data name="key_phone" xml:space="preserve">
+    <value>téléphone</value>
+  </data>
+  <data name="event_brief" xml:space="preserve">
+    <value>Description abrégée :</value>
+  </data>
+  <data name="event_brief_all" xml:space="preserve">
+    <value>Description détaillée</value>
+  </data>
+  <data name="event_keyword" xml:space="preserve">
+    <value>Mots clés :</value>
+  </data>
+  <data name="event_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="event_title" xml:space="preserve">
+    <value>Event title :</value>
+  </data>
+  <data name="event_upload" xml:space="preserve">
+    <value>Upload form file :</value>
+  </data>
+  <data name="timeline_desc" xml:space="preserve">
+    <value>Description d’un événement lié :</value>
+  </data>
+  <data name="class" xml:space="preserve">
+    <value>books_title_enfr</value>
+  </data>
+  <data name="books_title_text" xml:space="preserve">
+    <value>books_title_text_enfr</value>
+  </data>
+  <data name="books_texts" xml:space="preserve">
+    <value>books_texts_enfr</value>
+  </data>
+  <data name="pagetitle" xml:space="preserve">
+    <value>pagetitle_enfr</value>
+  </data>
+  <data name="txt1" xml:space="preserve">
+    <value>Azhar vise emplacement de mémoire pour voir et l'accès au patrimoine d'Al-Azhar et son histoire à travers les documents, et la biographie et le mars informé et les personnes âgées, et de documenter les chefs-d'œuvre architecturaux de Al-Azhar Al-Sharif, et utilisant les dernières technologies disponibles</value>
+  </data>
+  <data name="txt2" xml:space="preserve">
+    <value>Le site propose un contenu dynamique sont constamment mis à jour, et se compose des sections principales et d'autres nids, et les plus importants principales divisions:</value>
+  </data>
+  <data name="txt3" xml:space="preserve">
+    <value>Date de Azhar, qui traite avec les positions historiques d'Al-Azhar, et le rôle des corridors dans Ramadan science qui étudie, et les institutions d'Al-Azhar</value>
+  </data>
+  <data name="txt4" xml:space="preserve">
+    <value>Cheikhs Azhar: qui enregistre la biographie d'Al-Azhar vénérables anciens, et les anciens qui Ttelmzu sur leurs mains, et que les positions Tqlduha, et leurs compositions, leurs attitudes et opinions</value>
+  </data>
+  <data name="txt5" xml:space="preserve">
+    <value>Scientifiques drapeaux: Cette section examine les drapeaux des chercheurs et des chefs d'Al-Azhar dans toutes les parties de la terre.</value>
+  </data>
+  <data name="txt6" xml:space="preserve">
+    <value>Azhar axes mémoire: Cette section est la base pour le site, et les ramifications:</value>
+  </data>
+  <data name="txt7" xml:space="preserve">
+    <value>Photographe de mémoire: et la documentation du patrimoine d'Al-Azhar photos rares</value>
+  </data>
+  <data name="txt8" xml:space="preserve">
+    <value>Architecture de mémoire: Le plus près l'architecte de la mosquée Al-Azhar, les bâtiments appartiennent à lui, dans toutes les régions du pays d'Egypte</value>
+  </data>
+  <data name="txt9" xml:space="preserve">
+    <value>Mémoire documentaire: contient une collection de documents rares d'Al-Azhar, qui est divisé en plusieurs catégories objectivement peut-être le plus important</value>
+  </data>
+  <data name="txt10" xml:space="preserve">
+    <value>décisions historiques</value>
+  </data>
+  <data name="txt11" xml:space="preserve">
+    <value>Les conventions internationales</value>
+  </data>
+  <data name="txt12" xml:space="preserve">
+    <value>Documents le développement d'Al-Azhar depuis le siècle dernier.</value>
+  </data>
+  <data name="txt13" xml:space="preserve">
+    <value>Mémoire: la presse et la documentation pour la presse-Azhar et de son histoire, qui est le magazine d'Al-Azhar et la voix du journal Al-Azhar.</value>
+  </data>
+  <data name="txt14" xml:space="preserve">
+    <value>Audio et mémoire visuelle: et la documentation d'une sélection d'enregistrements audio rares et des enregistrements vidéo des cheikhs et Azhar, et face à un chef d'Al-Azhar</value>
+  </data>
+  <data name="txt15" xml:space="preserve">
+    <value>Manuscrits de la mémoire: et la présentation de certains des manuscrits de la bibliothèque d'Al-Azhar, Al-Azhar et de traiter d'une manière ou d'une autre, ainsi que d'une liste exclusive des bibliographique bibliothèque exploitations Azhar de manuscrits et de livres rares et premières publications</value>
+  </data>
+  <data name="txt16" xml:space="preserve">
+    <value>Versions Azhar: Il contient une bibliographie complète de la production intellectuelle de l'Al-Azhar, sous la forme d'une recherche en texte intégral, ainsi que d'une copie du livre électronique complet (Al-Azhar).</value>
+  </data>
+  <data name="txt17" xml:space="preserve">
+    <value>Ils ont dit à propos Azhar et l'anthologie, qui a été dit à la louange de Al-Azhar et ses hommes d'État, à la fois nationale et mondiale</value>
+  </data>
+  <data name="txt18" xml:space="preserve">
+    <value>Chefs-d'œuvre collection d'Al-Azhar (couper présentation du musée) et la largeur de la partie d'une collection de musée imaginaire du Musée d'Al-Azhar, et en utilisant les dernières techniques d'imagerie et multimédia en trois dimensions</value>
+  </data>
+  <data name="txt19" xml:space="preserve">
+    <value>Visite panoramique de la mosquée Al-Azhar: un voyage à l'intérieur de la mosquée Al-Azhar et les corridors historiques, qui sert une visite virtuelle de lui, ce qui est très utile pour ceux qui ne les fréquentent la mosquée accessible réel-Sharif</value>
+  </data>
+  <data name="txt20" xml:space="preserve">
+    <value>Sites associés: un guide sur les sites associés à Al-Azhar, soit administrativement ou objectives.</value>
+  </data>
+  <data name="txt21" xml:space="preserve">
+    <value>Site égyptienne Daralavta</value>
+  </data>
+  <data name="txt22" xml:space="preserve">
+    <value>
+Le site est connu Casablanca et le rôle qu'ils jouent dans la société , et une gamme d'articles spécialisés dans la religion islamique , il offre également de nombreuses sections dont l'exposition à la base de la fatwa et de ses filiales et afficher une partie de la fatwa , qui ont été répondu . Il offre également la possibilité de demander une fatwa directement sur le site et envoyer la réponse par e -mail à l'expéditeur de la fatwa , en plus de la rapide Fatwa Voir magazine publié par la maison et afficher le contenu de chacun d'eux et un résumé de son et points de vente qui peut être trouvé sur le magazine d'entre eux .
+Le site est disponible en plusieurs langues sont l'arabe , anglais, français , allemand, indonésien , russe, turc et Aloorudih</value>
+  </data>
+  <data name="txt23" xml:space="preserve">
+    <value>Site Web:</value>
+  </data>
+  <data name="txt24" xml:space="preserve">
+    <value>Azhar site éducatif</value>
+  </data>
+  <data name="txt25" xml:space="preserve">
+    <value>Connu comme le site d'Al-Azhar Al-Sharif et de ses différentes sections et les personnes âgées, en plus de l'écran pour voir la formation traité éducative Al-Azhar et l'affichage des événements les plus importants liés au processus éducatif et pour les étudiants de toutes les catégories, et les enseignants et ce qui leur appartient de nouvelles, en plus d'une section spéciale des forums et dans lequel ils peuvent échanger des opinions différentes pour tous sujets.
+Le site est disponible en arabe, en anglais et en français</value>
+  </data>
+  <data name="txt26" xml:space="preserve">
+    <value>Site-Azhar</value>
+  </data>
+  <data name="txt27" xml:space="preserve">
+    <value>Site de l'Université place Alozahraaraf universitaires, départements et divisions divers collèges et affiche de nouvelles, et des services offerts aux étudiants à l'université et les étudiants des cycles supérieurs, en plus de la définition des services de e-learning proposés par l'université, et des installations multiples offre ses services aux étudiants et aux membres du corps professoral à l'université.
+Le site est disponible en anglais et en arabe.</value>
+  </data>
+  <data name="txt28" xml:space="preserve">
+    <value>Site du Conseil suprême des affaires islamiques</value>
+  </data>
+  <data name="txt29" xml:space="preserve">
+    <value>Le site est connu pour voir le Conseil et le rôle joué par le site offre de nombreuses sections différentes qui permettent une variété de services, y compris l'interprétation du Coran directement sur le site et ainsi de nombreuses langues, dont l'anglais, le français, l'allemand, le russe et l'espagnol, permet également la possibilité d'installer certains programmes religieux qui servent tous les utilisateurs en ce qui concerne la religion de l'Islam, et d'offrir un ensemble différent de pages qui incluent divers aspects de la religion et de l'interprétation moderne et d'autres sections de la religion islamique.
+Le site est disponible en anglais et en arabe.</value>
+  </data>
+  <data name="links_rel" xml:space="preserve">
+    <value>links_rel_enfr</value>
+  </data>
+  <data name="links_des" xml:space="preserve">
+    <value>links_des_enfr</value>
+  </data>
+  <data name="links_url_text" xml:space="preserve">
+    <value>links_url_text_enfr</value>
+  </data>
+  <data name="links_url" xml:space="preserve">
+    <value>links_url_enfr</value>
+  </data>
+  <data name="timeline_h" xml:space="preserve">
+    <value>AH</value>
+  </data>
+  <data name="timeline_hdate" xml:space="preserve">
+    <value>date de l'Hégire de</value>
+  </data>
+  <data name="timeline_hdateto" xml:space="preserve">
+    <value>date de l'Hégire à </value>
+  </data>
+  <data name="timeline_hegry" xml:space="preserve">
+    <value>date de l'Hégire </value>
+  </data>
+  <data name="timeline_hegryfrom" xml:space="preserve">
+    <value>de </value>
+  </data>
+  <data name="timeline_hegryto" xml:space="preserve">
+    <value>à </value>
+  </data>
+  <data name="timeline_m" xml:space="preserve">
+    <value>AP.JC</value>
+  </data>
+  <data name="timeline_mdatefrom" xml:space="preserve">
+    <value>date du calendrier grégorien de </value>
+  </data>
+  <data name="timeline_mdateto" xml:space="preserve">
+    <value>date du calendrier grégorien à </value>
+  </data>
+  <data name="timeline_melady" xml:space="preserve">
+    <value>date du calendrier grégorien </value>
+  </data>
+  <data name="Lbl_character_Abrief_description" xml:space="preserve">
+    <value>Aperçu sur la personne  :</value>
+  </data>
+  <data name="Lbl_character_Achievements" xml:space="preserve">
+    <value>Réalisations :</value>
+  </data>
+  <data name="Lbl_character_Awards" xml:space="preserve">
+    <value>Types d’ honorification 
+(toges d’honneur scientifique – décorations et médailles – certificats d’appréciation)
+ :</value>
+  </data>
+  <data name="Lbl_character_Birth_upbringing" xml:space="preserve">
+    <value>Naissance et formation :</value>
+  </data>
+  <data name="Lbl_character_Educational_cultural" xml:space="preserve">
+    <value>Le parcours scientifique et culturel :</value>
+  </data>
+  <data name="Lbl_character_full_name" xml:space="preserve">
+    <value>Nom complet :</value>
+  </data>
+  <data name="Lbl_character_keywords" xml:space="preserve">
+    <value>Mots clés :</value>
+  </data>
+  <data name="Lbl_character_nick_name" xml:space="preserve">
+    <value>Surnom :</value>
+  </data>
+  <data name="Lbl_character_Notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Lbl_character_Posts_Jobs_occupied" xml:space="preserve">
+    <value>Postes occupés :</value>
+  </data>
+  <data name="Lbl_character_said_about_him" xml:space="preserve">
+    <value>Témoignages :</value>
+  </data>
+  <data name="Lbl_character_social_cultural_activities" xml:space="preserve">
+    <value> Principales activités sociales/politiques :</value>
+  </data>
+  <data name="Lbl_character_Titles" xml:space="preserve">
+    <value>Sobriquet :</value>
+  </data>
+  <data name="lbl_photo_details" xml:space="preserve">
+    <value>Description d’image</value>
+  </data>
+  <data name="lbl_photo_Keywords" xml:space="preserve">
+    <value>Mots clés :</value>
+  </data>
+  <data name="lbl_photo_Notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="lbl_photo_Photographer" xml:space="preserve">
+    <value>Photographe/peintre</value>
+  </data>
+  <data name="lbl_photo_Source_copyright" xml:space="preserve">
+    <value>Source/ copyright</value>
+  </data>
+  <data name="lbl_photo_Title_Photo" xml:space="preserve">
+    <value>Titre  d’image :</value>
+  </data>
+  <data name="lbl_Recording_Description" xml:space="preserve">
+    <value>Description de l’enregistrement</value>
+  </data>
+  <data name="lbl_Recording_Guests_position" xml:space="preserve">
+    <value>L’invité et son poste poste </value>
+  </data>
+  <data name="lbl_Recording_Guests_Post" xml:space="preserve">
+    <value>L’invité et son poste nom </value>
+  </data>
+  <data name="lbl_Recording_title" xml:space="preserve">
+    <value>Titre de l’enrgistrement  :</value>
+  </data>
+  <data name="lbl_Recording_Title_number_episode" xml:space="preserve">
+    <value>Titre de l’épisode ou son numéro </value>
+  </data>
+  <data name="Lbl_book_Author" xml:space="preserve">
+    <value>Nom d’auteur</value>
+  </data>
+  <data name="Lbl_book_Its_number_series" xml:space="preserve">
+    <value>Numéro du livre dans la collection :</value>
+  </data>
+  <data name="Lbl_book_Publication_data" xml:space="preserve">
+    <value>Données d’édition :</value>
+  </data>
+  <data name="Lbl_book_Publication_Place" xml:space="preserve">
+    <value>Lieu d’édition</value>
+  </data>
+  <data name="Lbl_book_Publication_Publisher" xml:space="preserve">
+    <value>Editeur</value>
+  </data>
+  <data name="Lbl_book_Publication_year" xml:space="preserve">
+    <value>Année d’édition</value>
+  </data>
+  <data name="Lbl_book_Series" xml:space="preserve">
+    <value>Collection :</value>
+  </data>
+  <data name="Lbl_book_Series_name" xml:space="preserve">
+    <value>Nom de la collection</value>
+  </data>
+  <data name="Lbl_book_Title" xml:space="preserve">
+    <value>Titre du livre :</value>
+  </data>
+  <data name="Lbl_document_Place_reservation" xml:space="preserve">
+    <value>Autorité responsable de l'enregistrement</value>
+  </data>
+  <data name="Lbl_document_Place_reservation_Bookshelving_no" xml:space="preserve">
+    <value>Numéro d'enregistrement</value>
+  </data>
+  <data name="Lbl_document_Place_reservation_City" xml:space="preserve">
+    <value>ville</value>
+  </data>
+  <data name="Lbl_document_Place_reservation_country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="Lbl_document_Place_reservation_name" xml:space="preserve">
+    <value>  Nom   </value>
+  </data>
+  <data name="Lbl_document_Place_reservation_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Lbl_document_Source" xml:space="preserve">
+    <value>Source du document </value>
+  </data>
+  <data name="Lbl_document_Source_no" xml:space="preserve">
+    <value>Numéro </value>
+  </data>
+  <data name="Lbl_document_Title" xml:space="preserve">
+    <value>Titre du document :</value>
+  </data>
+  <data name="lbl_manuscript_Author" xml:space="preserve">
+    <value>Nom de l'auteur </value>
+  </data>
+  <data name="lbl_manuscript_Conclusion" xml:space="preserve">
+    <value>Epilogue  du manuscrit</value>
+  </data>
+  <data name="lbl_manuscript_name" xml:space="preserve">
+    <value>Nome :</value>
+  </data>
+  <data name="lbl_manuscript_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="lbl_manuscript_Place_preservation" xml:space="preserve">
+    <value>Autorité responsable de l'enregistrement </value>
+  </data>
+  <data name="lbl_manuscript_Place_preservation_City" xml:space="preserve">
+    <value>Ville </value>
+  </data>
+  <data name="lbl_manuscript_Place_preservation_country" xml:space="preserve">
+    <value>pays </value>
+  </data>
+  <data name="lbl_manuscript_Preface" xml:space="preserve">
+    <value>Prologue du manuscrit </value>
+  </data>
+  <data name="lbl_manuscript_Title" xml:space="preserve">
+    <value>Titre du manuscrit :</value>
+  </data>
+  <data name="lbl_manuscript_Transcriber" xml:space="preserve">
+    <value>Copiste </value>
+  </data>
+  <data name="lbl_manuscript_Transcribing" xml:space="preserve">
+    <value>Les données à dicter :</value>
+  </data>
+  <data name="lbl_manuscript_Transcribing_place" xml:space="preserve">
+    <value>Lieu de Transcription (du manuscrit)  
+</value>
+  </data>
+  <data name="lbl_Recording_Broadcaster_interviewer" xml:space="preserve">
+    <value>Speaker, commentateur, intervieweur, présentateur</value>
+  </data>
+  <data name="lbl_Recording_keyword" xml:space="preserve">
+    <value>Mot-clé :</value>
+  </data>
+  <data name="lbl_Recording_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="lbl_Recording_Source" xml:space="preserve">
+    <value>Source de l’émission :</value>
+  </data>
+  <data name="lbl_Recording_Source_Book_shelving_no" xml:space="preserve">
+    <value>Nombre étagères du livre</value>
+  </data>
+  <data name="lbl_Recording_Source_city" xml:space="preserve">
+    <value>Source de l’émission Ville</value>
+  </data>
+  <data name="lbl_Recording_Source_country" xml:space="preserve">
+    <value>Source de l’émission pays </value>
+  </data>
+  <data name="lbl_Recording_Source_name" xml:space="preserve">
+    <value>Source de l’émission nom</value>
+  </data>
+  <data name="lbl_Recording_Source_notes" xml:space="preserve">
+    <value>Source de l’émission Remarques</value>
+  </data>
+  <data name="Places_labels_BotanDecorations" xml:space="preserve">
+    <value>Ornementations florales :</value>
+  </data>
+  <data name="Places_labels_briefDescription" xml:space="preserve">
+    <value>Description abrégée </value>
+  </data>
+  <data name="Places_labels_buildingInside" xml:space="preserve">
+    <value>le monument ou l’édifice vu de l’intérieur </value>
+  </data>
+  <data name="Places_labels_buildingOutside" xml:space="preserve">
+    <value>le monument ou l’édifice vu de l’éxterieur</value>
+  </data>
+  <data name="Places_labels_detailDescription" xml:space="preserve">
+    <value>Description détaillée</value>
+  </data>
+  <data name="Places_labels_generalNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Places_labels_generalOutline" xml:space="preserve">
+    <value>Planification générale :</value>
+  </data>
+  <data name="Places_labels_generalView" xml:space="preserve">
+    <value>Description d’élément architectural :</value>
+  </data>
+  <data name="Places_labels_geomDecorations" xml:space="preserve">
+    <value>Ornementations architecturales :</value>
+  </data>
+  <data name="Places_labels_GNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Places_labels_keyWords" xml:space="preserve">
+    <value>Mots clés :</value>
+  </data>
+  <data name="Places_labels_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Places_labels_originalStyle" xml:space="preserve">
+    <value>Description des caractéristiques générales de ce style majeur :</value>
+  </data>
+  <data name="Places_labels_otherNames" xml:space="preserve">
+    <value>Autres noms :</value>
+  </data>
+  <data name="Places_labels_plcaeName" xml:space="preserve">
+    <value>Nom du monument,  de l’édifice ou du site :</value>
+  </data>
+  <data name="Places_labels_writings" xml:space="preserve">
+    <value>Ecritures :</value>
+  </data>
+  <data name="Places_lab_AgedetailedDesc" xml:space="preserve">
+    <value>Description détaillée du site </value>
+  </data>
+  <data name="Places_lab_buildingJobNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Places_lab_buildingNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Places_lab_currentLocation" xml:space="preserve">
+    <value>L’adresse actuel :</value>
+  </data>
+  <data name="Places_lab_detailedLocDescrp" xml:space="preserve">
+    <value>Description détaillée du site :</value>
+  </data>
+  <data name="Places_lab_locNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Place_lab_ageProcessNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Plac_lab_ageFullProcessDesc" xml:space="preserve">
+    <value>Description détaillée du processus de la restauration :</value>
+  </data>
+  <data name="Plac_lab_AgeLocNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Plac_lab_ageRestorationResp" xml:space="preserve">
+    <value>Responsable de restauration :</value>
+  </data>
+  <data name="Plac_lab_ageSharedResp" xml:space="preserve">
+    <value>Les participants à la restauration (y compris les restaurateurs) :</value>
+  </data>
+  <data name="Plac_Lab_currCondiMonument" xml:space="preserve">
+    <value>L’état actuel du monument ou de l’édifice :</value>
+  </data>
+  <data name="Plac_lab_currConditionRestoration" xml:space="preserve">
+    <value>L’état actuel de la restauration :</value>
+  </data>
+  <data name="Plac_lab_respOfRestoration" xml:space="preserve">
+    <value>Responsable de la restauration :</value>
+  </data>
+  <data name="Plac_lab_RestorationNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Plac_lab_sharedRestoration" xml:space="preserve">
+    <value>Les participants à la restauration (y compris les restaurateurs) :</value>
+  </data>
+  <data name="Plac_lab_siteNotes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Plac_lab_siteWrittenDesc" xml:space="preserve">
+    <value>Description du site en question
+(texte) :</value>
+  </data>
+  <data name="Topics_Labels_Brief_Descrip" xml:space="preserve">
+    <value>Description abrégée</value>
+  </data>
+  <data name="Topics_labels_detail_descrip" xml:space="preserve">
+    <value>Description détaillée</value>
+  </data>
+  <data name="Topics_labels_KeyWords" xml:space="preserve">
+    <value>Mots clés :</value>
+  </data>
+  <data name="Topics_labels_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="Topics_labels_subject_lbl" xml:space="preserve">
+    <value>Le thème :</value>
+  </data>
+  <data name="b_desc" xml:space="preserve">
+    <value>Description abrégée </value>
+  </data>
+  <data name="conference_city" xml:space="preserve">
+    <value>Ville :</value>
+  </data>
+  <data name="conference_country" xml:space="preserve">
+    <value>Pays :</value>
+  </data>
+  <data name="conference_holdingplace" xml:space="preserve">
+    <value>Lieu de la conférence</value>
+  </data>
+  <data name="conference_name" xml:space="preserve">
+    <value>Thème de la conférence</value>
+  </data>
+  <data name="conference_org" xml:space="preserve">
+    <value>Autorité responsable de l’organisation</value>
+  </data>
+  <data name="conference_place" xml:space="preserve">
+    <value>Lieu :</value>
+  </data>
+  <data name="c_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="c_tags" xml:space="preserve">
+    <value>Mots clés</value>
+  </data>
+  <data name="details_desc" xml:space="preserve">
+    <value>Description détaillée</value>
+  </data>
+  <data name="elkasm" xml:space="preserve">
+    <value>Département</value>
+  </data>
+  <data name="elkolia" xml:space="preserve">
+    <value>Faculté</value>
+  </data>
+  <data name="main_title" xml:space="preserve">
+    <value>Titre de l'article :</value>
+  </data>
+  <data name="name_maker" xml:space="preserve">
+    <value>Nom de l’artisan</value>
+  </data>
+  <data name="org_city" xml:space="preserve">
+    <value>Ville </value>
+  </data>
+  <data name="org_country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="org_name" xml:space="preserve">
+    <value>Nom </value>
+  </data>
+  <data name="org_no" xml:space="preserve">
+    <value>N° d'enregistrement </value>
+  </data>
+  <data name="org_notes" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="periodical_title" xml:space="preserve">
+    <value>Titre du périodique</value>
+  </data>
+  <data name="searcher_name" xml:space="preserve">
+    <value>Nom de chercheur</value>
+  </data>
+  <data name="source_side" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="supermoshark" xml:space="preserve">
+    <value>Co-directeur</value>
+  </data>
+  <data name="supervisior" xml:space="preserve">
+    <value>Nom de directeur</value>
+  </data>
+  <data name="thesis_title" xml:space="preserve">
+    <value>Titre de thèse :</value>
+  </data>
+  <data name="university" xml:space="preserve">
+    <value>Université </value>
+  </data>
+  <data name="Lbl_character_head" xml:space="preserve">
+    <value>Les données de caractère - استمارة الشخصية</value>
+  </data>
+  <data name="Lbl_event_head" xml:space="preserve">
+    <value>formulaire d'événement - إستمارة الأحداث والمواقف</value>
+  </data>
+  <data name="Topics_head" xml:space="preserve">
+    <value>Sujets Formulaire  -  إستمارة الموضوعات</value>
+  </data>
+  <data name="Topics_upload" xml:space="preserve">
+    <value>Upload form file :</value>
+  </data>
+  <data name="Places_head" xml:space="preserve">
+    <value>إستمارة بيانات الذاكرة المعمارية (الآثار/المبانى المعمارية/الاماكن( - Formulaire de données de la mémoire architecturale (monuments/édifices/sites)</value>
+  </data>
+  <data name="Places_Accessories" xml:space="preserve">
+    <value>Annexes :</value>
+  </data>
+  <data name="Places_Architectural" xml:space="preserve">
+    <value>Styles architecturaux du monument ou de l’édifice (style majeur) </value>
+  </data>
+  <data name="Places_Awning" xml:space="preserve">
+    <value>Arcs/ abris-soleil :</value>
+  </data>
+  <data name="Places_Building_materials" xml:space="preserve">
+    <value>Matériaux utilisés dans la construction du monument ou de l’édifice </value>
+  </data>
+  <data name="Places_Ceilings" xml:space="preserve">
+    <value>Plafonds :</value>
+  </data>
+  <data name="Places_Charity_room" xml:space="preserve">
+    <value>Citerne  (Sabil) :</value>
+  </data>
+  <data name="Places_decorations" xml:space="preserve">
+    <value>Inscriptions et décorations</value>
+  </data>
+  <data name="Places_Desks" xml:space="preserve">
+    <value>Sièges :</value>
+  </data>
+  <data name="Places_Dooms" xml:space="preserve">
+    <value>Coupoles :</value>
+  </data>
+  <data name="Places_entrances" xml:space="preserve">
+    <value>Entrées :</value>
+  </data>
+  <data name="Places_Faces" xml:space="preserve">
+    <value>Façades :</value>
+  </data>
+  <data name="Places_fun" xml:space="preserve">
+    <value>L’usage actuel du monument ou de l’édifice :</value>
+  </data>
+  <data name="Places_Main_style" xml:space="preserve">
+    <value>style majeur :</value>
+  </data>
+  <data name="Places_Minarets" xml:space="preserve">
+    <value>Minarets :</value>
+  </data>
+  <data name="Places_Pinpointing" xml:space="preserve">
+    <value> La localisation du monument ou de l’édifice sur la carte d’Egypte </value>
+  </data>
+  <data name="Places_Playground" xml:space="preserve">
+    <value>Cour :</value>
+  </data>
+  <data name="Places_restoration" xml:space="preserve">
+    <value>Restauration du monument ou de l’édifice (état en question) </value>
+  </data>
+  <data name="Places_restoration_through_ages" xml:space="preserve">
+    <value>La restauration du monument ou de l’édifice à travers les époques :</value>
+  </data>
+  <data name="Places_Rooms_Halls" xml:space="preserve">
+    <value>Salles :</value>
+  </data>
+  <data name="Places_Site" xml:space="preserve">
+    <value>Site du monument ou de l’édifice (site en question) </value>
+  </data>
+  <data name="Places_Sub_style" xml:space="preserve">
+    <value>styles secondaires :</value>
+  </data>
+  <data name="Places_Windows" xml:space="preserve">
+    <value>Fenêtres :</value>
+  </data>
+  <data name="lbldelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="lbledit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lbl_mosalsel" xml:space="preserve">
+    <value>NO.</value>
+  </data>
+  <data name="Places_evo_through_age" xml:space="preserve">
+    <value>Les évolutions et les extensions architecturales du monument ou de l’édifice (à travers les époques) :</value>
+  </data>
+  <data name="Places_Fun_through_age" xml:space="preserve">
+    <value>L’usage  du monument ou de l’édifice à travers les époques </value>
+  </data>
+  <data name="Places_Site_through_age" xml:space="preserve">
+    <value>Site du monument ou de l’édifice à travers les époques :</value>
+  </data>
+  <data name="conference_no" xml:space="preserve">
+    <value>Numéro de la conférence</value>
+  </data>
+  <data name="conference_title" xml:space="preserve">
+    <value>Titre de  la recherche</value>
+  </data>
+  <data name="thesis_main_title" xml:space="preserve">
+    <value>Thèse</value>
+  </data>
+  <data name="website_Desc" xml:space="preserve">
+    <value>Description de la page du site</value>
+  </data>
+  <data name="website_title" xml:space="preserve">
+    <value>Nom du site</value>
+  </data>
+  <data name="lbl_manuscript_Transcribing_date" xml:space="preserve">
+    <value>Date d’obtention</value>
+  </data>
+  <data name="txt_moalf" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="lbl_manuscript_wa2fName" xml:space="preserve">
+    <value>suspendu par : </value>
+  </data>
+  <data name="lbl_manuscript_Authorn" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="glossary_def" xml:space="preserve">
+    <value>La définition du terme:</value>
+  </data>
+  <data name="glossary_title" xml:space="preserve">
+    <value>Le terme:</value>
+  </data>
+  <data name="lbl_article_yearno_folder" xml:space="preserve">
+    <value>Année/volume</value>
+  </data>
+  <data name="Lbl_document_creation_date" xml:space="preserve">
+    <value>Date de création</value>
+  </data>
+  <data name="lbl_ageBelongingManuscript" xml:space="preserve">
+    <value>Âge que le script appartient à : </value>
+  </data>
+  <data name="lbl_allowanceHearings" xml:space="preserve">
+    <value>Allocation et audiences : </value>
+  </data>
+  <data name="lbl_allowanceType" xml:space="preserve">
+    <value>Type de licence</value>
+  </data>
+  <data name="lbl_another" xml:space="preserve">
+    <value>un autre</value>
+  </data>
+  <data name="lbl_art" xml:space="preserve">
+    <value>Art </value>
+  </data>
+  <data name="lbl_authorFromIntro" xml:space="preserve">
+    <value>nom d’auteur tiré de l’introduction </value>
+  </data>
+  <data name="lbl_authorFromTitle" xml:space="preserve">
+    <value>Nom de l’auteur figurant sur la première de couverture </value>
+  </data>
+  <data name="lbl_copyContains" xml:space="preserve">
+    <value>La copie contient</value>
+  </data>
+  <data name="lbl_copyHas" xml:space="preserve">
+    <value>La copie est </value>
+  </data>
+  <data name="lbl_copyStatus" xml:space="preserve">
+    <value>Etat de la copie </value>
+  </data>
+  <data name="lbl_fontType" xml:space="preserve">
+    <value>Style calligraphique  </value>
+  </data>
+  <data name="lbl_generalNo" xml:space="preserve">
+    <value>Numéro général</value>
+  </data>
+  <data name="lbl_Hearings" xml:space="preserve">
+    <value>Auditions</value>
+  </data>
+  <data name="lbl_length" xml:space="preserve">
+    <value>longueur</value>
+  </data>
+  <data name="lbl_manuscriptGroupNo" xml:space="preserve">
+    <value>Le manuscrit faisant partie d’une collection - Son numéro dans la collection  </value>
+  </data>
+  <data name="lbl_manuscriptSize" xml:space="preserve">
+    <value>Taille du manuscrit</value>
+  </data>
+  <data name="lbl_manuscript_lang" xml:space="preserve">
+    <value>La langue du manuscrit</value>
+  </data>
+  <data name="lbl_manuscript_papers" xml:space="preserve">
+    <value>Feuilles</value>
+  </data>
+  <data name="lbl_mogalad" xml:space="preserve">
+    <value>Nombre de dossiers</value>
+  </data>
+  <data name="lbl_oldestAllowanceDate" xml:space="preserve">
+    <value>Date de la licence la plus ancienne </value>
+  </data>
+  <data name="lbl_oldsetHearingsDate" xml:space="preserve">
+    <value>Date de la licence la plus ancienne </value>
+  </data>
+  <data name="lbl_partsNo" xml:space="preserve">
+    <value>Nombre de tomes</value>
+  </data>
+  <data name="lbl_privateLib" xml:space="preserve">
+    <value>Bibliothèque privée</value>
+  </data>
+  <data name="lbl_privateNo" xml:space="preserve">
+    <value>Numéro particulier</value>
+  </data>
+  <data name="lbl_ruler" xml:space="preserve">
+    <value>Règle</value>
+  </data>
+  <data name="lbl_saveno" xml:space="preserve">
+    <value>Numéro d'enregistrement  </value>
+  </data>
+  <data name="lbl_somk" xml:space="preserve">
+    <value>épaisseur</value>
+  </data>
+  <data name="lbl_titleFromIntro" xml:space="preserve">
+    <value>Titre tiré de l’introduction </value>
+  </data>
+  <data name="lbl_titleFromTitle" xml:space="preserve">
+    <value>Titre figurant sur la première de couverture </value>
+  </data>
+  <data name="lbl_width" xml:space="preserve">
+    <value>largeur</value>
+  </data>
+  <data name="lbl_artifacts_maker" xml:space="preserve">
+    <value>Nom de l’artisan:</value>
+  </data>
+  <data name="lbl_artifacts_title" xml:space="preserve">
+    <value>Artefacts</value>
+  </data>
+  <data name="lbl_manuscript_titlehead" xml:space="preserve">
+    <value>manuscrits</value>
+  </data>
+  <data name="recDate" xml:space="preserve">
+    <value>Date de l’enregistrement ou de la diffusion  </value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Recording Date</value>
+  </data>
+  <data name="counCapital" xml:space="preserve">
+    <value>Country/Govornorate :</value>
+  </data>
+  <data name="workType" xml:space="preserve">
+    <value>Type de l’enregistrement  </value>
+  </data>
+  <data name="lbl_book_lang" xml:space="preserve">
+    <value>Langue du livre</value>
+  </data>
+  <data name="align_img" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="ch1" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="ch10" xml:space="preserve">
+    <value>J</value>
+  </data>
+  <data name="ch11" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="ch12" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="ch13" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="ch14" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="ch15" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="ch16" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="ch17" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="ch18" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="ch19" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="ch2" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="ch20" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="ch21" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="ch22" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="ch23" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="ch24" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="ch25" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="ch26" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="ch3" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="ch4" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="ch5" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="ch6" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="ch7" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="ch8" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="ch9" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="last" xml:space="preserve">
+    <value>dernier</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>prochaine</value>
+  </data>
+  <data name="no_data" xml:space="preserve">
+    <value>Aucune donnée n'est disponible</value>
+  </data>
+  <data name="prev" xml:space="preserve">
+    <value>précédent</value>
+  </data>
+  <data name="st" xml:space="preserve">
+    <value>première</value>
+  </data>
+  <data name="tdimg" xml:space="preserve">
+    <value>../img/Rowe1.jpg</value>
+  </data>
+  <data name="birthdate" xml:space="preserve">
+    <value>Date de naissance : </value>
+  </data>
+  <data name="chartype" xml:space="preserve">
+    <value>Fonction de la personnalité :</value>
+  </data>
+  <data name="deathdate" xml:space="preserve">
+    <value>Date de décès : </value>
+  </data>
+  <data name="DBtitle" xml:space="preserve">
+    <value>title_fr</value>
+  </data>
+  <data name="td1img" xml:space="preserve">
+    <value>background-image: url('../img/Row_e2.jpg'); background-repeat: repeat-y; background-position: left top</value>
+  </data>
+  <data name="Notes About Recoding Time" xml:space="preserve">
+    <value>L'époque traitée dans l’enregistrement Remarques </value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Les dates liées à l’enregistrement </value>
+  </data>
+  <data name="home_tabs_style" xml:space="preserve">
+    <value>321px;float:left</value>
+  </data>
+  <data name="lbl_7aletelnachr" xml:space="preserve">
+    <value>Etat de la publication</value>
+  </data>
+  <data name="lbl_doc_stat1" xml:space="preserve">
+    <value>publié</value>
+  </data>
+  <data name="lbl_doc_stat2" xml:space="preserve">
+    <value>non publié</value>
+  </data>
+  <data name="doc_lang" xml:space="preserve">
+    <value>Langue du document </value>
+  </data>
+  <data name="doc_madmon" xml:space="preserve">
+    <value>Contenu de document</value>
+  </data>
+  <data name="doc_shekl" xml:space="preserve">
+    <value>Forme et matière   </value>
+  </data>
+  <data name="title_alazhar" xml:space="preserve">
+    <value>Cheikh Al-Azhar</value>
+  </data>
+  <data name="title_article" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="title_audio" xml:space="preserve">
+    <value>Audios</value>
+  </data>
+  <data name="title_book" xml:space="preserve">
+    <value>Livre</value>
+  </data>
+  <data name="title_char" xml:space="preserve">
+    <value>Personalite</value>
+  </data>
+  <data name="title_conference" xml:space="preserve">
+    <value>Conferences</value>
+  </data>
+  <data name="title_document" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="title_event" xml:space="preserve">
+    <value>Evenements</value>
+  </data>
+  <data name="title_library" xml:space="preserve">
+    <value>Bibliothèque</value>
+  </data>
+  <data name="title_main" xml:space="preserve">
+    <value>Maison</value>
+  </data>
+  <data name="title_media" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="title_mufti" xml:space="preserve">
+    <value>mufti</value>
+  </data>
+  <data name="title_place" xml:space="preserve">
+    <value>place</value>
+  </data>
+  <data name="title_scholar" xml:space="preserve">
+    <value>scholare</value>
+  </data>
+  <data name="title_theses" xml:space="preserve">
+    <value>Thèses</value>
+  </data>
+  <data name="title_timeline" xml:space="preserve">
+    <value>Chronologie</value>
+  </data>
+  <data name="title_topic" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="title_video" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="title_glossray" xml:space="preserve">
+    <value>Glossaire</value>
+  </data>
+  <data name="link_contactus" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="main_home" xml:space="preserve">
+    <value>Bibliothèque Al-Azhar</value>
+  </data>
+  <data name="website_links" xml:space="preserve">
+    <value>Sites Web liés à</value>
+  </data>
+  <data name="co_org" xml:space="preserve">
+    <value>le co</value>
+  </data>
+  <data name="Q&amp;A" xml:space="preserve">
+    <value>Questions et réponses</value>
+  </data>
+  <data name="add_content_link" xml:space="preserve">
+    <value>Ajouter à Site</value>
+  </data>
+  <data name="website_map" xml:space="preserve">
+    <value>Plan du site</value>
+  </data>
+  <data name="tille_elect_library" xml:space="preserve">
+    <value>Electronic library</value>
+  </data>
+  <data name="title_photo" xml:space="preserve">
+    <value>Photos</value>
+  </data>
+  <data name="from_book" xml:space="preserve">
+    <value>Livres</value>
+  </data>
+  <data name="from_doc" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="from_manuscript" xml:space="preserve">
+    <value>Manuscripts</value>
+  </data>
+  <data name="more" xml:space="preserve">
+    <value>plus</value>
+  </data>
+  <data name="style_bottom" xml:space="preserve">
+    <value>width: 196px; height: 152px; float:right; background-color: #D5D0BA</value>
+  </data>
+  <data name="title_place_home" xml:space="preserve">
+    <value>Lieux</value>
+  </data>
+  <data name="reason_timeline" xml:space="preserve">
+    <value>La raison du choix de cette année</value>
+  </data>
+  <data name="year_timeline" xml:space="preserve">
+    <value>Représentation d'année sur le site</value>
+  </data>
+  <data name="quality_errorname" xml:space="preserve">
+    <value>Error type</value>
+  </data>
+  <data name="quality_fieldname" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="lbl_manuscript_wa2f_on_Name" xml:space="preserve">
+    <value>suspendu sur </value>
+  </data>
+  <data name="title_articles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="title_artifacts" xml:space="preserve">
+    <value>Artefacts</value>
+  </data>
+  <data name="title_audios" xml:space="preserve">
+    <value>Audios</value>
+  </data>
+  <data name="title_docs" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="title_manuscript" xml:space="preserve">
+    <value>Manuscrits</value>
+  </data>
+  <data name="title_researches" xml:space="preserve">
+    <value>actes de la conférence</value>
+  </data>
+  <data name="fromlibrary" xml:space="preserve">
+    <value>De Bibliothèque électronique</value>
+  </data>
+  <data name="mostseen" xml:space="preserve">
+    <value>Les plus vues</value>
+  </data>
+  <data name="spsub" xml:space="preserve">
+    <value>sujets en vedette</value>
+  </data>
+  <data name="topmenucss" xml:space="preserve">
+    <value>../css/menuCSSL.css</value>
+  </data>
+  <data name="articlNav" xml:space="preserve">
+    <value>&amp;raquo; articles</value>
+  </data>
+  <data name="artifactsNav" xml:space="preserve">
+    <value>&amp;raquo; artefacts</value>
+  </data>
+  <data name="audiosNav" xml:space="preserve">
+    <value>&amp;raquo; enregistrements audio</value>
+  </data>
+  <data name="bookNav" xml:space="preserve">
+    <value>&amp;raquo; E-Livres</value>
+  </data>
+  <data name="charactersNav" xml:space="preserve">
+    <value> &amp;raquo; caractère</value>
+  </data>
+  <data name="confNav" xml:space="preserve">
+    <value>&amp;raquo; actes de la conférence</value>
+  </data>
+  <data name="docsNav" xml:space="preserve">
+    <value>&amp;raquo; documents</value>
+  </data>
+  <data name="eventsNav" xml:space="preserve">
+    <value> &amp;raquo; événement</value>
+  </data>
+  <data name="glossNav" xml:space="preserve">
+    <value>&amp;raquo; glossaire</value>
+  </data>
+  <data name="imgsNav" xml:space="preserve">
+    <value>&amp;raquo; Galerie de photos</value>
+  </data>
+  <data name="manuscriptNav" xml:space="preserve">
+    <value>&amp;raquo; manuscrits</value>
+  </data>
+  <data name="placeNav" xml:space="preserve">
+    <value>&amp;raquo; mémoire architectural</value>
+  </data>
+  <data name="theseNav" xml:space="preserve">
+    <value>&amp;raquo; thèses</value>
+  </data>
+  <data name="topicsNav" xml:space="preserve">
+    <value>&amp;raquo; Sujets</value>
+  </data>
+  <data name="videosNav" xml:space="preserve">
+    <value>&amp;raquo; Enregistrements vidéo</value>
+  </data>
+  <data name="webNav" xml:space="preserve">
+    <value>&amp;raquo; sites</value>
+  </data>
+  <data name="title_website" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="relate_elemnts" xml:space="preserve">
+    <value>Les éléments liés</value>
+  </data>
+  <data name="dlarrow" xml:space="preserve">
+    <value>../images/pl.jpg</value>
+  </data>
+  <data name="rev_dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="artilce_langauage" xml:space="preserve">
+    <value>Langue du document</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Nom d’auteur</value>
+  </data>
+  <data name="author_roll" xml:space="preserve">
+    <value>Auteur Rouleau</value>
+  </data>
+  <data name="parts_number" xml:space="preserve">
+    <value>Numéro du périodique /Numéro de la partie </value>
+  </data>
+  <data name="workingPageNo" xml:space="preserve">
+    <value>Numéros des pages qu'il occupe </value>
+  </data>
+  <data name="recorded_radio" xml:space="preserve">
+    <value>Date de l’enregistrement ou de la diffusion  </value>
+  </data>
+  <data name="Edition" xml:space="preserve">
+    <value>édition</value>
+  </data>
+  <data name="Number of folders" xml:space="preserve">
+    <value>Nombre de volumes</value>
+  </data>
+  <data name="Number of parts" xml:space="preserve">
+    <value>Nombre de tomes </value>
+  </data>
+  <data name="Edition number" xml:space="preserve">
+    <value>Numéro de l’édition</value>
+  </data>
+  <data name="author_role" xml:space="preserve">
+    <value>Rôle d’auteur</value>
+  </data>
+  <data name="Name of publisher" xml:space="preserve">
+    <value>Nom de l'éditeur</value>
+  </data>
+  <data name="Numbered in series" xml:space="preserve">
+    <value>Numéro du livre dans la collection </value>
+  </data>
+  <data name="Number of Pages" xml:space="preserve">
+    <value>  pages </value>
+  </data>
+  <data name="Thread direct" xml:space="preserve">
+    <value>Enfilez directe</value>
+  </data>
+  <data name="No. demand at the source" xml:space="preserve">
+    <value>N ° demande à la source</value>
+  </data>
+  <data name="ISIN" xml:space="preserve">
+    <value>ISIN</value>
+  </data>
+  <data name="Collectibles" xml:space="preserve">
+    <value>Collectibles</value>
+  </data>
+  <data name="page_no" xml:space="preserve">
+    <value>Nombre de pages</value>
+  </data>
+  <data name="theses_type" xml:space="preserve">
+    <value>Type de thèse</value>
+  </data>
+  <data name="theses_lang" xml:space="preserve">
+    <value>Langue de thèse</value>
+  </data>
+  <data name="Website_Lang" xml:space="preserve">
+    <value>Langue du site</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL du site </value>
+  </data>
+  <data name="Responsible_Name" xml:space="preserve">
+    <value>Nom du responsable intellectuel (auteur/institution)</value>
+  </data>
+  <data name="login_date" xml:space="preserve">
+    <value>Date de la visite du site</value>
+  </data>
+  <data name="key_building_place" xml:space="preserve">
+    <value>Type de monument,  d’édifice ou de site </value>
+  </data>
+  <data name="key_Creation_Date" xml:space="preserve">
+    <value>Date de fondation </value>
+  </data>
+  <data name="key_Current_Position" xml:space="preserve">
+    <value>Position actuelle </value>
+  </data>
+  <data name="key_Date_completion" xml:space="preserve">
+    <value>Date d’achèvement de la construction</value>
+  </data>
+  <data name="key_Guest_name" xml:space="preserve">
+    <value>Nom de l'utilisateur</value>
+  </data>
+  <data name="Key_Latitude" xml:space="preserve">
+    <value>Latitude </value>
+  </data>
+  <data name="key_Latitude_longitude_coordinates" xml:space="preserve">
+    <value>Coordonnées de latitude et de longitude </value>
+  </data>
+  <data name="key_longitude" xml:space="preserve">
+    <value>longitude </value>
+  </data>
+  <data name="first" xml:space="preserve">
+    <value>première</value>
+  </data>
+  <data name="imgbtn" xml:space="preserve">
+    <value>../img/morefr.jpg</value>
+  </data>
+  <data name="key_Asset_Type" xml:space="preserve">
+    <value>Type de pièce  </value>
+  </data>
+  <data name="key_Color" xml:space="preserve">
+    <value>Couleur</value>
+  </data>
+  <data name="key_Date_manufacture_configuration" xml:space="preserve">
+    <value>Date de fabrication </value>
+  </data>
+  <data name="key_Dimensions" xml:space="preserve">
+    <value>Dimensions </value>
+  </data>
+  <data name="Key_Display" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="key_Distance" xml:space="preserve">
+    <value>distance</value>
+  </data>
+  <data name="key_eat_museum" xml:space="preserve">
+    <value>Les périodes auxquelles appartient la pièce </value>
+  </data>
+  <data name="key_Hull_Material" xml:space="preserve">
+    <value>Matière première </value>
+  </data>
+  <data name="Key_Length" xml:space="preserve">
+    <value>longueur</value>
+  </data>
+  <data name="key_Ocean" xml:space="preserve">
+    <value>océan</value>
+  </data>
+  <data name="key_Rise" xml:space="preserve">
+    <value>augmenter</value>
+  </data>
+  <data name="key_technique" xml:space="preserve">
+    <value>Style artistique  </value>
+  </data>
+  <data name="Key_Video_museum" xml:space="preserve">
+    <value>Vidéo de la pièce de musée </value>
+  </data>
+  <data name="key_Weight" xml:space="preserve">
+    <value>poids</value>
+  </data>
+  <data name="check_data" xml:space="preserve">
+    <value>Aucune donnée</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>Date de  fin </value>
+  </data>
+  <data name="Event_date" xml:space="preserve">
+    <value>Date de l'événement </value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>date de début</value>
+  </data>
+  <data name="Date_kind1" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="Date_kind2" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="code" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="conference_auther" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="conference_auther_name" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="conference_auther_role" xml:space="preserve">
+    <value>Rôle d’auteurr</value>
+  </data>
+  <data name="conference_Date_of_session" xml:space="preserve">
+    <value>Date de la tenue de la conférence</value>
+  </data>
+  <data name="conference_Language" xml:space="preserve">
+    <value>Langue de la recherche</value>
+  </data>
+  <data name="Page_number_from" xml:space="preserve">
+    <value>Nombre de pages ou les numéros des pages qu’elle occupe de</value>
+  </data>
+  <data name="Age_Image_belongs" xml:space="preserve">
+    <value>L'époque où il appartient image</value>
+  </data>
+  <data name="Date_photography_graphic" xml:space="preserve">
+    <value>Date de la photographie / graphisme</value>
+  </data>
+  <data name="Image_description" xml:space="preserve">
+    <value>Description de l'image </value>
+  </data>
+  <data name="Age_belongs_photo" xml:space="preserve">
+    <value>L'époque où il appartient photo</value>
+  </data>
+  <data name="Hijra_Image_date" xml:space="preserve">
+    <value>Hijra date de l'image</value>
+  </data>
+  <data name="Image_dateAD" xml:space="preserve">
+    <value>Date de l'image AD</value>
+  </data>
+  <data name="Image_notes" xml:space="preserve">
+    <value>notes</value>
+  </data>
+  <data name="Image_Type" xml:space="preserve">
+    <value>Type d'image</value>
+  </data>
+  <data name="Notes_on_age" xml:space="preserve">
+    <value>Notes sur l'âge</value>
+  </data>
+  <data name="Photographer" xml:space="preserve">
+    <value>photographe</value>
+  </data>
+  <data name="Photo_Album" xml:space="preserve">
+    <value>photo album</value>
+  </data>
+  <data name="Source_destination_Copyright" xml:space="preserve">
+    <value>Source / destination Droits d'auteur</value>
+  </data>
+  <data name="key_date1" xml:space="preserve">
+    <value>Hégire</value>
+  </data>
+  <data name="key_date2" xml:space="preserve">
+    <value>antidumping</value>
+  </data>
+  <data name="Another_title" xml:space="preserve">
+    <value>L'autre Titre du Document</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>créateur</value>
+  </data>
+  <data name="Doc_w_total" xml:space="preserve">
+    <value>Le document dans un ensemble</value>
+  </data>
+  <data name="pagenocon" xml:space="preserve">
+    <value>Nombre de feuilles et/ou de pages </value>
+  </data>
+  <data name="hegri" xml:space="preserve">
+    <value>hegri</value>
+  </data>
+  <data name="Acquisitions" xml:space="preserve">
+    <value>appropriations</value>
+  </data>
+  <data name="Endowments" xml:space="preserve">
+    <value>Les Waqfs (biens fondés) </value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>nom</value>
+  </data>
+  <data name="The date of acquisition" xml:space="preserve">
+    <value>la date d'acquisition</value>
+  </data>
+  <data name="The date of Endowments" xml:space="preserve">
+    <value>la date de dotations</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Durée</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="second" xml:space="preserve">
+    <value>deuxième</value>
+  </data>
+  <data name="key_alignParg" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="Responsible_Name2" xml:space="preserve">
+    <value>Responsable de site Web:</value>
+  </data>
+  <data name="key_Differentalign" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="recording_type" xml:space="preserve">
+    <value>Type de l’enregistrement :</value>
+  </data>
+  <data name="subTitle_align" xml:space="preserve">
+    <value>float:left</value>
+  </data>
+  <data name="keyimg_back" xml:space="preserve">
+    <value>../img/backCellfr.jpg</value>
+  </data>
+  <data name="align_oppsite" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="dir_oppsite" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="Lbl_book_Publication_year_h" xml:space="preserve">
+    <value>hijri  Année d’édition</value>
+  </data>
+  <data name="Lbl_book_Publication_year_m" xml:space="preserve">
+    <value>goergian  Année d’édition</value>
+  </data>
+  <data name="btnsrshbg" xml:space="preserve">
+    <value>text-decoration: none; vertical-align: bottom;
+                                width: 70px; height: 25px; background-color: #484137; float: right</value>
+  </data>
+  <data name="privacypolicy" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="rights1" xml:space="preserve">
+    <value>Tous droits réservés pour Al-Azhar</value>
+  </data>
+  <data name="rights2" xml:space="preserve">
+    <value>Développé par Ministère de la communication et de la technologie de l'information</value>
+  </data>
+  <data name="srsh" xml:space="preserve">
+    <value>recherche</value>
+  </data>
+  <data name="srshbg" xml:space="preserve">
+    <value>width: 192px; height: 26px;  background-image: url('../img/searchL.jpg');
+                            background-repeat: no-repeat; float: left; padding-top: 2px; cursor: hand;text-align: left;vertical-align: middle;</value>
+  </data>
+  <data name="tbldir" xml:space="preserve">
+    <value>direction: rtl;</value>
+  </data>
+  <data name="terms" xml:space="preserve">
+    <value>Conditions d'utilisation</value>
+  </data>
+  <data name="txtsrshbg" xml:space="preserve">
+    <value>background-color:#8C9AA3;border-style:None;height:18px;width: 160px;margin-left: 2px;</value>
+  </data>
+  <data name="rwmat" xml:space="preserve">
+    <value>matière première</value>
+  </data>
+  <data name="rwmatuse" xml:space="preserve">
+    <value>utilisation lieu</value>
+  </data>
+  <data name="co_org_details" xml:space="preserve">
+    <value>organisations contenu</value>
+  </data>
+  <data name="Q&amp;A_details" xml:space="preserve">
+    <value>Questions et réponses  contenu</value>
+  </data>
+  <data name="banner" xml:space="preserve">
+    <value>../images/banner_fr.jpg</value>
+  </data>
+  <data name="img_gawla" xml:space="preserve">
+    <value>../img/gawla_img_fr.jpg</value>
+  </data>
+  <data name="img_qeta3" xml:space="preserve">
+    <value>../img/qeta3_fr.jpg</value>
+  </data>
+  <data name="img_subject" xml:space="preserve">
+    <value>../img/sub_fr.jpg</value>
+  </data>
+  <data name="img_zakera" xml:space="preserve">
+    <value>../img/zakera_fr.png</value>
+  </data>
+  <data name="title_other" xml:space="preserve">
+    <value>autres personnages</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="pgstitle" xml:space="preserve">
+    <value>mémoire de Azhar</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>oui</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+</root>

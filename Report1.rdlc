@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnectionString">
+      <rd:DataSourceID>a6007b98-2c20-46bf-adb9-b3e56170e3eb</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>
+        </DataProvider>
+        <ConnectString>
+        </ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>1e1e1d41-da23-44f9-9ae7-31d9951cf3c5</rd:ReportID>
+  <Width>12.69841cm</Width>
+  <Body>
+    <Height>4.52063cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>Report1</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.91429cm</Height>
+      </Textbox>
+      <List Name="List1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <Color>SlateGray</Color>
+        </Style>
+        <ReportItems>
+          <Textbox Name="char_id">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>14pt</FontSize>
+              <Color>SlateGray</Color>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <rd:DefaultName>char_id</rd:DefaultName>
+            <Value>=Fields!char_id.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Height>0.68571cm</Height>
+          </Textbox>
+          <List Name="List2">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>12pt</FontSize>
+            </Style>
+            <ReportItems>
+              <Textbox Name="id">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <rd:DefaultName>id</rd:DefaultName>
+                <Value>=Fields!id.Value</Value>
+                <CanGrow>true</CanGrow>
+                <Height>0.60952cm</Height>
+              </Textbox>
+              <Matrix Name="matrix1">
+                <Top>1.26984cm</Top>
+                <RowGroupings>
+                  <RowGrouping>
+                    <DynamicRows>
+                      <Grouping Name="matrix1_char_brief">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!char_brief.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Grouping>
+                      <Sorting>
+                        <SortBy>
+                          <SortExpression>=Fields!char_brief.Value</SortExpression>
+                        </SortBy>
+                      </Sorting>
+                      <ReportItems>
+                        <Textbox Name="char_brief">
+                          <Style>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>White</Color>
+                            <BackgroundColor>#6e9eca</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>char_brief</rd:DefaultName>
+                          <Value>=Fields!char_brief.Value</Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.53333cm</Height>
+                          <Width>2.53968cm</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </DynamicRows>
+                    <Width>2.53968cm</Width>
+                  </RowGrouping>
+                  <RowGrouping>
+                    <DynamicRows>
+                      <Grouping Name="matrix1_char_details">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!char_details.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Grouping>
+                      <Sorting>
+                        <SortBy>
+                          <SortExpression>=Fields!char_details.Value</SortExpression>
+                        </SortBy>
+                      </Sorting>
+                      <ReportItems>
+                        <Textbox Name="char_details">
+                          <Style>
+                            <Color>White</Color>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>SlateGray</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>char_details</rd:DefaultName>
+                          <Value>=Fields!char_details.Value</Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.53333cm</Height>
+                          <Width>2.53968cm</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </DynamicRows>
+                    <Width>2.53968cm</Width>
+                  </RowGrouping>
+                </RowGroupings>
+                <MatrixRows>
+                  <MatrixRow>
+                    <MatrixCells>
+                      <MatrixCell>
+                        <ReportItems>
+                          <Textbox Name="textbox2">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                              <BorderStyle>
+                                <Default>Solid</Default>
+                              </BorderStyle>
+                              <BorderColor>
+                                <Default>LightGrey</Default>
+                              </BorderColor>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                            <rd:DefaultName>textbox2</rd:DefaultName>
+                            <Value>=First(Fields!scientific_life.Value)</Value>
+                            <CanGrow>true</CanGrow>
+                            <Height>0.53333cm</Height>
+                            <Width>2.53968cm</Width>
+                          </Textbox>
+                        </ReportItems>
+                      </MatrixCell>
+                    </MatrixCells>
+                    <Height>0.53333cm</Height>
+                  </MatrixRow>
+                </MatrixRows>
+                <Corner>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Value>
+                      </Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.53333cm</Height>
+                    </Textbox>
+                  </ReportItems>
+                </Corner>
+                <DataSetName>AZHARDataSet_characters_details_select</DataSetName>
+                <MatrixColumns>
+                  <MatrixColumn>
+                    <Width>2.53968cm</Width>
+                  </MatrixColumn>
+                </MatrixColumns>
+                <ColumnGroupings>
+                  <ColumnGrouping>
+                    <DynamicColumns>
+                      <Grouping Name="matrix1_name">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!name.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Grouping>
+                      <Sorting>
+                        <SortBy>
+                          <SortExpression>=Fields!name.Value</SortExpression>
+                        </SortBy>
+                      </Sorting>
+                      <ReportItems>
+                        <Textbox Name="name">
+                          <Style>
+                            <FontFamily>Tahoma</FontFamily>
+                            <FontSize>10pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>White</Color>
+                            <BackgroundColor>#6e9eca</BackgroundColor>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <BorderColor>
+                              <Default>LightGrey</Default>
+                            </BorderColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <rd:DefaultName>name</rd:DefaultName>
+                          <Value>=Fields!name.Value</Value>
+                          <CanGrow>true</CanGrow>
+                          <Height>0.53333cm</Height>
+                          <Width>2.53968cm</Width>
+                        </Textbox>
+                      </ReportItems>
+                    </DynamicColumns>
+                    <Height>0.53333cm</Height>
+                  </ColumnGrouping>
+                </ColumnGroupings>
+              </Matrix>
+            </ReportItems>
+            <Grouping Name="list1_id">
+              <GroupExpressions>
+                <GroupExpression>=Fields!id.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!id.Value</SortExpression>
+              </SortBy>
+            </Sorting>
+            <Top>1.26984cm</Top>
+            <DataSetName>AZHARDataSet_characters_details_select</DataSetName>
+          </List>
+        </ReportItems>
+        <Grouping Name="list1_char_id">
+          <GroupExpressions>
+            <GroupExpression>=Fields!char_id.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+        <Sorting>
+          <SortBy>
+            <SortExpression>=Fields!char_id.Value</SortExpression>
+          </SortBy>
+        </Sorting>
+        <Top>0.91429cm</Top>
+        <DataSetName>AZHARDataSet_characters_details_select</DataSetName>
+      </List>
+    </ReportItems>
+  </Body>
+  <Language>en-US</Language>
+  <LeftMargin>2.5cm</LeftMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <TopMargin>2.5cm</TopMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <PageWidth>21cm</PageWidth>
+  <PageHeight>29.7cm</PageHeight>
+  <DataSets>
+    <DataSet Name="AZHARDataSet_characters_details_select">
+      <rd:DataSetInfo>
+        <rd:DataSetName>AZHARDataSet</rd:DataSetName>
+        <rd:TableName>characters_details_select</rd:TableName>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterFillMethod>
+        </rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>
+        </rd:TableAdapterName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>dbo.characters_details_select</CommandText>
+        <DataSourceName>ConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="highlight">
+          <DataField>highlight</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="char_type">
+          <DataField>char_type</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="gender">
+          <DataField>gender</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="status">
+          <DataField>status</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="image_name">
+          <DataField>image_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="assigned_to">
+          <DataField>assigned_to</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="form_file">
+          <DataField>form_file</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="highlight_panorama">
+          <DataField>highlight_panorama</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="form_status">
+          <DataField>form_status</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="file_status">
+          <DataField>file_status</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="form_lock">
+          <DataField>form_lock</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="lock_files">
+          <DataField>lock_files</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="period_id">
+          <DataField>period_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="form_file_en">
+          <DataField>form_file_en</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="form_status_en">
+          <DataField>form_status_en</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="form_lock_en">
+          <DataField>form_lock_en</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="form_file_fr">
+          <DataField>form_file_fr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="form_status_fr">
+          <DataField>form_status_fr</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="form_lock_fr">
+          <DataField>form_lock_fr</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="rblFormImage">
+          <DataField>rblFormImage</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id1">
+          <DataField>id1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="char_id">
+          <DataField>char_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="titles">
+          <DataField>titles</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="other_names">
+          <DataField>other_names</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="char_brief">
+          <DataField>char_brief</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="char_details">
+          <DataField>char_details</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="scientific_life">
+          <DataField>scientific_life</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mashyakha_azhar">
+          <DataField>mashyakha_azhar</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lang_id">
+          <DataField>lang_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="birth_details">
+          <DataField>birth_details</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="birth_date">
+          <DataField>birth_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="death_date">
+          <DataField>death_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="working_life">
+          <DataField>working_life</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="activities">
+          <DataField>activities</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hbirth_date">
+          <DataField>hbirth_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hdeath_date">
+          <DataField>hdeath_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="keywords">
+          <DataField>keywords</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="notes">
+          <DataField>notes</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="written_about">
+          <DataField>written_about</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="form_pic_state">
+          <DataField>form_pic_state</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="data_collector_name">
+          <DataField>data_collector_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="data_revision_name">
+          <DataField>data_revision_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="data_entry_name">
+          <DataField>data_entry_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="data_entry_revision_name">
+          <DataField>data_entry_revision_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+</Report>

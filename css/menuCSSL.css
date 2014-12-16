@@ -1,0 +1,74 @@
+
+
+#menutt {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.menuButN {
+	border: 0px;
+	background-image: url(../images/menuImages/side-N.jpg);
+}
+.menuButR {
+	width: 20px;
+	border: 0px;
+	background-image: url(../images/menuImages/side-R.jpg);
+}
+.menuButL {
+	border: 0px;
+	background-image: url(../images/menuImages/side-L.jpg);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menutt > li {
+	position: relative;
+	
+}
+#menutt li ul 
+{
+	
+	display: none;
+	position: absolute;
+	left:0;
+	top:100%;
+}
+#menutt a {
+	display: table-cell;
+	border:0;
+	height: 32px;
+	text-decoration: none;
+	color: #000000;
+	
+	background-image:url(../images/menuImages/menuBK-Normal.jpg);
+	white-space: nowrap;
+	font-family:Tahoma;
+	font-weight:bold;
+	font-size:11px;
+	vertical-align:middle;
+}
+#menutt li a:hover {
+	color: #000000;
+}
+#menutt li:hover ul {
+	display: block;
+}
+#menutt li:hover li {
+	text-align: left;
+	font-size: 14px;
+}
+
+#menutt li:hover a {
+	color: #000000;
+	
+}
+#menutt li:hover li a:hover {
+	color: #fcfffd;
+	background-image:url(../images/menuImages/SubmenuBK-Normal.jpg);
+}
+#menutt li .isActive {
+	color: #FFFFFF;
+	background-image:url(../images/menuImages/menuBK-Over.gif);
+}

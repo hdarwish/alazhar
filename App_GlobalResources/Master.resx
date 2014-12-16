@@ -1,0 +1,1803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dir" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="align" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="main_items" xml:space="preserve">
+    <value>العناصر الاساسية </value>
+  </data>
+  <data name="aboutus" xml:space="preserve">
+    <value>عن الموقع</value>
+  </data>
+  <data name="Contactus" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="Labspecial" xml:space="preserve">
+    <value>عنصر مميز</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="key_AlAzhar" xml:space="preserve">
+    <value>الأزهر الشريف</value>
+  </data>
+  <data name="key_Artifacts" xml:space="preserve">
+    <value>القطع المتحفية</value>
+  </data>
+  <data name="key_audio" xml:space="preserve">
+    <value>التسجيلات الإذاعية</value>
+  </data>
+  <data name="key_Places" xml:space="preserve">
+    <value>الذاكرة المعمارية</value>
+  </data>
+  <data name="key_Video" xml:space="preserve">
+    <value>التسجيلات التليفزيونية</value>
+  </data>
+  <data name="srch1" xml:space="preserve">
+    <value>لاتوجد بيانات للعرض</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>البحــث:</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>عدد النتائج:</value>
+  </data>
+  <data name="title_manuscripts" xml:space="preserve">
+    <value>مخطوطات</value>
+  </data>
+  <data name="key_address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="key_dece_address" xml:space="preserve">
+    <value>حديقة الخالدين – صلاح سالم - الدراسة - جمهورية مصر العربية</value>
+  </data>
+  <data name="key_phone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="AddContent" xml:space="preserve">
+    <value>اضف الي المحتوي</value>
+  </data>
+  <data name="lblContent" xml:space="preserve">
+    <value>المحتوي</value>
+  </data>
+  <data name="plan" xml:space="preserve">
+    <value>خريطة الموقع :</value>
+  </data>
+  <data name="Terms of Use" xml:space="preserve">
+    <value>شروط الاستخدام</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>جميع الحقوق محفوظة للأزهر 2011</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>تم التطوير بواسطة وزارة الاتصالات وتكنولوجيا المعلومات</value>
+  </data>
+  <data name="conditions" xml:space="preserve">
+    <value>الشروط</value>
+  </data>
+  <data name="condition1" xml:space="preserve">
+    <value>الشرط الاول</value>
+  </data>
+  <data name="lblHighlight" xml:space="preserve">
+    <value>عنصر مميز </value>
+  </data>
+  <data name="event_brief" xml:space="preserve">
+    <value>الوصف المختصر </value>
+  </data>
+  <data name="event_brief_all" xml:space="preserve">
+    <value>الوصف التفصيلى </value>
+  </data>
+  <data name="event_keyword" xml:space="preserve">
+    <value>الكلمات الدالة </value>
+  </data>
+  <data name="event_notes" xml:space="preserve">
+    <value>ملاحظات  </value>
+  </data>
+  <data name="event_title" xml:space="preserve">
+    <value>الاسم الكامل </value>
+  </data>
+  <data name="event_upload" xml:space="preserve">
+    <value>تحميل الملف الاستمارة </value>
+  </data>
+  <data name="class" xml:space="preserve">
+    <value>books_title</value>
+  </data>
+  <data name="books_title_text" xml:space="preserve">
+    <value>books_title_text</value>
+  </data>
+  <data name="books_texts" xml:space="preserve">
+    <value>books_texts</value>
+  </data>
+  <data name="pagetitle" xml:space="preserve">
+    <value>pagetitle</value>
+  </data>
+  <data name="txt1" xml:space="preserve">
+    <value>يهدف موقع ذاكرة الأزهر إلى عرض وإتاحة  تراث الأزهر الشريف وتاريخه من خلال وثائقه، وسيرة ومسيرة أعلامه وشيوخه،وتوثيق الروائع المعمارية للأزهر الشريف، وذلك باستخدام أحدث التقنيات المتاحة</value>
+  </data>
+  <data name="txt2" xml:space="preserve">
+    <value>ويقدم الموقع محتوى ديناميكا يتم تحديثه باستمرار، ويتكون من أقسام رئيسة وأخرى تتفرع عنها، ومن أهم أقسامه الرئيسة:</value>
+  </data>
+  <data name="txt3" xml:space="preserve">
+    <value>تاريخ الأزهر:والذي يتناول المواقف التاريخية للأزهر، ودور الأروقة في مدارسة العلم، ومؤسسات الأزهر</value>
+  </data>
+  <data name="txt4" xml:space="preserve">
+    <value>شيوخ الأزهر: والذي يسجل السيرة الذاتية لشيوخ الأزهر الأجلاء، وشيوخهم الذين تتلمذوا على أيديهم، والمناصب التي تقلدوها، ومؤلفاتهم، ومواقفهم وآرائهم</value>
+  </data>
+  <data name="txt5" xml:space="preserve">
+    <value>العلماء والأعلام: ويستعرض هذا الجزء أعلام الأزهر من علماء ورؤساء في جميع بقاع الأرض.</value>
+  </data>
+  <data name="txt6" xml:space="preserve">
+    <value>محاور الذاكرة الأزهرية: ويعد هذا القسم أساسا للموقع، ويتفرع عنه</value>
+  </data>
+  <data name="txt7" xml:space="preserve">
+    <value>الذاكرة المصورة: وفيه توثيق لتراث الأزهر من الصور النادرة</value>
+  </data>
+  <data name="txt8" xml:space="preserve">
+    <value>الذاكرة المعمارية: وفيه توثيق معماري للجامع الأزهر، والمباني التابعة له، في جميع أنحاء القطر المصري</value>
+  </data>
+  <data name="txt9" xml:space="preserve">
+    <value>الذاكرة الوثائقية: يحتوي على مجموعة نادرة من الوثائق الأزهرية، وهي مقسمة موضوعيا على عدة فئات لعل أهمها</value>
+  </data>
+  <data name="txt10" xml:space="preserve">
+    <value>القرارات التاريخية</value>
+  </data>
+  <data name="txt11" xml:space="preserve">
+    <value>الاتفاقيات الدولية</value>
+  </data>
+  <data name="txt12" xml:space="preserve">
+    <value>وثائق تطوير الأزهر منذ القرن المنصرم.</value>
+  </data>
+  <data name="txt13" xml:space="preserve">
+    <value>الذاكرة الصحفية: وفيه توثيق للصحافة الأزهرية وتاريخها، والذي يتمثل في مجلة الأزهر وجريدة صوت الأزهر.</value>
+  </data>
+  <data name="txt14" xml:space="preserve">
+    <value>الذاكرة المسموعة والمرئية: وفيه توثيق لمختارات من التسجيلات الصوتية النادرة، وتسجيلات الفيديو لشيوخ الأزهر وعلمائه، والتي تتناول الأزهر بشكل رئيس.</value>
+  </data>
+  <data name="txt15" xml:space="preserve">
+    <value>ذاكرة المخطوطات: وفيها عرض لبعض المخطوطات من المكتبة الأزهرية، والتي تتناول الأزهر بشكل أو بآخر، فضلا عن قائمة ببليوجرافية حصرية بمقتنيات المكتبة الأزهرية من المخطوطات، ونوادر الكتب وأوائل المطبوعات</value>
+  </data>
+  <data name="txt16" xml:space="preserve">
+    <value>إصدارات الأزهر: ويحتوي على ببليوجرافية شاملة للإنتاج الفكري الصادر عن الأزهر، في شكل قابل للبحث في النصوص الكاملة، فضلا عن نسخة لإلكترونية كاملة من كتاب الجامع الأزهر.</value>
+  </data>
+  <data name="txt17" xml:space="preserve">
+    <value>قالوا عن الأزهر: وفيها مختارات مما قيل في تقريظ الأزهر ورجالاته، على المستويين المحلي والعالمي.</value>
+  </data>
+  <data name="txt18" xml:space="preserve">
+    <value>روائع مقتنيات الأزهر (قطع العرض المتحفي): وفيه عرض متحفي تخيلي لجانب من مقتنيات متحف الأزهر الشريف، وذلك باستخدام أحدث تقنيات التصوير ثلاثي الأبعاد والوسائط المتعددة.</value>
+  </data>
+  <data name="txt19" xml:space="preserve">
+    <value>جولة بانورامية للجامع الأزهر: وهي رحلة في داخل الجامع الأزهر وأروقته التاريخية، وهي بمثابة زيارة تخيلية له، وهي مفيدة جدا لمن لا يتيسر لهم الزيارة الحقيقية للجامع الشريف.</value>
+  </data>
+  <data name="txt20" xml:space="preserve">
+    <value>مواقع مرتبطة: وهو دليل بالمواقع المرتبطة بالأزهر سواء إداريا أو موضوعيا.</value>
+  </data>
+  <data name="txt21" xml:space="preserve">
+    <value>موقع دارالإفتاء المصرية</value>
+  </data>
+  <data name="txt22" xml:space="preserve">
+    <value>يعرف الموقع بالدار ودورها الذي تقوم به في المجتمع، ومجموعة من المقالات المتخصصة في الدين الإسلامي، كما يقدم العديد من الأقسام التي تعرض لأساس عمليات الفتوى وفروعها وعرض لبعض الفتوى التي تمت الإجابة عليها. كما يقدم إمكانية طلب فتوي مباشرة من على الموقع وإرسال الإجابة عن طريق البريد الإلكتروني لمرسل الفتوي، هذا بالإضافة إلى عرض سريع لمجلة الإفتاء التي تصدرها الدار وعرض لمحتويات كل عدد منها وملخص له ومنافذ البيع التي يمكن الحصول على المجلة منها. 
+الموقع متاح بالعديد من اللغات هي العربية والإنجليزية والفرنسية والألمانية والأندونيسية والروسية والأورودية والتركية</value>
+  </data>
+  <data name="txt23" xml:space="preserve">
+    <value>الموقع الألكترونى:</value>
+  </data>
+  <data name="txt24" xml:space="preserve">
+    <value>موقع الأزهر التعليمي</value>
+  </data>
+  <data name="txt25" xml:space="preserve">
+    <value>يعرف الموقع بالأزهر الشريف وأقسامه المختلفه وشيوخه، هذا بالإضافة إلى إلى عرضه لرؤية الأزهر التعليمية ومعاهده التعليمية، وعرض لأهم الأحداث المتعلقة بالعملية التعليمية وما يخص الطلاب بجميع فئاتهم، والمعلمين وما يخصهم من أخبار، بالإضافة إلى قسم خاص بالمنتديات والتي يمكن من خلالها تبادل الأراء المختلفة لكافة الموضوعات. 
+الموقع متاح باللغات العربية والإنجليزية والفرنسية</value>
+  </data>
+  <data name="txt26" xml:space="preserve">
+    <value>موقع جامعة الأزهر</value>
+  </data>
+  <data name="txt27" xml:space="preserve">
+    <value>موقع جامعة الأزهريعرف الموقع بالجامعة وإداراتها وأقسامها المختلفة وكلياتها ويعرض لأخبارها، والخدمات التي تقدمها للطلابها في الكليات وطلبة الدراسات العليا، هذا بالإضافة إلى التعريف بخدمات التعليم الإلكتروني التي تقدمها الجامعة، ومنشآتها المتعددة التي تقدم خدماتها للطلبة وأعضاء هيئة التدريس في الجامعة.
+الموقع متاح باللغتين العربية والإنجليزية</value>
+  </data>
+  <data name="txt28" xml:space="preserve">
+    <value>موقع المجلس الأعلى للشئون الإسلامية</value>
+  </data>
+  <data name="txt29" xml:space="preserve">
+    <value>موقع جامعة الأزهريعرف الموقع بالجامعة وإداراتها وأقسامها المختلفة وكلياتها ويعرض لأخبارها، والخدمات التي تقدمها للطلابها في الكليات وطلبة الدراسات العليا، هذا بالإضافة إلى التعريف بخدمات التعليم الإلكتروني التي تقدمها الجامعة، ومنشآتها المتعددة التي تقدم خدماتها للطلبة وأعضاء هيئة التدريس في الجامعة.
+الموقع متاح باللغتين العربية والإنجليزية</value>
+  </data>
+  <data name="links_rel" xml:space="preserve">
+    <value>links_rel</value>
+  </data>
+  <data name="links_des" xml:space="preserve">
+    <value>links_des</value>
+  </data>
+  <data name="links_url_text" xml:space="preserve">
+    <value>links_url_text</value>
+  </data>
+  <data name="links_url" xml:space="preserve">
+    <value>links_url</value>
+  </data>
+  <data name="timeline_desc" xml:space="preserve">
+    <value>وصف الحدث </value>
+  </data>
+  <data name="timeline_h" xml:space="preserve">
+    <value>هـ</value>
+  </data>
+  <data name="timeline_hdate" xml:space="preserve">
+    <value>هجرى من </value>
+  </data>
+  <data name="timeline_hdateto" xml:space="preserve">
+    <value>هجرى إلي </value>
+  </data>
+  <data name="timeline_hegry" xml:space="preserve">
+    <value>تاريخ هجري</value>
+  </data>
+  <data name="timeline_hegryfrom" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="timeline_hegryto" xml:space="preserve">
+    <value>إلي</value>
+  </data>
+  <data name="timeline_m" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="timeline_mdatefrom" xml:space="preserve">
+    <value>ميلادى من </value>
+  </data>
+  <data name="timeline_mdateto" xml:space="preserve">
+    <value>ميلادى إلي </value>
+  </data>
+  <data name="Lbl_character_Abrief_description" xml:space="preserve">
+    <value>نبذة عن الشخصية </value>
+  </data>
+  <data name="Lbl_character_Achievements" xml:space="preserve">
+    <value>أهم الإنجازات</value>
+  </data>
+  <data name="Lbl_character_Awards" xml:space="preserve">
+    <value>ملامح التكريم </value>
+  </data>
+  <data name="Lbl_character_Birth_upbringing" xml:space="preserve">
+    <value>المولد والنشأه </value>
+  </data>
+  <data name="Lbl_character_Educational_cultural" xml:space="preserve">
+    <value>الحياة العلمية والثقافية </value>
+  </data>
+  <data name="Lbl_character_full_name" xml:space="preserve">
+    <value>الاسم الكامل </value>
+  </data>
+  <data name="Lbl_character_keywords" xml:space="preserve">
+    <value>كلمات الدالة </value>
+  </data>
+  <data name="Lbl_character_nick_name" xml:space="preserve">
+    <value>اسم الشهرة </value>
+  </data>
+  <data name="Lbl_character_Notes" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="Lbl_character_Posts_Jobs_occupied" xml:space="preserve">
+    <value>الوظائف التي تولتها </value>
+  </data>
+  <data name="Lbl_character_said_about_him" xml:space="preserve">
+    <value>قالوا عن الشخصية </value>
+  </data>
+  <data name="Lbl_character_social_cultural_activities" xml:space="preserve">
+    <value>أهم الانشطة الاجتماعية والسياسية </value>
+  </data>
+  <data name="Lbl_character_Titles" xml:space="preserve">
+    <value>ألقاب </value>
+  </data>
+  <data name="lbl_photo_details" xml:space="preserve">
+    <value>نوع الصورة </value>
+  </data>
+  <data name="lbl_photo_Keywords" xml:space="preserve">
+    <value>الكلمات الدالة </value>
+  </data>
+  <data name="lbl_photo_Notes" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="lbl_photo_Photographer" xml:space="preserve">
+    <value>المصور/الرسام </value>
+  </data>
+  <data name="lbl_photo_Source_copyright" xml:space="preserve">
+    <value>المصدر/ جهة حقوق النشر </value>
+  </data>
+  <data name="lbl_photo_Title_Photo" xml:space="preserve">
+    <value>عنوان الصورة </value>
+  </data>
+  <data name="lbl_Recording_Description" xml:space="preserve">
+    <value>وصف العمل</value>
+  </data>
+  <data name="lbl_Recording_Guests_position" xml:space="preserve">
+    <value>منصب الضيف </value>
+  </data>
+  <data name="lbl_Recording_Guests_Post" xml:space="preserve">
+    <value>اسم الضيف </value>
+  </data>
+  <data name="lbl_Recording_title" xml:space="preserve">
+    <value>عنوان العمل </value>
+  </data>
+  <data name="lbl_Recording_Title_number_episode" xml:space="preserve">
+    <value>اسم الحلقة أو رقمها </value>
+  </data>
+  <data name="Lbl_book_Author" xml:space="preserve">
+    <value>اسم مؤلف الكتاب</value>
+  </data>
+  <data name="Lbl_book_Its_number_series" xml:space="preserve">
+    <value>رقمه في السلسلة </value>
+  </data>
+  <data name="Lbl_book_Publication_data" xml:space="preserve">
+    <value>بيانات النشر </value>
+  </data>
+  <data name="Lbl_book_Publication_Place" xml:space="preserve">
+    <value>مكان النشر</value>
+  </data>
+  <data name="Lbl_book_Publication_Publisher" xml:space="preserve">
+    <value>الناشر </value>
+  </data>
+  <data name="Lbl_book_Publication_year" xml:space="preserve">
+    <value>سنة النشر </value>
+  </data>
+  <data name="Lbl_book_Series" xml:space="preserve">
+    <value>السلسلة </value>
+  </data>
+  <data name="Lbl_book_Series_name" xml:space="preserve">
+    <value>اسم السلسلة </value>
+  </data>
+  <data name="Lbl_book_Title" xml:space="preserve">
+    <value>عنوان الكتاب </value>
+  </data>
+  <data name="Lbl_document_Place_reservation" xml:space="preserve">
+    <value>جهة الحفظ </value>
+  </data>
+  <data name="Lbl_document_Place_reservation_Bookshelving_no" xml:space="preserve">
+    <value>رقم الحفظ </value>
+  </data>
+  <data name="Lbl_document_Place_reservation_City" xml:space="preserve">
+    <value>مدينة جهة الحفظ </value>
+  </data>
+  <data name="Lbl_document_Place_reservation_country" xml:space="preserve">
+    <value>دولة جهة الحفظ </value>
+  </data>
+  <data name="Lbl_document_Place_reservation_name" xml:space="preserve">
+    <value>اسم جهة الحفظ </value>
+  </data>
+  <data name="Lbl_document_Place_reservation_notes" xml:space="preserve">
+    <value>ملاحظات جهة الحفظ</value>
+  </data>
+  <data name="Lbl_document_Source" xml:space="preserve">
+    <value>منشئ الوثيقة </value>
+  </data>
+  <data name="Lbl_document_Source_no" xml:space="preserve">
+    <value>رقم المنشئ </value>
+  </data>
+  <data name="Lbl_document_Title" xml:space="preserve">
+    <value>عنوان الوثيقة </value>
+  </data>
+  <data name="lbl_manuscript_Author" xml:space="preserve">
+    <value>اسم المؤلف </value>
+  </data>
+  <data name="lbl_manuscript_Conclusion" xml:space="preserve">
+    <value>خاتمة المخطوط </value>
+  </data>
+  <data name="lbl_manuscript_name" xml:space="preserve">
+    <value>الاسم </value>
+  </data>
+  <data name="lbl_manuscript_notes" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="lbl_manuscript_Place_preservation" xml:space="preserve">
+    <value>جهة الحفظ </value>
+  </data>
+  <data name="lbl_manuscript_Place_preservation_City" xml:space="preserve">
+    <value>مدينة الحفظ </value>
+  </data>
+  <data name="lbl_manuscript_Place_preservation_country" xml:space="preserve">
+    <value>دولة الحفظ </value>
+  </data>
+  <data name="lbl_manuscript_Preface" xml:space="preserve">
+    <value>فاتحة المخطوط </value>
+  </data>
+  <data name="lbl_manuscript_Title" xml:space="preserve">
+    <value>عنوان المخطوط </value>
+  </data>
+  <data name="lbl_manuscript_Transcriber" xml:space="preserve">
+    <value>الناسخ </value>
+  </data>
+  <data name="lbl_manuscript_Transcribing" xml:space="preserve">
+    <value>بيانات النسخ </value>
+  </data>
+  <data name="lbl_manuscript_Transcribing_place" xml:space="preserve">
+    <value>مكان النسخ </value>
+  </data>
+  <data name="lbl_Recording_Broadcaster_interviewer" xml:space="preserve">
+    <value>اسم المذيع </value>
+  </data>
+  <data name="lbl_Recording_keyword" xml:space="preserve">
+    <value>الكلمات الدالة </value>
+  </data>
+  <data name="lbl_Recording_notes" xml:space="preserve">
+    <value>ملاحظات   </value>
+  </data>
+  <data name="lbl_Recording_Source" xml:space="preserve">
+    <value>جهة المصدر</value>
+  </data>
+  <data name="lbl_Recording_Source_Book_shelving_no" xml:space="preserve">
+    <value>رقم الحفظ </value>
+  </data>
+  <data name="lbl_Recording_Source_city" xml:space="preserve">
+    <value>المدينة </value>
+  </data>
+  <data name="lbl_Recording_Source_country" xml:space="preserve">
+    <value>الدولة </value>
+  </data>
+  <data name="lbl_Recording_Source_name" xml:space="preserve">
+    <value>اسم المصدر </value>
+  </data>
+  <data name="lbl_Recording_Source_notes" xml:space="preserve">
+    <value>ملاحظات عن المصدر </value>
+  </data>
+  <data name="Places_labels_BotanDecorations" xml:space="preserve">
+    <value>- الزخارف النباتية :</value>
+  </data>
+  <data name="Places_labels_briefDescription" xml:space="preserve">
+    <value>الوصف المختصر </value>
+  </data>
+  <data name="Places_labels_buildingInside" xml:space="preserve">
+    <value>الأثر /المبنى المعماري من الداخل </value>
+  </data>
+  <data name="Places_labels_buildingOutside" xml:space="preserve">
+    <value>الأثر /المبنى المعماري من الخارج</value>
+  </data>
+  <data name="Places_labels_detailDescription" xml:space="preserve">
+    <value>الوصف التفصيلي </value>
+  </data>
+  <data name="Places_labels_generalNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_labels_generalOutline" xml:space="preserve">
+    <value>التخطيط العام :</value>
+  </data>
+  <data name="Places_labels_generalView" xml:space="preserve">
+    <value>- وصف الملامح العامة  :</value>
+  </data>
+  <data name="Places_labels_geomDecorations" xml:space="preserve">
+    <value>- الزخارف الهندسية :</value>
+  </data>
+  <data name="Places_labels_GNotes" xml:space="preserve">
+    <value>- ملاحظة</value>
+  </data>
+  <data name="Places_labels_keyWords" xml:space="preserve">
+    <value>الكلمات الدالة  </value>
+  </data>
+  <data name="Places_labels_notes" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="Places_labels_originalStyle" xml:space="preserve">
+    <value>- وصف الملامح العامة  :</value>
+  </data>
+  <data name="Places_labels_otherNames" xml:space="preserve">
+    <value>اسماء أخرى</value>
+  </data>
+  <data name="Places_labels_plcaeName" xml:space="preserve">
+    <value>اسم الأثر أو المبنى أو المكان :</value>
+  </data>
+  <data name="Places_labels_writings" xml:space="preserve">
+    <value>- الكتابات :</value>
+  </data>
+  <data name="Places_lab_AgedetailedDesc" xml:space="preserve">
+    <value>- الوصف التفصيلي للموقع :</value>
+  </data>
+  <data name="Places_lab_buildingJobNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_lab_buildingNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Places_lab_currentLocation" xml:space="preserve">
+    <value>- الموقع الحالى :</value>
+  </data>
+  <data name="Places_lab_detailedLocDescrp" xml:space="preserve">
+    <value>- الوصف التفصيلي للموقع :</value>
+  </data>
+  <data name="Places_lab_locNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Place_lab_ageProcessNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Plac_lab_ageFullProcessDesc" xml:space="preserve">
+    <value>- الوصف التفصيلي لعملية الترميم :</value>
+  </data>
+  <data name="Plac_lab_AgeLocNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Plac_lab_ageRestorationResp" xml:space="preserve">
+    <value>- المسئول عن الترميم :</value>
+  </data>
+  <data name="Plac_lab_ageSharedResp" xml:space="preserve">
+    <value>- المشاركون في الترميم (يشمل المنفذون للترميم)  :</value>
+  </data>
+  <data name="Plac_Lab_currCondiMonument" xml:space="preserve">
+    <value>- حالة الأثر أو المبنى المعماري الحالية :</value>
+  </data>
+  <data name="Plac_lab_currConditionRestoration" xml:space="preserve">
+    <value>- الوضع الحالي من الترميم :</value>
+  </data>
+  <data name="Plac_lab_respOfRestoration" xml:space="preserve">
+    <value>- المسئول عن الترميم :</value>
+  </data>
+  <data name="Plac_lab_RestorationNotes" xml:space="preserve">
+    <value>- ملاحظة </value>
+  </data>
+  <data name="Plac_lab_sharedRestoration" xml:space="preserve">
+    <value>- المشاركون في الترميم (يشمل المنفذون للترميم)  :</value>
+  </data>
+  <data name="Plac_lab_siteNotes" xml:space="preserve">
+    <value> ملاحظة </value>
+  </data>
+  <data name="Plac_lab_siteWrittenDesc" xml:space="preserve">
+    <value>- وصف نصي للمكان الحالي  :</value>
+  </data>
+  <data name="Topics_Labels_Brief_Descrip" xml:space="preserve">
+    <value>الوصف المختصر </value>
+  </data>
+  <data name="Topics_labels_detail_descrip" xml:space="preserve">
+    <value>الوصف التفصيلى </value>
+  </data>
+  <data name="Topics_labels_KeyWords" xml:space="preserve">
+    <value>الكلمات الدالة  </value>
+  </data>
+  <data name="Topics_labels_notes" xml:space="preserve">
+    <value>ملاحظات  </value>
+  </data>
+  <data name="Topics_labels_subject_lbl" xml:space="preserve">
+    <value>عنوان الموضوع </value>
+  </data>
+  <data name="b_desc" xml:space="preserve">
+    <value>الوصف المختصر</value>
+  </data>
+  <data name="conference_city" xml:space="preserve">
+    <value>المدينة </value>
+  </data>
+  <data name="conference_country" xml:space="preserve">
+    <value>الدولة </value>
+  </data>
+  <data name="conference_holdingplace" xml:space="preserve">
+    <value>مكان الانعقاد</value>
+  </data>
+  <data name="conference_name" xml:space="preserve">
+    <value>اسم المؤتمر </value>
+  </data>
+  <data name="conference_org" xml:space="preserve">
+    <value>الهيئة المسئولة عن التنظيم </value>
+  </data>
+  <data name="conference_place" xml:space="preserve">
+    <value>المكان </value>
+  </data>
+  <data name="c_notes" xml:space="preserve">
+    <value>ملاحظات  </value>
+  </data>
+  <data name="details_desc" xml:space="preserve">
+    <value>الوصف التفصيلي </value>
+  </data>
+  <data name="elkasm" xml:space="preserve">
+    <value>القسم</value>
+  </data>
+  <data name="elkolia" xml:space="preserve">
+    <value>الكلية </value>
+  </data>
+  <data name="main_title" xml:space="preserve">
+    <value>عنوان المقالة </value>
+  </data>
+  <data name="name_maker" xml:space="preserve">
+    <value>اسم الصانع </value>
+  </data>
+  <data name="org_city" xml:space="preserve">
+    <value>المدينة </value>
+  </data>
+  <data name="org_country" xml:space="preserve">
+    <value>الدولة </value>
+  </data>
+  <data name="org_name" xml:space="preserve">
+    <value>اسم الجهة </value>
+  </data>
+  <data name="org_no" xml:space="preserve">
+    <value>رقم الحفظ </value>
+  </data>
+  <data name="org_notes" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="periodical_title" xml:space="preserve">
+    <value>عنوان الدورية </value>
+  </data>
+  <data name="searcher_name" xml:space="preserve">
+    <value>اسم الباحث</value>
+  </data>
+  <data name="source_side" xml:space="preserve">
+    <value>جهة المصدر </value>
+  </data>
+  <data name="supermoshark" xml:space="preserve">
+    <value>مشرف مشارك </value>
+  </data>
+  <data name="supervisior" xml:space="preserve">
+    <value>اسم المشرف</value>
+  </data>
+  <data name="tags" xml:space="preserve">
+    <value>الكلمات الدالة </value>
+  </data>
+  <data name="thesis_title" xml:space="preserve">
+    <value>عنوان الأطروحة </value>
+  </data>
+  <data name="university" xml:space="preserve">
+    <value>الجامعة</value>
+  </data>
+  <data name="Lbl_character_head" xml:space="preserve">
+    <value>استمارة الشخصية </value>
+  </data>
+  <data name="timeline_melady" xml:space="preserve">
+    <value>تاريخ ميلادى</value>
+  </data>
+  <data name="Lbl_event_head" xml:space="preserve">
+    <value>إستمارة الأحداث والمواقف</value>
+  </data>
+  <data name="Topics_head" xml:space="preserve">
+    <value> إستمارة الموضوعات</value>
+  </data>
+  <data name="Topics_upload" xml:space="preserve">
+    <value>تحميل الملف الاستمارة  </value>
+  </data>
+  <data name="Places_head" xml:space="preserve">
+    <value>إستمارة بيانات الذاكرة المعمارية (الآثار/المبانى المعمارية/الاماكن)</value>
+  </data>
+  <data name="Places_Accessories" xml:space="preserve">
+    <value>الملاحق </value>
+  </data>
+  <data name="Places_Architectural" xml:space="preserve">
+    <value>الطرز المعمارية</value>
+  </data>
+  <data name="Places_Awning" xml:space="preserve">
+    <value>أيوانات/ ظلات </value>
+  </data>
+  <data name="Places_Building_materials" xml:space="preserve">
+    <value>خامات البناء </value>
+  </data>
+  <data name="Places_Ceilings" xml:space="preserve">
+    <value>الأسقف :</value>
+  </data>
+  <data name="Places_Charity_room" xml:space="preserve">
+    <value>حجرة السبيل </value>
+  </data>
+  <data name="Places_decorations" xml:space="preserve">
+    <value>النقوش والزخارف </value>
+  </data>
+  <data name="Places_Desks" xml:space="preserve">
+    <value>المقاعد </value>
+  </data>
+  <data name="Places_Dooms" xml:space="preserve">
+    <value>القباب </value>
+  </data>
+  <data name="Places_entrances" xml:space="preserve">
+    <value>المداخل </value>
+  </data>
+  <data name="Places_Faces" xml:space="preserve">
+    <value>الواجهات </value>
+  </data>
+  <data name="Places_fun" xml:space="preserve">
+    <value>وظيفة الأثر أو المبنى المعماري </value>
+  </data>
+  <data name="Places_Main_style" xml:space="preserve">
+    <value>الطراز الأساسي :</value>
+  </data>
+  <data name="Places_Minarets" xml:space="preserve">
+    <value>المآذن </value>
+  </data>
+  <data name="Places_Pinpointing" xml:space="preserve">
+    <value>موقع الأثر المعماري على خريطة مصر   </value>
+  </data>
+  <data name="Places_Playground" xml:space="preserve">
+    <value>الفناء </value>
+  </data>
+  <data name="Places_restoration" xml:space="preserve">
+    <value>ترميم الأثر أو المبنى المعماري (الوضع الحالي)   </value>
+  </data>
+  <data name="Places_restoration_through_ages" xml:space="preserve">
+    <value>ترميم الأثر أو المبنى المعماري عبر العصور  </value>
+  </data>
+  <data name="Places_Rooms_Halls" xml:space="preserve">
+    <value>القاعات </value>
+  </data>
+  <data name="Places_Site" xml:space="preserve">
+    <value>موقع الأثر أو المبنى المعماري </value>
+  </data>
+  <data name="Places_Sub_style" xml:space="preserve">
+    <value>الطراز الفرعية :</value>
+  </data>
+  <data name="Places_Windows" xml:space="preserve">
+    <value>النوافذ </value>
+  </data>
+  <data name="lbl_mosalsel" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="lbldelete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="lbledit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="c_tags" xml:space="preserve">
+    <value>الكلمات الدالة</value>
+  </data>
+  <data name="Places_evo_through_age" xml:space="preserve">
+    <value>التطور المعماري والتوسعات للأثر أو المبنى عبر العصور  :</value>
+  </data>
+  <data name="Places_Fun_through_age" xml:space="preserve">
+    <value>وظيفة الأثر أو المبنى المعماري عبر العصور  </value>
+  </data>
+  <data name="Places_Site_through_age" xml:space="preserve">
+    <value>موقع الأثر أو المبنى المعماري عبر العصور </value>
+  </data>
+  <data name="conference_title" xml:space="preserve">
+    <value>عنوان المؤتمر </value>
+  </data>
+  <data name="conference_no" xml:space="preserve">
+    <value>رقم المؤتمر</value>
+  </data>
+  <data name="thesis_main_title" xml:space="preserve">
+    <value>الأطروحة</value>
+  </data>
+  <data name="website_title" xml:space="preserve">
+    <value>عنوان الموقع </value>
+  </data>
+  <data name="website_Desc" xml:space="preserve">
+    <value>وصف الصفحة </value>
+  </data>
+  <data name="lbl_manuscript_Transcribing_date" xml:space="preserve">
+    <value>تاريخ النسخ</value>
+  </data>
+  <data name="txt_moalf" xml:space="preserve">
+    <value>اسم مؤلف</value>
+  </data>
+  <data name="lbl_manuscript_wa2fName" xml:space="preserve">
+    <value>الموقوف عليه </value>
+  </data>
+  <data name="lbl_manuscript_Authorn" xml:space="preserve">
+    <value>المؤلف</value>
+  </data>
+  <data name="glossary_def" xml:space="preserve">
+    <value>المصطلح</value>
+  </data>
+  <data name="glossary_title" xml:space="preserve">
+    <value>تعريف المصطلح</value>
+  </data>
+  <data name="lbl_article_yearno_folder" xml:space="preserve">
+    <value>رقم السنة/المجلد</value>
+  </data>
+  <data name="Lbl_document_creation_date" xml:space="preserve">
+    <value>تاريخ الإنشاء </value>
+  </data>
+  <data name="lbl_ageBelongingManuscript" xml:space="preserve">
+    <value>العصر الذي ينتمي إليه المخطوط </value>
+  </data>
+  <data name="lbl_allowanceHearings" xml:space="preserve">
+    <value>الإجازات والسماعات </value>
+  </data>
+  <data name="lbl_allowanceType" xml:space="preserve">
+    <value>نوع الإجازة </value>
+  </data>
+  <data name="lbl_another" xml:space="preserve">
+    <value>أخرى </value>
+  </data>
+  <data name="lbl_art" xml:space="preserve">
+    <value>الفن </value>
+  </data>
+  <data name="lbl_authorFromIntro" xml:space="preserve">
+    <value>اسم المؤلف من المقدمة </value>
+  </data>
+  <data name="lbl_authorFromTitle" xml:space="preserve">
+    <value>اسم المؤلف من صفحة العنوان </value>
+  </data>
+  <data name="lbl_copyContains" xml:space="preserve">
+    <value>النسخة تحتوي على </value>
+  </data>
+  <data name="lbl_copyHas" xml:space="preserve">
+    <value>النسخة بها </value>
+  </data>
+  <data name="lbl_copyStatus" xml:space="preserve">
+    <value>حالة النسخ </value>
+  </data>
+  <data name="lbl_fontType" xml:space="preserve">
+    <value>نوع الخط </value>
+  </data>
+  <data name="lbl_generalNo" xml:space="preserve">
+    <value>رقم عام </value>
+  </data>
+  <data name="lbl_Hearings" xml:space="preserve">
+    <value>السماعات </value>
+  </data>
+  <data name="lbl_length" xml:space="preserve">
+    <value>الطول </value>
+  </data>
+  <data name="lbl_manuscriptGroupNo" xml:space="preserve">
+    <value>المخطوط ضمن مجموع-رقمه في المجموع </value>
+  </data>
+  <data name="lbl_manuscript_lang" xml:space="preserve">
+    <value>لغة المخطوط </value>
+  </data>
+  <data name="lbl_manuscript_papers" xml:space="preserve">
+    <value>الأوراق </value>
+  </data>
+  <data name="lbl_mogalad" xml:space="preserve">
+    <value>عدد المجلدات </value>
+  </data>
+  <data name="lbl_oldestAllowanceDate" xml:space="preserve">
+    <value>تاربخ أقدم  الإجازات  الموجودة </value>
+  </data>
+  <data name="lbl_oldsetHearingsDate" xml:space="preserve">
+    <value>تاريخ أقدم السماعات </value>
+  </data>
+  <data name="lbl_partsNo" xml:space="preserve">
+    <value>عدد الأجزاء  </value>
+  </data>
+  <data name="lbl_privateLib" xml:space="preserve">
+    <value>المكتبة الخاصة </value>
+  </data>
+  <data name="lbl_privateNo" xml:space="preserve">
+    <value>رقم خاص</value>
+  </data>
+  <data name="lbl_ruler" xml:space="preserve">
+    <value>المسطرة </value>
+  </data>
+  <data name="lbl_saveno" xml:space="preserve">
+    <value>رقم الحفظ داخل جهة الحفظ </value>
+  </data>
+  <data name="lbl_somk" xml:space="preserve">
+    <value>الُسْمك </value>
+  </data>
+  <data name="lbl_titleFromIntro" xml:space="preserve">
+    <value>العنوان من المقدمة </value>
+  </data>
+  <data name="lbl_titleFromTitle" xml:space="preserve">
+    <value>العنوان من صفحة العنوان </value>
+  </data>
+  <data name="lbl_width" xml:space="preserve">
+    <value>العرض </value>
+  </data>
+  <data name="lbl_artifacts_maker" xml:space="preserve">
+    <value>اسم الصانع </value>
+  </data>
+  <data name="lbl_artifacts_title" xml:space="preserve">
+    <value>القطع المتحفية</value>
+  </data>
+  <data name="lbl_manuscript_titlehead" xml:space="preserve">
+    <value>المخطوطات</value>
+  </data>
+  <data name="recDate" xml:space="preserve">
+    <value>تاريخ التسجيل أو الإذاعة </value>
+  </data>
+  <data name="counCapital" xml:space="preserve">
+    <value>الدولة/المدينة </value>
+  </data>
+  <data name="workType" xml:space="preserve">
+    <value>نوع العمل </value>
+  </data>
+  <data name="align_img" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="audio_recorded" xml:space="preserve">
+    <value>التسجيل الأذاعى </value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>المده </value>
+  </data>
+  <data name="page_no" xml:space="preserve">
+    <value>عدد الصفحات</value>
+  </data>
+  <data name="recorded_radio" xml:space="preserve">
+    <value>تاريخ التسجيل </value>
+  </data>
+  <data name="recording_type" xml:space="preserve">
+    <value>نوع التسجيل الآذاعى </value>
+  </data>
+  <data name="theses_lang" xml:space="preserve">
+    <value>لغه الأطروحه </value>
+  </data>
+  <data name="theses_type" xml:space="preserve">
+    <value>نوع الاطروحة </value>
+  </data>
+  <data name="supervisor" xml:space="preserve">
+    <value>المشرف </value>
+  </data>
+  <data name="lbl_book_lang" xml:space="preserve">
+    <value>لغة الكتاب</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>الموضوع المباشر</value>
+  </data>
+  <data name="style" xml:space="preserve">
+    <value>width:21px;background-image: url('../img/Row 2.jpg'); background-repeat: repeat-y; background-position: left top;</value>
+  </data>
+  <data name="img__details1" xml:space="preserve">
+    <value>background-image: url('../img/Row 1.jpg')</value>
+  </data>
+  <data name="img__details2" xml:space="preserve">
+    <value>background-image: url('../img/Row 2.jpg')</value>
+  </data>
+  <data name="style1" xml:space="preserve">
+    <value>../img/Row 1.jpg</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>دقيقة </value>
+  </data>
+  <data name="second" xml:space="preserve">
+    <value>ثانيه </value>
+  </data>
+  <data name="no_data" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>المصدر</value>
+  </data>
+  <data name="last" xml:space="preserve">
+    <value>الأخيرة </value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>التالية</value>
+  </data>
+  <data name="prev" xml:space="preserve">
+    <value>السابقة</value>
+  </data>
+  <data name="st" xml:space="preserve">
+    <value>الأولى</value>
+  </data>
+  <data name="ch1" xml:space="preserve">
+    <value>ا</value>
+  </data>
+  <data name="ch10" xml:space="preserve">
+    <value>ر</value>
+  </data>
+  <data name="ch11" xml:space="preserve">
+    <value>ز</value>
+  </data>
+  <data name="ch12" xml:space="preserve">
+    <value>س</value>
+  </data>
+  <data name="ch13" xml:space="preserve">
+    <value>ش</value>
+  </data>
+  <data name="ch14" xml:space="preserve">
+    <value>ص</value>
+  </data>
+  <data name="ch15" xml:space="preserve">
+    <value>ض</value>
+  </data>
+  <data name="ch16" xml:space="preserve">
+    <value>ط</value>
+  </data>
+  <data name="ch17" xml:space="preserve">
+    <value>ظ</value>
+  </data>
+  <data name="ch18" xml:space="preserve">
+    <value>ع</value>
+  </data>
+  <data name="ch19" xml:space="preserve">
+    <value>غ</value>
+  </data>
+  <data name="ch2" xml:space="preserve">
+    <value>ب</value>
+  </data>
+  <data name="ch20" xml:space="preserve">
+    <value>ف</value>
+  </data>
+  <data name="ch21" xml:space="preserve">
+    <value>ق</value>
+  </data>
+  <data name="ch22" xml:space="preserve">
+    <value>ك</value>
+  </data>
+  <data name="ch23" xml:space="preserve">
+    <value>ل</value>
+  </data>
+  <data name="ch24" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="ch25" xml:space="preserve">
+    <value>ن</value>
+  </data>
+  <data name="ch26" xml:space="preserve">
+    <value>ه</value>
+  </data>
+  <data name="ch27" xml:space="preserve">
+    <value>و</value>
+  </data>
+  <data name="ch28" xml:space="preserve">
+    <value>ى</value>
+  </data>
+  <data name="ch3" xml:space="preserve">
+    <value>ت</value>
+  </data>
+  <data name="ch4" xml:space="preserve">
+    <value>ث</value>
+  </data>
+  <data name="ch5" xml:space="preserve">
+    <value>ج</value>
+  </data>
+  <data name="ch6" xml:space="preserve">
+    <value>ح</value>
+  </data>
+  <data name="ch7" xml:space="preserve">
+    <value>خ</value>
+  </data>
+  <data name="ch8" xml:space="preserve">
+    <value>د</value>
+  </data>
+  <data name="ch9" xml:space="preserve">
+    <value>ذ</value>
+  </data>
+  <data name="tdimg" xml:space="preserve">
+    <value>../img/Row 1.jpg</value>
+  </data>
+  <data name="birthdate" xml:space="preserve">
+    <value>تاريخ المولد </value>
+  </data>
+  <data name="chartype" xml:space="preserve">
+    <value>صفة الشخصية </value>
+  </data>
+  <data name="deathdate" xml:space="preserve">
+    <value>تاريخ الوفاة </value>
+  </data>
+  <data name="DBtitle" xml:space="preserve">
+    <value>title_ar</value>
+  </data>
+  <data name="td1img" xml:space="preserve">
+    <value>background-image: url('../img/Row 2.jpg'); background-repeat: repeat-y; background-position: left top</value>
+  </data>
+  <data name="artilce_langauage" xml:space="preserve">
+    <value>لغة المقاله</value>
+  </data>
+  <data name="Notes About Recoding Time" xml:space="preserve">
+    <value>ملاحظات على عصر التسجيل </value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>العصر الذى يتناوله التسجيل ويدور حوله </value>
+  </data>
+  <data name="home_tabs_style" xml:space="preserve">
+    <value>321px;float:right</value>
+  </data>
+  <data name="lbl_7aletelnachr" xml:space="preserve">
+    <value>حالة النشر </value>
+  </data>
+  <data name="lbl_doc_stat1" xml:space="preserve">
+    <value>وثيقة منشورة</value>
+  </data>
+  <data name="lbl_doc_stat2" xml:space="preserve">
+    <value>وثيقة غير منشورة</value>
+  </data>
+  <data name="doc_lang" xml:space="preserve">
+    <value>لغة الوثيقة </value>
+  </data>
+  <data name="doc_madmon" xml:space="preserve">
+    <value>مضمون الوثيقة</value>
+  </data>
+  <data name="doc_shekl" xml:space="preserve">
+    <value>الشكل المادي </value>
+  </data>
+  <data name="link_contactus" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="link_glossary" xml:space="preserve">
+    <value>قاموس المصطلحات</value>
+  </data>
+  <data name="first" xml:space="preserve">
+    <value>الأولي </value>
+  </data>
+  <data name="tab_highlight" xml:space="preserve">
+    <value>موضوعات مميزة</value>
+  </data>
+  <data name="tab_MostVisited" xml:space="preserve">
+    <value>الأكثر مشاهدة</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>اسم المؤلف</value>
+  </data>
+  <data name="author_roll" xml:space="preserve">
+    <value>دور المؤلف</value>
+  </data>
+  <data name="holdin_date" xml:space="preserve">
+    <value>تاريخ الأنعقاد </value>
+  </data>
+  <data name="pagenocon" xml:space="preserve">
+    <value>أرقام الصفحات التي تشغلها من</value>
+  </data>
+  <data name="search_lang" xml:space="preserve">
+    <value>لغه البحث </value>
+  </data>
+  <data name="Date_photo_belong" xml:space="preserve">
+    <value>العصر الذي تنتمي إليه الصورة </value>
+  </data>
+  <data name="Draw_Date" xml:space="preserve">
+    <value>تاريخ التصوير/الرسم </value>
+  </data>
+  <data name="Photo_Desc" xml:space="preserve">
+    <value>وصف الصوره </value>
+  </data>
+  <data name="title_alazhar" xml:space="preserve">
+    <value>شيخ الأزهر</value>
+  </data>
+  <data name="title_article" xml:space="preserve">
+    <value>المقالة</value>
+  </data>
+  <data name="title_audio" xml:space="preserve">
+    <value>إذاعة</value>
+  </data>
+  <data name="title_book" xml:space="preserve">
+    <value>الكتب</value>
+  </data>
+  <data name="title_char" xml:space="preserve">
+    <value>الشخصيات</value>
+  </data>
+  <data name="title_conference" xml:space="preserve">
+    <value>أبحاث المؤتمرات</value>
+  </data>
+  <data name="title_document" xml:space="preserve">
+    <value>الوثيقة</value>
+  </data>
+  <data name="title_event" xml:space="preserve">
+    <value>الأحداث والمواقف</value>
+  </data>
+  <data name="title_library" xml:space="preserve">
+    <value>المكتبة</value>
+  </data>
+  <data name="title_main" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="title_media" xml:space="preserve">
+    <value>وسائط متعددة</value>
+  </data>
+  <data name="title_mufti" xml:space="preserve">
+    <value>مفتي</value>
+  </data>
+  <data name="title_photo" xml:space="preserve">
+    <value>الصور</value>
+  </data>
+  <data name="title_photo1" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="title_place" xml:space="preserve">
+    <value>الذاكرة المعمارية</value>
+  </data>
+  <data name="title_scholar" xml:space="preserve">
+    <value>عالم</value>
+  </data>
+  <data name="title_theses" xml:space="preserve">
+    <value>الأطروحة</value>
+  </data>
+  <data name="title_timeline" xml:space="preserve">
+    <value>الخط الزمني</value>
+  </data>
+  <data name="title_topic" xml:space="preserve">
+    <value>الموضوعات</value>
+  </data>
+  <data name="title_video" xml:space="preserve">
+    <value>تسجيلات تليفزيونية</value>
+  </data>
+  <data name="Responsible_Name" xml:space="preserve">
+    <value>اسم المسئول الفكري (مؤلف/هيئة) </value>
+  </data>
+  <data name="Responsible_Name2" xml:space="preserve">
+    <value>المسئول عن الموقع </value>
+  </data>
+  <data name="title_Sites" xml:space="preserve">
+    <value>مواقع </value>
+  </data>
+  <data name="Website_Lang" xml:space="preserve">
+    <value>لغه الموقع </value>
+  </data>
+  <data name="title_glossray" xml:space="preserve">
+    <value>قاموس المصطلحات</value>
+  </data>
+  <data name="login_date" xml:space="preserve">
+    <value>تاريخ الدخول على الموقع </value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>العنوان الإلكتروني (URL) </value>
+  </data>
+  <data name="main_home" xml:space="preserve">
+    <value>مكتبة الأزهر الشريف</value>
+  </data>
+  <data name="co_org" xml:space="preserve">
+    <value>الجهات المشتركة</value>
+  </data>
+  <data name="website_links" xml:space="preserve">
+    <value>مواقع مرتبطة</value>
+  </data>
+  <data name="Q&amp;A" xml:space="preserve">
+    <value>أسئلة وأجوبة</value>
+  </data>
+  <data name="add_content_link" xml:space="preserve">
+    <value>أضف إلي المحتوي</value>
+  </data>
+  <data name="website_map" xml:space="preserve">
+    <value>خريطة الموقع</value>
+  </data>
+  <data name="tille_elect_library" xml:space="preserve">
+    <value>من المكتبة الإليكترونية</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>لا توجد بيانات </value>
+  </data>
+  <data name="from_book" xml:space="preserve">
+    <value>من الكتب</value>
+  </data>
+  <data name="from_doc" xml:space="preserve">
+    <value>من الوثائق</value>
+  </data>
+  <data name="from_manuscript" xml:space="preserve">
+    <value>من المخطوطات</value>
+  </data>
+  <data name="more" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+  <data name="style_bottom" xml:space="preserve">
+    <value>width: 196px; height: 152px; float:left; background-color: #D5D0BA</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>المؤلف </value>
+  </data>
+  <data name="title_place_home" xml:space="preserve">
+    <value>الأماكن</value>
+  </data>
+  <data name="title_articles" xml:space="preserve">
+    <value>المقالات</value>
+  </data>
+  <data name="title_audios" xml:space="preserve">
+    <value>التسجيلات الإذاعية</value>
+  </data>
+  <data name="title_docs" xml:space="preserve">
+    <value>الوثائق</value>
+  </data>
+  <data name="title_manuscript" xml:space="preserve">
+    <value>المخطوطات</value>
+  </data>
+  <data name="title_researches" xml:space="preserve">
+    <value>أبحاث في مؤتمرات</value>
+  </data>
+  <data name="reason_timeline" xml:space="preserve">
+    <value>سبب اختيار هذه السنة</value>
+  </data>
+  <data name="year_timeline" xml:space="preserve">
+    <value>سنة التمثيل علي الخط الزمني</value>
+  </data>
+  <data name="quality_errorname" xml:space="preserve">
+    <value>نوع الخطأ</value>
+  </data>
+  <data name="quality_fieldname" xml:space="preserve">
+    <value>اسم الحقل:</value>
+  </data>
+  <data name="lbl_manuscript_wa2f_on_Name" xml:space="preserve">
+    <value>الموقوف عليه </value>
+  </data>
+  <data name="lbl_manuscriptSize" xml:space="preserve">
+    <value>مقاس المخطوط </value>
+  </data>
+  <data name="title_artifacts" xml:space="preserve">
+    <value>القطع المتحفية</value>
+  </data>
+  <data name="fromlibrary" xml:space="preserve">
+    <value>من المكتبة الالكترونية</value>
+  </data>
+  <data name="mostseen" xml:space="preserve">
+    <value>الأكــثر مشاهدة</value>
+  </data>
+  <data name="spsub" xml:space="preserve">
+    <value>مــوضوعات مميزة</value>
+  </data>
+  <data name="topmenucss" xml:space="preserve">
+    <value>../css/menuCSS.css</value>
+  </data>
+  <data name="articlNav" xml:space="preserve">
+    <value>&amp;raquo; المقالات</value>
+  </data>
+  <data name="artifactsNav" xml:space="preserve">
+    <value>&amp;raquo; القطع المتحفية</value>
+  </data>
+  <data name="audiosNav" xml:space="preserve">
+    <value>&amp;raquo; التسجيلات الإذاعية</value>
+  </data>
+  <data name="bookNav" xml:space="preserve">
+    <value>&amp;raquo; الكتب الإلكترونية</value>
+  </data>
+  <data name="charactersNav" xml:space="preserve">
+    <value>&amp;raquo; الشخصيات</value>
+  </data>
+  <data name="confNav" xml:space="preserve">
+    <value>&amp;raquo; أبحاث فى مؤتمرات</value>
+  </data>
+  <data name="docsNav" xml:space="preserve">
+    <value>&amp;raquo; الوثائق</value>
+  </data>
+  <data name="eventsNav" xml:space="preserve">
+    <value>&amp;raquo; الأحداث والمواقف</value>
+  </data>
+  <data name="glossNav" xml:space="preserve">
+    <value>&amp;raquo; قاموس المصطلحات</value>
+  </data>
+  <data name="imgsNav" xml:space="preserve">
+    <value>&amp;raquo; معرض الصور</value>
+  </data>
+  <data name="manuscriptNav" xml:space="preserve">
+    <value>&amp;raquo; المخطوطات</value>
+  </data>
+  <data name="placeNav" xml:space="preserve">
+    <value>&amp;raquo; الذاكرة المعمارية</value>
+  </data>
+  <data name="theseNav" xml:space="preserve">
+    <value>&amp;raquo; أطروحة</value>
+  </data>
+  <data name="topicsNav" xml:space="preserve">
+    <value>&amp;raquo; الموضوعات</value>
+  </data>
+  <data name="videosNav" xml:space="preserve">
+    <value>&amp;raquo; التسجيلات التليفزيونية</value>
+  </data>
+  <data name="webNav" xml:space="preserve">
+    <value>&amp;raquo; مواقع إلكترونية</value>
+  </data>
+  <data name="title_website" xml:space="preserve">
+    <value>المواقع الإلكترونية</value>
+  </data>
+  <data name="relate_elemnts" xml:space="preserve">
+    <value>عناصر مرتبطة</value>
+  </data>
+  <data name="dlarrow" xml:space="preserve">
+    <value>../images/p.jpg</value>
+  </data>
+  <data name="rev_dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>محتوى متعلق بالشخصية</value>
+  </data>
+  <data name="parts_number" xml:space="preserve">
+    <value>رقم العدد أو الجزء</value>
+  </data>
+  <data name="workingPageNo" xml:space="preserve">
+    <value>أرقام الصفحات التي تشغلها</value>
+  </data>
+  <data name="Edition" xml:space="preserve">
+    <value>الطبعة</value>
+  </data>
+  <data name="Number of folders" xml:space="preserve">
+    <value>عدد المجلدات</value>
+  </data>
+  <data name="Number of parts" xml:space="preserve">
+    <value>عدد الأجزاء</value>
+  </data>
+  <data name="Edition number" xml:space="preserve">
+    <value>رقم الطبعة</value>
+  </data>
+  <data name="Publisher" xml:space="preserve">
+    <value>الناشر</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+  <data name="Name of publisher" xml:space="preserve">
+    <value>اسم الناشر</value>
+  </data>
+  <data name="Numbered in series" xml:space="preserve">
+    <value>رقمه في السلسة </value>
+  </data>
+  <data name="Number of Pages" xml:space="preserve">
+    <value>عدد الصفحات </value>
+  </data>
+  <data name="Thread direct" xml:space="preserve">
+    <value>الموضوع المباشر</value>
+  </data>
+  <data name="No. demand at the source" xml:space="preserve">
+    <value>رقم الطلب في المصدر</value>
+  </data>
+  <data name="ISIN" xml:space="preserve">
+    <value>الترقيم الدولى</value>
+  </data>
+  <data name="Collectibles" xml:space="preserve">
+    <value>من مقتنيات</value>
+  </data>
+  <data name="author_role" xml:space="preserve">
+    <value>دور المؤلف</value>
+  </data>
+  <data name="key_building_place" xml:space="preserve">
+    <value>نوع الأثر أو المبنى أو المكان :</value>
+  </data>
+  <data name="key_Creation_Date" xml:space="preserve">
+    <value>تاريخ الإنشاء :</value>
+  </data>
+  <data name="key_Current_Position" xml:space="preserve">
+    <value>- الوظيفة الحالية :</value>
+  </data>
+  <data name="key_Date_completion" xml:space="preserve">
+    <value>تاريخ الانتهاء من الإنشاء :</value>
+  </data>
+  <data name="key_Guest_name" xml:space="preserve">
+    <value>إسم الضيف :</value>
+  </data>
+  <data name="Key_Latitude" xml:space="preserve">
+    <value>- خط العرض :</value>
+  </data>
+  <data name="key_Latitude_longitude_coordinates" xml:space="preserve">
+    <value>- إحداثيات الطول والعرض :</value>
+  </data>
+  <data name="key_longitude" xml:space="preserve">
+    <value>- خط الطول :</value>
+  </data>
+  <data name="dd" xml:space="preserve">
+    <value>ggg</value>
+  </data>
+  <data name="imgbtn" xml:space="preserve">
+    <value>../img/more1.png</value>
+  </data>
+  <data name="key_Asset_Type" xml:space="preserve">
+    <value>نوع القطعة</value>
+  </data>
+  <data name="key_Color" xml:space="preserve">
+    <value>اللون</value>
+  </data>
+  <data name="key_Date_manufacture_configuration" xml:space="preserve">
+    <value>تاريخ الصنع/التكوين</value>
+  </data>
+  <data name="key_Dimensions" xml:space="preserve">
+    <value>الأبعاد</value>
+  </data>
+  <data name="Key_Display" xml:space="preserve">
+    <value>العرض</value>
+  </data>
+  <data name="key_Distance" xml:space="preserve">
+    <value>القطر</value>
+  </data>
+  <data name="key_eat_museum" xml:space="preserve">
+    <value>العصر الذي تتناوله/ ترتبط به القطعة المتحفية</value>
+  </data>
+  <data name="key_Hull_Material" xml:space="preserve">
+    <value>مادة الصنع</value>
+  </data>
+  <data name="Key_Length" xml:space="preserve">
+    <value>الطول</value>
+  </data>
+  <data name="key_Ocean" xml:space="preserve">
+    <value>المحيط</value>
+  </data>
+  <data name="key_Rise" xml:space="preserve">
+    <value>الارتفاع</value>
+  </data>
+  <data name="key_technique" xml:space="preserve">
+    <value>الأسلوب الفني</value>
+  </data>
+  <data name="Key_Video_museum" xml:space="preserve">
+    <value>فيديو للقطعة المتحفية </value>
+  </data>
+  <data name="key_Weight" xml:space="preserve">
+    <value>الوزن</value>
+  </data>
+  <data name="check_data" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>تاريخ النهاية </value>
+  </data>
+  <data name="Event_date" xml:space="preserve">
+    <value>تاريخ الحدث :</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>تاريخ البداية</value>
+  </data>
+  <data name="Date_kind1" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="Date_kind2" xml:space="preserve">
+    <value>هـ</value>
+  </data>
+  <data name="code" xml:space="preserve">
+    <value>م</value>
+  </data>
+  <data name="conference_auther" xml:space="preserve">
+    <value>المؤلف</value>
+  </data>
+  <data name="conference_auther_name" xml:space="preserve">
+    <value>اسم المؤلف</value>
+  </data>
+  <data name="conference_auther_role" xml:space="preserve">
+    <value>دور المؤلف</value>
+  </data>
+  <data name="conference_Date_of_session" xml:space="preserve">
+    <value>تاريخ الانعقاد</value>
+  </data>
+  <data name="conference_Language" xml:space="preserve">
+    <value> لغة البحث</value>
+  </data>
+  <data name="Page_number_from" xml:space="preserve">
+    <value>أرقام الصفحات التي تشغلها من</value>
+  </data>
+  <data name="Age_Image_belongs" xml:space="preserve">
+    <value>العصر الذي تنتمي إليه الصورة</value>
+  </data>
+  <data name="Date_photography_graphic" xml:space="preserve">
+    <value>تاريخ التصوير/الرسم</value>
+  </data>
+  <data name="Image_description" xml:space="preserve">
+    <value>وصف الصورة</value>
+  </data>
+  <data name="Age_belongs_photo" xml:space="preserve">
+    <value>العصر الذي تنتمي إليه الصورة:</value>
+  </data>
+  <data name="Hijra_Image_date" xml:space="preserve">
+    <value>تاريخ الصورة الهجرى:</value>
+  </data>
+  <data name="Image_dateAD" xml:space="preserve">
+    <value>تاريخ الصورة الميلادى:</value>
+  </data>
+  <data name="Image_notes" xml:space="preserve">
+    <value>ملاحظات </value>
+  </data>
+  <data name="Image_Type" xml:space="preserve">
+    <value>نوع الصورة:</value>
+  </data>
+  <data name="Notes_on_age" xml:space="preserve">
+    <value>ملاحظات على العصر </value>
+  </data>
+  <data name="Photographer" xml:space="preserve">
+    <value>المصور :</value>
+  </data>
+  <data name="Photo_Album" xml:space="preserve">
+    <value>ألبوم الصور</value>
+  </data>
+  <data name="Source_destination_Copyright" xml:space="preserve">
+    <value>المصدر/ جهة حقوق النشر:</value>
+  </data>
+  <data name="key_date1" xml:space="preserve">
+    <value>هجرى</value>
+  </data>
+  <data name="key_date2" xml:space="preserve">
+    <value>ميلادى</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>المنشئ </value>
+  </data>
+  <data name="Another_title" xml:space="preserve">
+    <value>عنوان وثيقة أخر</value>
+  </data>
+  <data name="Doc_w_total" xml:space="preserve">
+    <value>الوثيقة ضمن مجموع</value>
+  </data>
+  <data name="hegri" xml:space="preserve">
+    <value>سنة النشر هـ</value>
+  </data>
+  <data name="Acquisitions" xml:space="preserve">
+    <value>التملكات</value>
+  </data>
+  <data name="Endowments" xml:space="preserve">
+    <value>التوقيفات</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="The date of acquisition" xml:space="preserve">
+    <value>تاريخ التملك</value>
+  </data>
+  <data name="The date of Endowments" xml:space="preserve">
+    <value>تاريخ الوقف</value>
+  </data>
+  <data name="key_alignParg" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="key_Differentalign" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="subTitle_align" xml:space="preserve">
+    <value>float:right</value>
+  </data>
+  <data name="keyimg_back" xml:space="preserve">
+    <value>../img/backCell.jpg</value>
+  </data>
+  <data name="align_oppsite" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="dir_oppsite" xml:space="preserve">
+    <value>rtl</value>
+  </data>
+  <data name="Lbl_book_Publication_year_h" xml:space="preserve">
+    <value>سنة النشر هجرى</value>
+  </data>
+  <data name="Lbl_book_Publication_year_m" xml:space="preserve">
+    <value>سنة النشر ميلادى</value>
+  </data>
+  <data name="srsh" xml:space="preserve">
+    <value>بحـث</value>
+  </data>
+  <data name="srshbg" xml:space="preserve">
+    <value>width: 192px; height: 26px;  background-image: url('../img/search.jpg');
+                            background-repeat: no-repeat; float: right; padding-top: 2px; cursor: hand;text-align: right;vertical-align: middle;</value>
+  </data>
+  <data name="btnsrshbg" xml:space="preserve">
+    <value>text-decoration: none; vertical-align: bottom;
+                                width: 70px; height: 25px; background-color: #484137; float: left</value>
+  </data>
+  <data name="privacypolicy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="rights1" xml:space="preserve">
+    <value>جميع الحقوق محفوظة للأزهر</value>
+  </data>
+  <data name="rights2" xml:space="preserve">
+    <value>تم التطوير بواسطة وزارة الاتصالات وتكنولوجيا المعلومات</value>
+  </data>
+  <data name="tbldir" xml:space="preserve">
+    <value>direction: ltr;</value>
+  </data>
+  <data name="terms" xml:space="preserve">
+    <value>شروط الاستخدام</value>
+  </data>
+  <data name="txtsrshbg" xml:space="preserve">
+    <value>background-color:#8C9AA3;border-style:None;height:18px;width: 160px;margin-right: 2px;</value>
+  </data>
+  <data name="rwmat" xml:space="preserve">
+    <value>المادة الخام</value>
+  </data>
+  <data name="rwmatuse" xml:space="preserve">
+    <value>موضع استخدام المادة الخام</value>
+  </data>
+  <data name="co_org_details" xml:space="preserve">
+    <value>مركز التوثيق الحضارى ، الازهر الشريف ، وزارة الاتصالات وتكنولوجيا المعلومات </value>
+  </data>
+  <data name="Q&amp;A_details" xml:space="preserve">
+    <value>محتوى الأسئلة والأجوبة</value>
+  </data>
+  <data name="banner" xml:space="preserve">
+    <value>../images/banner.gif</value>
+  </data>
+  <data name="img_gawla" xml:space="preserve">
+    <value>../img/gawla_img.jpg</value>
+  </data>
+  <data name="img_qeta3" xml:space="preserve">
+    <value>../img/qeta3.jpg</value>
+  </data>
+  <data name="img_subject" xml:space="preserve">
+    <value>../img/sub.jpg</value>
+  </data>
+  <data name="img_zakera" xml:space="preserve">
+    <value>../img/zakera.png</value>
+  </data>
+  <data name="title_other" xml:space="preserve">
+    <value>أعلام أخرى</value>
+  </data>
+  <data name="pgstitle" xml:space="preserve">
+    <value>ذاكرة الأزهر</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>البريد الاليكترونى</value>
+  </data>
+</root>

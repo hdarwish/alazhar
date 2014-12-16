@@ -1,0 +1,104 @@
+div.TabView div.Tabs
+{
+  overflow: hidden;
+ 
+ }
+div.TabView div.Tabs a
+{
+	float: right;
+	text-align: center;
+	padding-top: 3px;
+	vertical-align: middle;
+	border-top: 1px solid #CAAE7E;
+	border-left: 1px solid #CAAE7E;
+	border-right: 1px solid #CAAE7E;
+	text-decoration: none;
+	font-family: tahoma;
+	font-weight: 900;
+	color: #52442e;
+	background-color:#DCCCA8;
+	font-size:11px;
+	font-weight:bold;
+	height:20px;
+	padding-top:5px;
+
+
+}
+div.TabView div.link
+{
+  overflow: hidden;
+ 
+ }
+div.TabView div.link a.Active
+{
+	float: right;
+	text-align: center;
+	padding-top: 3px;
+	vertical-align: middle;
+	
+	text-decoration: none;
+	font-family: tahoma;
+	font-weight: 900;
+	color: #53442D;
+	background-color:#DCCCA8;
+	font-size:5pt;
+
+
+
+}
+div.TabView div.link a a:hover, div.TabView div.link a.Active
+{
+background-color: #F2EDDA;
+color:#B72A21;
+padding-top:1px
+}
+
+
+div.TabView div.Tabs a:hover, div.TabView div.Tabs a.Active
+{
+background-color: #C2A182;
+
+padding-top:5px;
+font-family:Tahoma;
+font-size:12px;
+font-weight:bold;
+color:#ffffff
+}
+
+div.TabView div.Pages
+{
+  clear: both;
+  overflow: hidden;
+  border-bottom:1px #CAAE7E solid;
+  border-left:1px #CAAE7E solid;
+  border-right:1px #CAAE7E solid;
+  border-top:1px #CAAE7E solid;
+}
+
+
+div.TabView div.Pagess
+{
+  clear: both;
+  overflow: hidden;
+}
+div.TabView div.Pages div.Page
+{
+  
+  padding: 0px;
+  overflow: hidden;
+}
+
+
+div.TabView div.Pagess div.Page
+{
+  padding: 0px;
+  overflow: hidden;
+}
+div.TabView div.Pages div.Page div.Pad
+{
+}
+
+div.TabView div.Pagess div.Page div.Pad
+{
+
+}

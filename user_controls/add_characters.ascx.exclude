@@ -1,0 +1,190 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="add_characters.ascx.cs"
+    Inherits="user_controls_add_characters" %>
+<style type="text/css">
+    .style1
+    {
+        width: 189px;
+        text-align: right;
+        direction: rtl;
+    }
+    .style2
+    {
+        width: 171px;
+        text-align: right;
+        direction: rtl;
+    }
+</style>
+<table dir="rtl" cellpadding="0px" cellspacing="7px" align="right">
+    <tr align="center ">
+        <td  colspan="3" align="center">
+            <asp:Label ID="lblerror" Visible="false" runat="server" Text="Label"></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td  colspan="3">
+            <asp:Label ID="Label2" runat="server" Text="الشخصيات"></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label3" runat="server" Text="الرقم الكودي"></asp:Label>
+        </td>
+        <td colspan="2" >
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label4" runat="server" Text=" عنصر مميز"></asp:Label>
+        </td>
+        <td align="right">
+            <asp:CheckBox ID="chk_highlight" runat="server" Text="علي الموقع" />
+            <td align="right">
+                <asp:CheckBox ID="chk_pano" runat="server" Text="علي بانوراما التراث" />
+            </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label5" runat="server" Text="نوع الشخصية"></asp:Label>
+        </td>
+        <td colspan="2" >
+            <asp:CheckBoxList ID="chk_char_type" runat="server" RepeatDirection="Horizontal"
+                RepeatLayout="Flow" CellSpacing="25">
+            </asp:CheckBoxList>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label6" runat="server" Text="اسم الشهرة"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_other_name" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label7" runat="server" Text="الاسم الكامل"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_name" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td  align="right">
+            <asp:Label ID="Label8" runat="server" Text=" ألقاب"></asp:Label>
+        </td>
+        <td colspan="2" align="right">
+            <asp:TextBox ID="txt_titles" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label9" runat="server" Text=" تاريخ الميلاد"></asp:Label>
+        </td>
+        <td colspan="1" dir="rtl">
+            <asp:TextBox ID="txt_hbirth_date" runat="server"></asp:TextBox>
+            <asp:Label ID="Label11" runat="server" Text="هـ"></asp:Label>
+        </td>
+        <td align="right">
+            <asp:TextBox ID="txt_birth_date" runat="server"></asp:TextBox>
+            <asp:Label ID="Label12" runat="server" Text="م"></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label10" runat="server" Text="تاريخ الوفاة"></asp:Label>
+        </td>
+        <td align="right">
+            <asp:TextBox ID="txt_hdeath_date" runat="server"></asp:TextBox>
+            <asp:Label ID="Label1" runat="server" Text="هـ"></asp:Label>
+        </td>
+        <td>
+            <asp:TextBox ID="txt_death_date" runat="server"></asp:TextBox>
+            <asp:Label ID="Label13" runat="server" Text="م"></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label14" runat="server" Text="نبذه عن الشخصية"></asp:Label>
+        </td>
+        <td colspan="2" align="right">
+            <asp:TextBox ID="txt_char_details" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label15" runat="server" Text="المولد والنشأه"></asp:Label>
+        </td>
+        <td colspan="2" align="right">
+            <asp:TextBox ID="txt_birth_details" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label16" runat="server" Text="الحياة العلمية والثقافية"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_scientific_life" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label17" runat="server" Text="الوظائف التي تولتها"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_working_life" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label18" runat="server" Text="أهم الانشطة الاجتماعية والسياسية"></asp:Label>
+        </td>
+        <td colspan="2" align="right">
+            <asp:TextBox ID="txt_activities" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label19" runat="server" Text="ملامح التكريم"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_awesma" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label20" runat="server" Text="أهم الإنجازات"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_achiev" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label21" runat="server" Text="قالوا عن الشخصية"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            <asp:TextBox ID="txt_written_about" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label22" runat="server" Text="ملاحظات"></asp:Label>
+        </td>
+        <td colspan="2" align="right">
+            <asp:TextBox ID="txt_notes" runat="server" Height="52px" Width="292px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <asp:Label ID="Label23" runat="server" Text="كلمات الدالة"></asp:Label>
+        </td>
+        <td colspan="2" align="right">
+            <asp:TextBox ID="txt_keywords" runat="server" Height="22px" Width="292px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <asp:Button ID="Button1" runat="server" Text="حفظ" OnClick="Button1_Click" />
+    </tr>
+</table>

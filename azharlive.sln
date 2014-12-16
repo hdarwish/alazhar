@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "azharlive", "..\azharlive", "{AE8AF362-D299-4A8F-BA38-7B2A13D6D644}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/azharlive", LYYEAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/azharlive"
+		Debug.AspNetCompiler.PhysicalPath = "..\azharlive\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\azharlive\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/azharlive"
+		Release.AspNetCompiler.PhysicalPath = "..\azharlive\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\azharlive\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53982"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccWebProject0 = true
+		SccProjectUniqueName0 = .
+		SccProjectName0 = \u0022$/azharlive\u0022,\u0020LYYEAAAA
+		SccLocalPath0 = G:\\WorkShop_VSS\\azharlive
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice0 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE8AF362-D299-4A8F-BA38-7B2A13D6D644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8AF362-D299-4A8F-BA38-7B2A13D6D644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

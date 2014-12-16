@@ -1,0 +1,27 @@
+﻿Main element .div2
+{
+ width: 42px;  
+ height: 15px;  
+ float: right; 
+ background-color: #CBB383;
+ font-family: tahoma; 
+ font-size: 10px;
+  color: #FFF;
+  margin-top: -2px;
+}  
+
+Main element back div.title
+{
+ width: 235px;  
+ height: 68px;  
+ float: right; 
+ background-color: #E9DFC6;
+ font-family: tahoma; 
+ font-size: 10px;
+  margin-top: -2px;
+ border-top:#9C8661 dotted 2px;
+ margin-right:8px;
+ border-top: #9C8661 dotted 2px;
+ border-right: #9C8661 dotted 2px;
+
+}  

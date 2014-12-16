@@ -1,0 +1,232 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="website_template.ascx.cs" Inherits="user_controls_website_template" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:HiddenField id="content_id" Visible="false" runat="server"/>
+<asp:HiddenField id="content_type" Visible="false" runat="server"/>
+<table id="tblWebsite" style="width:700px" border="0" cellspacing="5" runat="server" dir='<%$Resources:Master, dir%>' > 
+ 
+    <tr>
+    <td colspan="2" align="center" height="60px">
+         <asp:Label ID="Label25" runat="server" Text=" استمارة بيانات موقع إلكترونى " ForeColor="Black" Font-Bold="true" Font-Size="16px"></asp:Label>
+    </td>
+    <td> <a href="#" runat="server" id="id_href" target="_blank" visible="false">
+        عرض الاستمارة
+        </a></td>
+   </tr>
+    <tr runat="server" id="trTitle">
+    <td width="100px" valign="top">
+         <asp:Label ID="lbl2" runat="server" Text="عنوان الموقع : "></asp:Label>
+    </td>
+    <td align="right" dir="rtl" valign="top">
+        
+        <asp:Label ID="txtTitle" runat="server" Width="300px" Height="26px" ></asp:Label>
+        
+    </td>
+    <td width="150px" align="right" valign="top">
+       
+    </td>
+   </tr>
+    <tr style="height: 36px" runat="server" id="trHighlight" dir='<%$Resources:Master, dir%>' align='<%$Resources:Master, align%>'>
+    
+    <td id="Td1" width="100px" valign="top" runat="server" dir='<%$Resources:Master, dir%>' align='<%$Resources:Master, align%>'>
+         <asp:Label ID="lblHighlight" runat="server" Text='<%$Resources:Master, lblHighlight%>' Font-Bold="True"></asp:Label>
+    </td>
+
+    <td id="Td2" valign="top" runat="server" dir='<%$Resources:Master, dir%>' align='<%$Resources:Master, align%>'>
+       <asp:CheckBox ID="chk_highlight" runat="server" Text="علي الموقع" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:CheckBox ID="chk_pano" runat="server" Text="علي بانوراما التراث" />
+    </td>
+    
+    <td>
+    
+    </td>
+   </tr>
+  
+   
+    <tr runat="server" id="trDesc">
+         <td width="100px" valign="top">
+            <asp:Label ID="lbl4" runat="server" Text="وصف الصفحة : "></asp:Label>
+         </td>
+         <td>
+            <asp:TextBox ID="txtDesc" runat="server" Width="450px"  TextMode="MultiLine" 
+                 Height="60px"></asp:TextBox>
+         </td>
+         <td align="right" dir="rtl" valign="top">
+        
+    </td>
+    </tr>
+    <tr runat="server" id="trName">
+        <td dir="rtl" width="130px">
+            <asp:Label ID="lbl5" runat="server" Text="اسم المسئول الفكري (مؤلف/هيئة) : "></asp:Label>
+        </td>
+        <td>
+                <asp:TextBox ID="txtName" runat="server" Width="450px" Height="26px" ></asp:TextBox>
+    
+        </td>
+        <td>
+        
+    </td>
+    </tr>
+     <tr runat="server" id="trSiteLang">
+    <td width="100px" valign="top">
+         <asp:Label ID="lbl3" runat="server" Text="لغة الموقع : "></asp:Label>
+    </td>
+    <td align="right">
+        <asp:RadioButtonList ID="RblLangType" runat="server" RepeatColumns="4" 
+            RepeatDirection="Horizontal" Width="450px" DataTextField="title_ar" DataValueField="id">
+           
+        </asp:RadioButtonList>
+    </td>
+    <td>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+            ErrorMessage="يجب اختيار لغة الموقع"  ControlToValidate="RblLangType" ValidationGroup="page"
+                Font-Size="14px" ></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+   
+    <tr runat="server" id="trurl">
+        <td dir="rtl" width="100px">
+            <asp:Label ID="Label3" runat="server" Text="العنوان الإلكتروني (URL) : "></asp:Label>
+        </td>
+        <td align="right">
+            <asp:TextBox ID="txtUrl" runat="server" Width="450px" Height="26px" 
+                 ></asp:TextBox>
+        </td>
+        <td>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ControlToValidate="txtUrl" ValidationGroup="page"
+                Font-Size="14px"></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+   
+  
+    <tr runat="server" id="trDate">
+       <td dir="rtl" width="100px" >
+            <asp:Label ID="Label5" runat="server" Text="تاريخ الدخول على الموقع : "></asp:Label>
+        </td>
+        <td align="right">
+  
+              <asp:TextBox ID="txtDate" runat="server"  Height="20px"
+                   Width="80px" />
+                
+                    <cc1:FilteredTextBoxExtender ID="FilteredtxtGorgDate" runat="server" FilterType="Custom"
+                    TargetControlID="txtDate" ValidChars="0123456789/\"></cc1:FilteredTextBoxExtender>
+                   
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ControlToValidate="txtDate" ValidationGroup="page"
+                Font-Size="14px"></asp:RequiredFieldValidator>
+                  
+          
+           
+        
+        </td>
+        <td>
+        
+    </td>
+    </tr>
+   <tr runat="server" id="trLinkWords">
+        <td dir="rtl" width="120px" class="style1" rowspan="1" valign="top">
+            <asp:Label ID="Label16" runat="server" Text="الكلمات الدالة  : "></asp:Label>
+        </td>
+         <td>
+            <asp:TextBox ID="txtLinkWords" runat="server" Width="335px"  
+                 TextMode="MultiLine" Height="60px"></asp:TextBox>
+            <asp:Label ID="lblDeclaration" runat="server" 
+                 Text="* يرجى إدخال الكلمات الدالة مفصولة برمز (#) فيما بينها كما بالمثال التالى كلمة دالة 1 # كلمة دالة 2" 
+                 Font-Size="12px" ForeColor="Red" Width="100px" ></asp:Label>
+         </td>
+         <td align="right" dir="rtl" valign="top">
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ControlToValidate="txtLinkWords" ValidationGroup="page"
+                 Font-Size="14px"></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+    <tr runat="server" id="trNotes">
+         <td dir="rtl" width="135px" class="style1" rowspan="1" valign="top">
+            <asp:Label ID="Label15" runat="server" Text="ملاحظات  : "></asp:Label>
+        </td>
+        <td align="right">
+            <asp:TextBox ID="txtNotes" runat="server" Width="450px"  TextMode="MultiLine" 
+                Height="60px"></asp:TextBox>
+         </td>
+         <td>
+         
+    </td>
+    </tr>
+   
+    
+  
+    <tr runat="server" id="trFormDataCollectorName">
+         <td dir="rtl" rowspan="1" valign="top" colspan="2" align="right">
+            <asp:Label ID="Label20" runat="server" Text="اسم جامع بيانات الاستمارة  : " 
+                 Width="150px" Height="26px"></asp:Label>
+             <asp:TextBox ID="txtFormDataColectorName" runat="server"  
+                   Width="270px" Height="26px"  />
+        </td>
+        <td>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ValidationGroup="page"
+                ControlToValidate="txtFormDataColectorName" Font-Size="14px"></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+    <tr runat="server" id="trFormDataRevisionName">
+         <td dir="rtl" rowspan="1" valign="top" colspan="2" align="right">
+            <asp:Label ID="Label21" runat="server" Text="اسم مراجع بيانات الاستمارة  : " 
+                 Width="155px" Height="26px"></asp:Label>
+             <asp:TextBox ID="txtFormDataRevisionName" runat="server"  
+                   Width="270px" Height="26px"  />
+        </td>
+        <td>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ValidationGroup="page"
+                ControlToValidate="txtFormDataRevisionName" Font-Size="14px"></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+    <tr runat="server" id="trFormDataEntryName">
+         <td dir="rtl" rowspan="1" valign="top" colspan="2" align="right">
+            <asp:Label ID="Label22" runat="server" Text="اسم مدخل بيانات الاستمارة على الحاسب الآلي  : " 
+                 Width="245px" Height="26px"></asp:Label>
+             <asp:TextBox ID="txtFormDataEntryName" runat="server"  
+                   Width="270px" Height="26px"  />
+        </td>
+        <td>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ControlToValidate="txtFormDataEntryName" ValidationGroup="page"
+                Font-Size="14px"></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+    <tr runat="server" id="trFormDataEntryRevisionName">
+         <td dir="rtl" rowspan="1" valign="top" colspan="2" align="right">
+            <asp:Label ID="Label23" runat="server" Text="اسم مراجع إدخال بيانات الاستمارة على الحاسب الآلي  : " 
+                 Width="280px" Height="26px"></asp:Label>
+             <asp:TextBox ID="txtFormDataEntryRevisionName" runat="server"  
+                   Width="270px" Height="26px"  />
+        </td>
+        <td>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" 
+            ErrorMessage="هذا الحقل يجب إدخاله" ValidationGroup="page"
+                ControlToValidate="txtFormDataEntryRevisionName" Font-Size="14px"></asp:RequiredFieldValidator>
+    </td>
+    </tr>
+    <tr runat="server" id="file_tr">
+        <td dir="rtl"  rowspan="1" valign="top" align="right">
+            <asp:Label ID="Label27" runat="server" Text="تحميل الملف :"></asp:Label>
+        </td>
+        <td dir="rtl"  rowspan="1" valign="top" align="right">
+            <asp:FileUpload ID="uploadfile" runat="server" Width="350px" />
+        &nbsp;
+      
+        </td>
+        <td>
+            <asp:Label ID="labfile" runat="server" Text="Label" Visible="False" Font-Size="14px" ForeColor="Red"></asp:Label>
+            
+        </td>
+    </tr>
+    <tr runat="server" id="trSave">
+        <td align="center" colspan="3" height="60px" valign="middle">
+            <asp:Button ID="btnsave" runat="server" Text="حفظ بيانات" ValidationGroup="page"
+                onclick="btnsave_Click" />
+        </td>
+       
+    </tr>
+</table>

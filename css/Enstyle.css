@@ -1,0 +1,44 @@
+﻿body {
+}
+
+
+.headerTitle
+{
+	font-family:wisoftpro;
+	color:#9d080d;
+	font-size:30px;
+	background-color:#e1e1e1;
+	padding: 5px 5px 5px 5px;
+}
+
+.topMenu
+{
+	font-family:winsoftpro;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+}
+
+.topMenu a
+{
+	font-family:winsoftpro;
+	color:#ffffff;
+	font-size:17px;
+	text-decoration:none;
+}
+
+.topMenu2 a
+{
+	font-family:Traditional Arabic;
+	color:#fee332;
+	font-size:24px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+p
+{
+	font-family:arial;
+	color:#000000;
+	font-size:14px;
+}

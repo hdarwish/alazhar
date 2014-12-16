@@ -1,0 +1,762 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.Data.SqlClient;
+
+public partial class masterpage_add_books : System.Web.UI.UserControl
+{
+    documents_DT docobj = new documents_DT();
+    documents_details_DT docdetails = new documents_details_DT();
+
+     
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+
+        }
+
+        if (content_type.Value == "10")
+        {
+            if (content_id.Value != "")
+            {
+                getData();
+                fillcontrol();
+                filldrop_lang();
+                filldrop_type();
+                fillcheck_periods();
+                filldrop_author();
+                filldrop_author_type();
+                filldrop_char();
+                filldrop_role();
+                FillGrid();
+                invisible();
+                visible();
+            }
+            if (Session["user_type"].ToString() == "4" && Request.QueryString["operation"].ToString() == "wrong")
+            {
+                Button2.Visible = false;
+                uploadfile.Enabled = false;
+                Dimmed();
+                Enabled();
+            }
+            if (Session["user_type"].ToString() == "5")
+            {
+                //drop_char.Enabled = false;
+                //drop_author.Enabled = false;
+                //drop_role.Enabled = false;
+                //drop_type.Enabled = false;
+                TextBox1.ReadOnly = true;
+                Button1.Visible = false;
+                Button2.Visible = false;
+                uploadfile.Enabled = false;
+                Dimmed();
+                 
+
+            }
+
+        }
+    }
+
+
+    private void getData()
+    {
+        docobj = documents_DB.SelectByID(CDataConverter.ConvertToInt(content_id.Value));
+        docdetails = documents_details_DB.SelectByID(CDataConverter.ConvertToInt(content_id.Value),menus_update.get_current_lang());
+
+
+    }
+    private void filldrop_lang()
+    {
+        languages_DT obj = new languages_DT();
+        DataTable lang_dt = languages_DB.SelectAll();
+        drop_lang.DataSource = lang_dt;
+        drop_lang.DataBind();
+        ListItem litem = new ListItem("-- اختر اللغة --", "0");
+        drop_lang.Items.Insert(0, litem);
+
+        if (docdetails.doc_lang != "")
+        {
+            if (docdetails.doc_lang != null)
+            {
+                string id = docdetails.doc_lang;
+                drop_lang.Items.FindByText(id).Selected = true;
+            }
+        }
+        else
+        {
+
+            litem.Selected = true;
+
+        }
+
+
+    }
+    private void filldrop_type()
+    {
+        DataTable dt = author_type_DB.SelectAll();
+        drop_type.DataSource = dt;
+        drop_type.DataBind();
+        if (docdetails.title_type_id > 0)
+        {
+            ListItem litem = new ListItem("-- اختر نوع العنوان --", "0");
+            drop_type.Items.Insert(0, litem);
+            string id = docdetails.title_type_id.ToString();
+            drop_type.Items.FindByValue(id).Selected = true;
+        }
+        else
+        {
+            ListItem litem = new ListItem("-- اختر نوع العنوان --", "0");
+            litem.Selected = true;
+            drop_type.Items.Insert(0, litem);
+        }
+    }
+    private void filldrop_author()
+    {
+        DataTable dt = authors_details_DB.SelectAll();
+        drop_author.DataSource = dt;
+        drop_author.DataBind();
+        ListItem litem = new ListItem("-- اختر اسم المؤلف --", "0");
+        litem.Selected = true;
+        drop_author.Items.Insert(0, litem);
+
+
+
+    }
+    private void filldrop_char()
+    {
+        DataTable dt = characters_details_DB.SelectBylang_ID(menus_update.get_current_lang());
+        drop_char.DataSource = dt;
+        drop_char.DataBind();
+        ListItem litem = new ListItem("--  اختر اسم المؤلف من الشخصيات  --", "0");
+        litem.Selected = true;
+        drop_char.Items.Insert(0, litem);
+    }
+    private void filldrop_role()
+    {
+        DataTable dt = authors_role_DB.SelectAll();
+        drop_role.DataSource = dt;
+        drop_role.DataBind();
+        ListItem litem = new ListItem("-- اختر دور المؤلف--", "0");
+        litem.Selected = true;
+        drop_role.Items.Insert(0, litem);
+    }
+    private void filldrop_author_type()
+    {
+        DataTable dt = author_type_DB.SelectAll();
+        drop_author_type.DataSource = dt;
+        drop_author_type.DataBind();
+        ListItem litem = new ListItem("-- اختر نوع اسم المؤلف--", "0");
+        litem.Selected = true;
+        drop_author_type.Items.Insert(0, litem);
+    }
+    private void fillcheck_periods()
+    {
+        periods_DT obj = new periods_DT();
+        DataTable per_dt = periods_DB.SelectAll();
+        chk_periods.DataSource = per_dt;
+        chk_periods.DataBind();
+
+
+    }
+    public void test()
+    {
+        //string name = this.NamingContainer.ToString();
+        // Class1 clss = new Class1();
+        // clss.Dimmed(books);
+    }
+    public void Dimmed()
+    {
+        //Class1 clss = new Class1();
+        //clss.Dimmed();
+        foreach (System.Web.UI.HtmlControls.HtmlTableRow r in tblbook.Rows)
+        {
+            foreach (Control ctr in r.Cells)
+            {
+
+                foreach (Control control in ctr.Controls)
+                {
+                    // foreach (Control childc in control.Controls )
+                    //{
+                    //    if (childc is TextBox)
+                    //    {
+                    // foreach(Control c2 in control.Controls)
+                    //{
+
+                    if (control.GetType().ToString() == "System.Web.UI.WebControls.TextBox")
+                    {
+
+                        ((TextBox)control).ReadOnly = true;
+                    }
+
+                    else if (control.GetType().ToString() == "System.Web.UI.WebControls.CheckBox")
+                    {
+
+                        ((CheckBox)control).Enabled = false;
+                    }
+
+                    else if (control.GetType().ToString() == "System.Web.UI.WebControls.DropDownList")
+                    {
+
+                        ((DropDownList)control).Enabled = false;
+                    }
+
+
+                    else if (control.GetType().ToString() == "System.Web.UI.WebControls.RadioButtonList")
+                    {
+
+                        ((RadioButtonList)control).Enabled = false;
+                    }
+                    else if (control.GetType().ToString() == "System.Web.UI.WebControls.CheckBoxList")
+                    {
+
+                        ((CheckBoxList)control).Enabled = false;
+                    }
+                    if (control.GetType().ToString() == "System.Web.UI.WebControls.FileUpload")
+                    {
+
+                        ((FileUpload)control).Enabled = false;
+                    }
+                }
+            }
+
+        }
+    }
+    public void Enabled()
+    {
+        if (Session["user_type"] != null && Session["user_type"].ToString() == "4")
+        {
+            if (Request.QueryString["operation"].ToString() == "wrong")
+            {
+
+                SqlParameter[] sqlParamse = new SqlParameter[] {new SqlParameter ("@content_type",CDataConverter.ConvertToInt(content_type.Value)),
+              new SqlParameter("@content_id",CDataConverter.ConvertToInt(content_id.Value))};
+
+                DataTable cont_fields = DatabaseFunctions.SelectData(sqlParamse, "contents_notes_fields_enabled");
+                int i = cont_fields.Rows.Count;
+
+                for (int x = 0; x < i; x++)
+                {
+                    string id = "";
+                    if (cont_fields.Rows[x]["type"].ToString() == "TextBox")
+                    {
+                        //string id = Page.FindControl(cont_fields.Rows[x]["control_name"].ToString());
+                        id = cont_fields.Rows[x]["control_name"].ToString();
+                        TextBox txtbox = (TextBox)this.FindControl(id);
+                        txtbox.ReadOnly = false;
+                        txtbox.ForeColor = System.Drawing.Color.Red;
+
+                    }
+                    if (cont_fields.Rows[x]["type"].ToString() == "RadioButtonList")
+                    {
+                        id = cont_fields.Rows[x]["control_name"].ToString();
+                        RadioButtonList rad = (RadioButtonList)this.FindControl(id);
+                        rad.Enabled = true;
+                        rad.ForeColor = System.Drawing.Color.Red;
+                    }
+                    if (cont_fields.Rows[x]["type"].ToString() == "CheckBox")
+                    {
+                        id = cont_fields.Rows[x]["control_name"].ToString();
+                        CheckBox chbox = (CheckBox)this.FindControl(id);
+                        chbox.Enabled = true;
+                        chbox.ForeColor = System.Drawing.Color.Red;
+                        chbox.Focus();
+
+                    }
+                    if (cont_fields.Rows[x]["type"].ToString() == "Button")
+                    {
+                        id = cont_fields.Rows[x]["control_name"].ToString();
+                        Button btn = (Button)this.FindControl(id);
+                        btn.Visible = true;
+                        btn.ForeColor = System.Drawing.Color.Red;
+
+                    }
+                    if (cont_fields.Rows[x]["type"].ToString() == "FileUpload")
+                    {
+                        id = cont_fields.Rows[x]["control_name"].ToString();
+                        FileUpload upfile = (FileUpload)this.FindControl(id);
+                        upfile.Enabled = true;
+                        //btn.ForeColor = System.Drawing.Color.Red;
+
+
+                    }
+
+
+                }
+            }
+        }
+
+    }
+    public void invisible()
+    {
+        if (Session["Lang"] != null && Session["Lang"].ToString() != "ar")
+        {
+            string[] arrv = new string[22];
+            arrv[0] = "trtitle";
+            arrv[1] = "trspecial";
+            arrv[2] = "trtitletype";
+            arrv[3] = "trmoalf";
+            arrv[4] = "trlang";
+            arrv[5] = "trpublisher";
+            arrv[6] = "trdate";
+            arrv[7] = "trseries";
+            arrv[8] = "trnotes";
+            arrv[9] = "trtags";
+            arrv[10] = "trperiods";
+            arrv[11] = "trpicture";
+            arrv[12] = "trcolectorname";
+            arrv[13] = "trrevisionname";
+            arrv[14] = "file_tr";
+            arrv[15] = "trpublishno";
+            arrv[16] = "trfolderno";
+            arrv[17] = "trorg";
+            arrv[18] = "trcity";
+            arrv[19] = "trno";
+            arrv[20] = "trartno";
+            arrv[21] = "trperiods2";
+            
+            for (int i = 0; i< 22; i++)
+            {
+                string x = arrv[i].ToString();
+                HtmlTableRow tr = (HtmlTableRow)this.FindControl(x);
+                if (tr.ID != null)
+                    tr.Visible = false;
+
+
+          }
+        }
+    }
+    public void visible()
+    {
+        if (Session["Lang"] != null && Session["Lang"].ToString() != "ar")
+        {
+            string[] arrv = new string[6];
+            arrv[0] = "trtitle";
+            arrv[1] = "trpublisher";
+            arrv[2] = "trseries";
+            arrv[3] = "trorg";
+            arrv[4] = "trtags";
+            arrv[5] = "trnotes";
+            
+            for (int i = 0; i < 6; i++)
+            {
+                string x = arrv[i].ToString();
+                HtmlTableRow tr = (HtmlTableRow)this.FindControl(x);
+                tr.Visible = true;
+
+            }
+        }
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        save();
+    }
+    protected Boolean vaildfile()
+    {
+        bool vaild = false;
+        if (docobj.form_file == "")
+        {
+            string filename = uploadfile.FileName;
+            if (filename == "")
+            {
+
+                labfile.Visible = true;
+                //labfile.ForeColor = System.Drawing.Color.Red;
+                labfile.Text = "يجب إضافة ملف";
+                vaild = false;
+            }
+
+            else if (filename != "")
+            {
+                String[] FileNameDot = uploadfile.FileName.Split('.');
+                if (FileNameDot.Length == 2)
+                {
+                    int id = CDataConverter.ConvertToInt(content_id.Value);
+                    int cont_type = CDataConverter.ConvertToInt(content_type.Value);
+                    string fileCode = cont_type.ToString() + "_" + id.ToString();
+                    if (FileNameDot[0].ToString() != fileCode)
+                    {
+                        labfile.Visible = true;
+                        labfile.Text = " اسم الملف غير صحيح ";
+                        vaild = false;
+                    }
+                    else
+                    {
+                        saveFileSystem();
+                        vaild = true;
+                    }
+                }
+                else
+                {
+                    labfile.Visible = true;
+                    labfile.Text = " امتداد الملف غير صحيح ";
+                    vaild = false;
+                }
+            }
+        }
+        else { vaild = true; }
+        return vaild;
+    }
+    protected void saveFileSystem()
+    {
+        string savePath = MapPath("~") + "\\images\\esdarat\\";
+
+        string fileName = uploadfile.FileName;
+        savePath += fileName;
+        uploadfile.SaveAs(savePath);
+        docobj.form_file = fileName;
+
+
+    }
+    public void save()
+    { //if (CheckValidate())
+
+        {
+            if (vaildfile())
+            {
+                lblerror.Visible = false;
+                string Filename = "";
+
+                docobj.id = docobj.id;
+                docobj.file_status = docobj.file_status;
+                docobj.form_status = docobj.form_status;
+                docobj.form_lock = docobj.form_lock;
+                docobj.lock_files = docobj.lock_files;
+                docobj.assigned_to = docobj.assigned_to;
+
+                docobj.doc_type = 1;
+
+                if (chk_site.Checked == true)
+                { docobj.highlight = 1; }
+                else docobj.highlight = 0;
+                if (chk_pan.Checked == true)
+                { docobj.highlight_panorama = 1; }
+                else { docobj.highlight_panorama = 0; }
+
+                docobj.folders_no = CDataConverter.ConvertToInt(txt_folder_no.Text);
+                docobj.publish_no = txt_publish_no.Text;
+                docobj.creater_no = txt_createrno.Text;
+                docobj.isbn =
+                docobj.large_image =
+                docobj.small_image = null;
+                publishers_DT doc_objp = new publishers_DT();
+                doc_objp.title_ar = txt_publisher.Text;
+                doc_objp.id = publishers_DB.Save(doc_objp);
+                if (doc_objp.id > 0)
+                { docobj.publisher_id = doc_objp.id; }
+                else docobj.publisher_id = 0;
+                docobj.publish_date = txt_date.Text;
+                docobj.publish_hdate = txt_hdate.Text;
+                docobj.period_id = CDataConverter.ConvertToInt(chk_periods.SelectedValue);
+                docobj.id = documents_DB.Save(docobj);
+
+                /////////////////////////////////////////
+
+                docdetails.id = docdetails.id;
+                docdetails.doc_id = CDataConverter.ConvertToInt(content_id.Value);
+                docdetails.title = txt_title.Text;
+                docdetails.title_type_id = CDataConverter.ConvertToInt(drop_type.SelectedValue);
+                docdetails.save_public_no = txt_genno.Text;
+                docdetails.save_specifics_no = txt_specifno.Text;
+                docdetails.library_no = txt_library.Text;
+                docdetails.organization_save = txt_org.Text;
+                docdetails.city = txt_city.Text;
+                docdetails.country_name = txt_country.Text;
+                docdetails.art_no = txt_art.Text;
+                //rblFormImage.SelectedValue = doc_obj_details.form_pic_state.ToString ();
+                if (CDataConverter.ConvertToInt(drop_lang.SelectedValue) > 0)
+                {
+                    other.Enabled = false;
+                    docdetails.doc_lang = drop_lang.SelectedItem.Text;
+                }
+                else
+                {
+                    other.Enabled = true;
+                    docdetails.other_doc_lang = other.Text;
+                }
+                docdetails.notes = TextBox3.Text;
+                docdetails.series_no = txt_series_no.Text;
+                docdetails.keywords = txt_tags.Text;
+                docdetails.publish_location = txt_plocation.Text;
+                docdetails.brief =
+                 docdetails.direct_subject =
+                 docdetails.docs_type =
+                 docdetails.material_shape =
+                 docdetails.material_type =
+                 docdetails.request_id =
+                 docdetails.series = null;
+                docdetails.title_type_id =
+                docdetails.lang_id = 1;
+                docdetails.data_collector_name = txtFormDataColectorName.Text;
+                docdetails.data_revision_name = txtFormDataRevisionName.Text;
+
+                docdetails.id = documents_details_DB.Save(docdetails);
+                if (docdetails.id > 0)
+                {
+
+                    ShowAlertMessage("لقد تم الحفظ بنجاح");
+                    log(2);
+                }
+                else { ShowAlertMessage("من فضلك اعد المحاولة"); }
+            }
+        }
+
+    }
+    public void fillcontrol()
+    {
+
+        if (docobj.highlight_panorama == 1)
+        { chk_pan.Checked = true; }
+        else chk_pan.Checked = false;
+        if (docobj.highlight == 1)
+        { chk_site.Checked = true; }
+        txt_from.Text = docobj.pages_from.ToString();
+        txt_folder_no.Text = docobj.folders_no.ToString();
+        if (docobj.period_id > 0)
+        { chk_periods.SelectedValue = docobj.period_id.ToString(); }
+        txt_art.Text = docdetails.title;
+        txt_city.Text = docdetails.city;
+        txt_country.Text = docdetails.country_name;
+        txt_specifno.Text = docdetails.save_specifics_no;
+        txt_genno.Text = docdetails.save_public_no;
+        rblFormImage.SelectedValue = docdetails.form_pic_state.ToString();
+        txt_tags.Text = docdetails.keywords;
+        txt_series.Text = docdetails.series_no;
+        other.Text = docdetails.other_doc_lang;
+        txt_plocation.Text = docdetails.publish_location;
+        publishers_DT publisher_dt = new publishers_DT();
+        publisher_dt = publishers_DB.SelectByID(docobj.publisher_id);
+        txt_publisher.Text = publisher_dt.title_ar;
+        txt_title.Text = docdetails.title;
+        txt_date.Text = docobj.publish_date;
+        txt_hdate.Text = docobj.publish_hdate;
+        txt_series_no.Text = docdetails.series_no;
+        txt_publish_no.Text = docobj.publish_no;
+        txt_from.Text = docobj.pages_no.ToString();
+        txt_createrno.Text = docobj.creater_no;
+        txt_org.Text = docdetails.organization_save;
+        txt_specifno.Text = docdetails.save_specifics_no;
+        txt_library.Text = docdetails.library_no;
+        TextBox3.Text = docdetails.notes;
+        rblFormImage.SelectedIndex = CDataConverter.ConvertToInt(docdetails.form_pic_state);
+        id_href.Visible = true;
+        if (docobj.form_file != "")
+        { id_href.HRef = "~/images/esdarat/" + docobj.form_file; }
+        else id_href.Visible = false;
+        txtFormDataColectorName.Text = docdetails.data_collector_name;
+        txtFormDataRevisionName.Text = docdetails.data_revision_name;
+
+    }
+    private bool CheckValidate()
+    {
+        bool isValid = true;
+        if (txt_title.Text == "")
+        {
+            isValid = false;
+            lblerror.Visible = true;
+            lblerror.Text = "يجب ادخال اسم المقالة";
+            goto returnPart;
+        }
+        if (txt_from.Text == "")
+        {
+            isValid = false;
+            lblerror.Visible = true;
+            lblerror.Text = "يجب إدخال عدد الصفحات من / إلي ";
+            goto returnPart;
+        }
+        if (CDataConverter.ConvertToInt(drop_lang.SelectedValue) < 0 && other.Text == "")
+        {
+            isValid = false;
+            lblerror.Visible = true;
+            lblerror.Text = "يجب اختيار اللغة أو كتابة لغة أخري";
+            goto returnPart;
+        }
+        if (txt_title.Text == "")
+        {
+            isValid = false;
+            lblerror.Visible = true;
+            lblerror.Text = "يجب ادخال اسم المقالة";
+            goto returnPart;
+        }
+        if (CDataConverter.ConvertToInt(chk_periods.SelectedValue) < 0)
+        {
+            isValid = false;
+            lblerror.Visible = true;
+            lblerror.Text = "يجب اختيار العصر المرتبط بالمقالة";
+            goto returnPart;
+        }
+        if (txt_tags.Text == "")
+        {
+            isValid = false;
+            lblerror.Visible = true;
+            lblerror.Text = "";
+            goto returnPart;
+        }
+        if (txt_hdate.Text != "")
+        {
+            if (security_issues.check_date(txt_hdate.Text) == false)
+            {
+                isValid = false;
+                lblerror.Visible = true;
+                //lblError2.ForeColor = System.Drawing.Color.Red;
+                lblerror.Text = "(التاريخ الهجري غير صحيح يجب أن يكون( سنة أو (يوم/شهر/سنة)";
+                goto returnPart;
+            }
+
+        }
+        if (txt_date.Text != "")
+        {
+            if (security_issues.check_date(txt_date.Text) == false)
+            {
+                isValid = false;
+                lblerror.Visible = true;
+                //lblError3.ForeColor = System.Drawing.Color.Red;
+                lblerror.Text = "(التاريخ الميلادي غير صحيح يجب أن يكون( سنة أو (يوم/شهر/سنة)";
+                goto returnPart;
+            }
+
+        }
+       
+    returnPart:
+        return isValid;
+
+    }
+    public static void ShowAlertMessage(string error)
+    {
+
+        Page page = HttpContext.Current.Handler as Page;
+        if (page != null)
+        {
+            error = error.Replace("'", "\'");
+            ScriptManager.RegisterStartupScript(page, page.GetType(), "err_msg", "alert('" + error + "');", true);
+        }
+    }
+    public void FillGrid()
+    {
+        SqlParameter[] sqlParams = new SqlParameter[] { new SqlParameter("@doc_id", CDataConverter.ConvertToInt(content_id.Value)),
+            new SqlParameter("@lang_id", menus_update.get_current_lang ()) };
+        DataTable dt = new DataTable();
+        dt = DatabaseFunctions.SelectData(sqlParams, "authorstitle_select");
+        
+        gview_moalf.Visible = true;
+        gview_moalf.DataSource = dt;
+        gview_moalf.DataBind();
+
+    }
+    public void log(int operation_id)
+    {
+        contents_log_DT clog = new contents_log_DT();
+        clog.id = 0;
+        clog.content_type = Convert.ToInt16(content_type.Value);
+        clog.content_id = Convert.ToInt16(content_id.Value);
+        clog.operation_id = operation_id;
+        clog.user_id = Convert.ToInt16(Session["user_id"].ToString());
+        clog.note_date = DateTime.Now.ToShortDateString();
+        int rslut = contents_log_DB.Save(clog);
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+        if (CDataConverter.ConvertToInt(drop_char.SelectedValue) > 0)
+        {
+            docs_authors_DT authors_doc_dt = new docs_authors_DT();
+            authors_doc_dt.doc_id = CDataConverter.ConvertToInt(content_id.Value);
+            authors_doc_dt.author_id = CDataConverter.ConvertToInt(drop_char.SelectedValue);
+            authors_doc_dt.is_character = 1;
+            authors_doc_dt.relation_title_ar = "";
+            authors_doc_dt.author_type_id = CDataConverter.ConvertToInt(drop_type.SelectedValue);
+            authors_doc_dt.role_id = CDataConverter.ConvertToInt(drop_role.SelectedValue);
+            authors_doc_dt.id = docs_authors_DB.Save(authors_doc_dt);
+            id.Value = authors_doc_dt.id.ToString();
+        }
+        if (TextBox1.Text != "")
+        {
+            authors_DT authors_new = new authors_DT();
+            authors_new.id = 0;
+            authors_new.notes = "";
+            authors_new.id = authors_DB.Save(authors_new);
+            authors_details_DT author_details_new = new authors_details_DT();
+            author_details_new.id = 0;
+            author_details_new.author_id = authors_new.id;
+            author_details_new.name = TextBox1.Text;
+            author_details_new.details = null;
+            author_details_new.address = null;
+            author_details_new.title = null;
+            author_details_new.id = authors_details_DB.Save(author_details_new);
+
+            if (author_details_new.id > 0)
+            {
+                docs_authors_DT authors_doc_dt = new docs_authors_DT();
+                authors_doc_dt.id = 0;
+                authors_doc_dt.doc_id = CDataConverter.ConvertToInt(content_id.Value);
+                authors_doc_dt.author_id = author_details_new.author_id;
+                authors_doc_dt.is_character = 0;
+                authors_doc_dt.relation_title_ar = "";
+                authors_doc_dt.author_type_id = CDataConverter.ConvertToInt(drop_type.SelectedValue);
+                authors_doc_dt.role_id = CDataConverter.ConvertToInt(drop_role.SelectedValue);
+                authors_doc_dt.id = docs_authors_DB.Save(authors_doc_dt);
+                id.Value = authors_doc_dt.id.ToString();
+
+            }
+
+        }
+
+        if (CDataConverter.ConvertToInt(drop_author.SelectedValue) > 0)
+        {
+            docs_authors_DT authors_doc_dt = new docs_authors_DT();
+
+            authors_doc_dt.doc_id = CDataConverter.ConvertToInt(content_id.Value);
+            authors_doc_dt.author_id = CDataConverter.ConvertToInt(drop_author.SelectedValue); ;
+            authors_doc_dt.is_character = 0;
+            authors_doc_dt.role_id = CDataConverter.ConvertToInt(drop_role.SelectedValue);
+            authors_doc_dt.author_type_id = CDataConverter.ConvertToInt(drop_type.SelectedValue);
+            authors_doc_dt.relation_title_ar = "";
+            authors_doc_dt.id = docs_authors_DB.Save(authors_doc_dt);
+            id.Value = authors_doc_dt.id.ToString();
+        }
+
+        FillGrid();
+        TextBox1.Text ="";
+
+    }
+    protected void gview_moalf_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        
+    }
+
+    protected void imgDelete_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+    {
+         int id = CDataConverter.ConvertToInt(((ImageButton)sender).CommandArgument);
+         if (id > 0)
+         {
+               docs_authors_DB.Delete(id);
+                FillGrid();
+             
+            
+         }
+    }
+    protected void drop_char_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (drop_char.SelectedValue != "0")
+        { drop_author.Enabled = false; TextBox1.Enabled = false; }
+        else { drop_author.Enabled = true; TextBox1.Enabled = true; }
+        
+
+    }
+    protected void drop_author_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (drop_author.SelectedValue != "0")
+        { drop_char.Enabled = false; TextBox1.Enabled = false; }
+        else { drop_char.Enabled = true; TextBox1.Enabled = true; }
+
+    }
+}

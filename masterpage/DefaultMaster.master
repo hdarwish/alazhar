@@ -1,0 +1,225 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultMaster.master.cs"
+    Inherits="masterpage_HomeMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ذاكرة الأزهر الشريف</title>
+    <link href="../css/CSS.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/StyleSheet.css" rel="stylesheet" type="text/css" />
+    
+
+</head>
+
+<body class="bg">
+    <form id="form2" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div>
+        <center>
+            <div class="container">
+                <div class="top_menu">
+                    <div class="top_menu_left">
+                        <table class="top_menu_left">
+                            <tr>
+                                <td>
+                                    قاموس المصطلحات
+                                </td>
+                                <td>
+                                    <img src="../img/mostl7.jpg" />
+                                </td>
+                                <td>
+                                    <a href="../general/contactus.aspx" class="contactus">اتصل بنا</a>
+                                </td>
+                                <td>
+                                    <img src="../img/call.jpg" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="top_menu_right">
+                        <table>
+                            <tr>
+                                <td style="width: 170px; background-color: #A03225; padding-top: 17px; padding-right: 21px;
+                                    padding-left: 20px; padding-bottom: 10px" runat="server" id="tbl_lang">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <asp:LinkButton ID="LinkButton1" CssClass="lang" runat="server" 
+                                                    ValidationGroup="LangLinks">Francais</asp:LinkButton>
+                                            </td>
+                                            <td style="width: 20px;">
+                                            </td>
+                                            <td>
+                                                <asp:LinkButton ID="LinkButton2" CssClass="lang" runat="server" 
+                                                    ValidationGroup="LangLinks">English</asp:LinkButton>
+                                            </td>
+                                            <td style="width: 21px;">
+                                            </td>
+                                            <td>
+                                                <asp:LinkButton ID="LinkButton3" CssClass="lang" runat="server" 
+                                                    ValidationGroup="LangLinks">عربي</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="_page">
+                    <div class="_page_banner">
+                        <div class="_page_banner_search">
+                            <div style="width: 70px; height: 26px; background-color: #484137; float: left">
+                                <div style="margin-top: 3pt;">
+                                    <a href="#" style="text-decoration: none" class="text_search_btn">بحث متقدم</a></div>
+                            </div>
+                            <div style="width: 192px; height: 26px; background-image: url(../img/search.jpg);
+                                background-repeat: no-repeat; float: right; padding-top: 2px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 15px; float: left; width: 976px;">
+                    </div>
+                    <div class="_page_menu">
+
+                        <script type="text/javascript" src="../menu/stmenu.js"></script>
+
+                        <script type="text/javascript"> 
+<!--
+stm_bm(["menu6bb3",970,"","../menu/blank.gif",0,"","",1,0,250,0,1000,1,0,1,"","",0,0,1,2,"default","hand","",1,25],this);
+stm_bp("p0",[0,4,0,0,0,0,0,0,100,"",-2,"",-2,50,0,0,"#999999","#F5F2E1","",0,0,0,"#000000"]);
+stm_ai("p0i0",[0,"وسائط متعددة","","",-1,-1,0,"1","_self","","","","",0,0,0,"","",0,0,0,1,1,"#F5F2E1",0,"#F5F2E1",0,"../menu/middle.png","../menu/middle_high.png",1,1,0,0,"#E6EFF9","#000000","#000000","#FFFFFF","bold 8pt Tahoma","bold 8pt Tahoma",0,0,"","","","",0,0,0],120,31);
+stm_ai("p0i1",[6,1,"#D6B290","",-1,-1,0]);
+stm_aix("p0i2","p0i0",[0,"خط الزمن","","",-1,-1,0,"2","_self","","","","",0,0,0,"","",0,0,0,1,1,"#E6EFF9",1,"#FFD602",1],120,31);
+stm_aix("p0i3","p0i1",[]);
+stm_aix("p0i4","p0i2",[0,"المكتبة","","",-1,-1,0,"../Esdarat/list_document.aspx"],115,31);
+stm_aix("p0i5","p0i1",[]);
+stm_aix("p0i6","p0i2",[0,"الذاكرة المعمارية","","",-1,-1,0,"4"],125,31);
+stm_aix("p0i7","p0i1",[]);
+stm_aix("p0i8","p0i2",[0,"الشخصيات","","",-1,-1,0,"../sheikhs/Default.aspx"],120,31);
+stm_aix("p0i9","p0i1",[]);
+stm_aix("p0i10","p0i2",[0,"الموضوعات","","",-1,-1,0,"6"],115,31);
+stm_aix("p0i11","p0i1",[]);
+stm_aix("p0i12","p0i2",[0,"الأحداث","","",-1,-1,0,"7"],120,31);
+stm_aix("p0i13","p0i1",[]);
+stm_aix("p0i14","p0i0",[0,"الرئيسية","","",-1,-1,0,"../Default.aspx"],115,31);
+stm_ep();
+stm_em();
+//-->
+                        </script>
+
+                    </div>
+                   <div style="height: 15px; float: left; width: 976px;">
+                    </div>
+                    <div class="_page_body">
+                        <div style="height: auto">
+                            <div align="center">
+                          
+                            
+                            
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+                                
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="_page_body_bottom">
+                            <table width="95%" height="90%" border="0" cellpadding="2" cellspacing="2">
+                                <tr>
+                                    <td>
+                                        <div align="center">
+                                            <a href="#" class="footer_text_dark">سياسة الخصوصية </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div align="center">
+                                            <a href="#" class="footer_text_dark">شروط الاستخدام </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div align="center">
+                                            <a href="#">
+                                                <img src="../img/clutnat_logo.png" width="59" height="32" border="0" /></a></div>
+                                    </td>
+                                    <td>
+                                        <div align="center">
+                                            <a href="#">
+                                                <img src="../img/azhar_mtbaa.png" width="47" height="46" border="0" /></a></div>
+                                    </td>
+                                    <td>
+                                        <div align="center">
+                                            <a href="#">
+                                                <img src="../img/eagle_logo.png" width="31" height="43" border="0" /></a></div>
+                                    </td>
+                                    <td>
+                                        <div align="center">
+                                            <a href="#">
+                                                <img src="../img/azhar_logo.png" width="55" height="55" border="0" /></a></div>
+                                    </td>
+                                    <td>
+                                        <div align="center" class="footer_text_dark">
+                                            جميع الحقوق محفوظة للأزهر 2011
+                                        </div>
+                                        <div align="center" class="footer_text_dark">
+                                            تم التطوير بواسطة وزارة الاتصالات وتكنولوجيا المعلومات
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </center>
+        <div class="footer">
+            <center>
+                <div style="width: 766px;">
+                    <table width="95%" border="0" cellspacing="2" cellpadding="2">
+                        <tr>
+                            <td>
+                                <div class="footer_text">
+                                    <a href="#" class="footer_text">خريطة الموقع </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer_text">
+                                    <a href="#" class="footer_text">أضف إلى المحتوى </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer_text">
+                                    <a href="#" class="footer_text">أسئلةو|أجوبة</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer_text">
+                                    <a href="#" class="footer_text">الجهات المشتركة</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer_text">
+                                    <a href="#" class="footer_text">مواقع مرتبطة </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer_text">
+                                    <a href="#" class="footer_text">عن الموقع</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </center>
+        </div>
+        <%-- <script type="text/javascript">
+                swfobject.registerObject("FlashID");
+        </script>--%>
+    </div>
+    </form>
+</body>
+</html>

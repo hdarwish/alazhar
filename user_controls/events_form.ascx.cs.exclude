@@ -1,0 +1,136 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using Dates;
+using System.Reflection;
+
+public partial class masterpage_Events_Form : System.Web.UI.UserControl
+{
+    //change Convert.ToInt16(object_id.Value) with the actual audio_events id
+    public string FirstName
+    {
+        get { return object_id.Value; }
+        set { object_id.Value = value; }
+    }
+    events_DT events_obj_to_save = new events_DT();
+    events_details_DT events_details_obj_to_save = new events_details_DT();
+    contents_timeline_DT contents_timeline_obj_to_save = new contents_timeline_DT();
+
+    events_DT events_obj_to_select = new events_DT();
+    events_details_DT events_details_obj_to_select = new events_details_DT();
+    contents_timeline_DT contents_timeline_obj_to_select = new contents_timeline_DT();
+
+    protected void updatePanel_Unload(object sender, EventArgs e)
+    {
+        /* Cast sender as an updatePanel, and use reflection to invoke * * the page's scriptmanger registerUpdatePanel() method * * */
+        UpdatePanel aUpdatePanel = sender as UpdatePanel;
+
+        MethodInfo m = (
+            from methods in typeof(ScriptManager).GetMethods(
+                BindingFlags.NonPublic | BindingFlags.Instance
+                )
+            where methods.Name.Equals("System.Web.UI.IScriptManagerInternal.RegisterUpdatePanel")
+            select methods).First<MethodInfo>();
+
+        m.Invoke(ScriptManager.GetCurrent(aUpdatePanel.Page), new object[] { aUpdatePanel });
+    }
+    public void Page_Load(object sender, EventArgs e)
+    {
+        //if (!IsPostBack)
+        //{
+        if (object_id.Value != "")
+        {
+            getData();
+            filldata();
+        }
+
+        //}
+    }
+    public void btnsave_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            getData();
+            events_obj_to_save.id = Convert.ToInt16(object_id.Value);
+            events_obj_to_save.end_date = Dates_operations.date_validate(events_obj_to_select.end_date);
+            events_obj_to_save.highlight = events_obj_to_select.highlight;
+            events_obj_to_save.large_image = events_obj_to_select.large_image;
+            events_obj_to_save.assigned_to = events_obj_to_select.assigned_to;
+            events_obj_to_save.period_id = events_obj_to_select.period_id;
+            events_obj_to_save.small_image = events_obj_to_select.small_image;
+            events_obj_to_save.start_date = Dates_operations.date_validate(events_obj_to_select.start_date);
+            int res =  events_DB.Save(events_obj_to_save);
+            events_details_obj_to_save.event_id = Convert.ToInt16(object_id.Value);
+            events_details_obj_to_save.title = txtTitle.Text;
+            events_details_obj_to_save.special_element = rblSpecialElement.SelectedIndex;
+            events_details_obj_to_save.form_pic_state = rblFormImage.SelectedIndex;
+            events_details_obj_to_save.event_brief = txtDesc.Text;
+            events_details_obj_to_save.event_details = txtDetailedDesc.Text;
+            events_details_obj_to_save.notes = txtNotes.Text;
+            events_details_obj_to_save.link_words = txtLinkWords.Text;
+            events_details_obj_to_save.link_words = txtLinkWords.Text;
+            events_details_obj_to_save.form_pic_state = CDataConverter.ConvertToInt(rblFormImage.SelectedIndex);
+            events_details_obj_to_save.data_collector_name = txtFormDataColectorName.Text;
+            events_details_obj_to_save.data_revision_name = txtFormDataRevisionName.Text;
+            events_details_obj_to_save.data_entry_name = txtFormDataEntryName.Text;
+            events_details_obj_to_save.data_entry_revision_name = txtFormDataEntryRevisionName.Text;
+            events_details_obj_to_save.lang_id = events_details_obj_to_select.lang_id;
+            res = events_details_DB.Save(events_details_obj_to_save);
+
+            contents_timeline_obj_to_save.content_id = Convert.ToInt16(object_id.Value);
+            contents_timeline_obj_to_save.date_type = contents_timeline_obj_to_select.date_type;
+            contents_timeline_obj_to_save.century_id = contents_timeline_obj_to_select.century_id;
+            contents_timeline_obj_to_save.period_id = rblTimeLine.SelectedIndex;
+            contents_timeline_obj_to_save.melady_date_from = contents_timeline_obj_to_select.melady_date_from;
+            contents_timeline_obj_to_save.melady_date_to = contents_timeline_obj_to_select.melady_date_to;
+            contents_timeline_obj_to_save.hegry_date_from = contents_timeline_obj_to_select.hegry_date_from;
+            contents_timeline_obj_to_save.hegry_date_to = contents_timeline_obj_to_select.hegry_date_to;
+            contents_timeline_obj_to_save.content_type = contents_timeline_obj_to_select.content_type;
+            contents_timeline_obj_to_save.notes = txtTimelineNotes.Text;
+            res = contents_timeline_DB.Save(contents_timeline_obj_to_save);
+            lblpage.Visible = true;
+        }
+        catch
+        {
+            lblpage.Visible = false;
+        }
+        this.Page.GetType().InvokeMember("fill_data", System.Reflection.BindingFlags.InvokeMethod, null, this.Page, new object[] { });
+        this.Page.GetType().InvokeMember("fill_objects_titles", System.Reflection.BindingFlags.InvokeMethod, null, this.Page, new object[] { });
+        
+        //fill_data()
+    }
+    private void getData()
+    {
+        events_obj_to_select = events_DB.SelectByID(Convert.ToInt16(object_id.Value));
+        events_details_obj_to_select = events_details_DB.SelectByID(Convert.ToInt16(object_id.Value));
+        contents_timeline_obj_to_select = contents_timeline_DB.SelectByID(Convert.ToInt16(object_id.Value));
+    }
+    public void filldata()
+    {
+        txtTitle.Text = events_details_obj_to_select.title;
+        rblSpecialElement.SelectedIndex = CDataConverter.ConvertToInt(events_details_obj_to_select.special_element);
+        txtDesc.Text = events_details_obj_to_select.event_brief;
+        txtDetailedDesc.Text = events_details_obj_to_select.event_details;
+        txtStartDate.Text = events_obj_to_select.start_date;
+        txtEndDate.Text = events_obj_to_select.end_date;
+        txtNotes.Text = events_details_obj_to_select.notes;
+        txtLinkWords.Text = events_details_obj_to_select.link_words;
+        txtFormDataColectorName.Text = events_details_obj_to_select.data_collector_name;
+        txtFormDataRevisionName.Text = events_details_obj_to_select.data_revision_name;
+        txtFormDataEntryName.Text = events_details_obj_to_select.data_entry_name;
+        txtFormDataEntryRevisionName.Text = events_details_obj_to_select.data_entry_revision_name;
+        rblFormImage.SelectedIndex = CDataConverter.ConvertToInt(events_details_obj_to_select.form_pic_state);
+        rblTimeLine.SelectedIndex = CDataConverter.ConvertToInt(contents_timeline_obj_to_select.period_id);
+        txtTimelineNotes.Text = contents_timeline_obj_to_select.notes;
+
+    }
+}

@@ -1,0 +1,397 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="add_books.ascx.cs" Inherits="masterpage_add_books" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<input id="doc_id" type="hidden" value="0" runat="server" />
+<input id="id" type="hidden" runat="server" />
+<asp:HiddenField ID="content_type" runat="server" />
+<asp:HiddenField ID="content_id" runat="server" />
+<table cellspacing="5" runat="server" dir="<%$Resources:Master, dir%>" id="tblbook">
+    <tr align="right" id="trpagetitle" runat="server">
+        <td colspan="3" align="center">
+            <asp:Label ID="lblpagetitle" runat="server" Text="استمارة الكتب" Visible="false"></asp:Label>
+        </td>
+        <td align="left" visible="true" dir="rtl">
+            <a href runat="server" id="id_href" target="_blank">عرض الاستمارة </a>
+        </td>
+    </tr>
+    <tr align="right" id="trtitle" runat="server">
+        <td dir="rtl" rowspan="2" valign="top">
+            <asp:Label ID="Label16" runat="server" Text="العنوان:"></asp:Label>
+        </td>
+        <td dir="rtl">
+            <asp:Label ID="Label19" runat="server" Text="عنوان الكتاب:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="txt_title" runat="server"  Font-Size="14px" Font-Bold="true"></asp:Label>
+        </td>
+       <td></td>
+    </tr>
+     <tr align="right" id="trtitletype" runat="server">
+        <td dir="rtl">
+            <asp:Label ID="Label2" runat="server" Text="نوع/مصدر العنوان :"></asp:Label>
+            &nbsp;<asp:DropDownList ID="drop_type" runat="server" DataTextField="author_type"
+                DataValueField="id" Width="140px">
+            </asp:DropDownList>
+            &nbsp;
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="drop_type"
+                ErrorMessage="هذا الحقل يجب إدخاله" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr align="right">
+        <td colspan="3" align="center" dir="rtl">
+            <asp:Label ID="lblerror" runat="server" Text="Label" Visible="false"></asp:Label>
+        </td>
+    </tr>
+    <tr dir="<%$Resources:Master, dir%>" id="trspecial" runat="server">
+        <td align="<%$Resources:Master, align%>">
+            <asp:Label ID="Label1" runat="server" Text="<%$Resources:Master, Labspecial%>"></asp:Label>
+        </td>
+        <td colspan="2" align="<%$Resources:Master, align%>">
+            <asp:CheckBox ID="chk_pan" runat="server" Text="علي البانوراما" />
+            <asp:CheckBox ID="chk_site" runat="server" Text="علي الموقع" />
+            &nbsp;
+        </td>
+    </tr>
+   
+    <tr align="right" id="trmoalf" runat="server">
+        <td valign="top">
+            <asp:Label ID="Label21" runat="server" Text="المؤلف:"></asp:Label>
+        </td>
+        <td colspan="3">
+            <asp:Panel ID="Panel1" runat="server" Direction="RightToLeft" BorderStyle="Ridge"
+                BorderColor="ActiveBorder" >
+                <table width="700px">
+                    <tr align="right">
+                        <td rowspan="3" align="right" dir="rtl" valign="top">
+                            <asp:Label ID="Label20" runat="server" Text=" اسم المؤلف:"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            من الشخصيات
+                        </td>
+                        <td>
+                            من المؤلفين
+                        </td>
+                        <td dir="rtl">
+                            أخري
+                        </td>
+                    </tr>
+                    <tr width="700px">
+                        <td>
+                            <asp:DropDownList ID="drop_char" runat="server" DataTextField="name" 
+                                DataValueField="id" AutoPostBack="True" width="250"
+                                onselectedindexchanged="drop_char_SelectedIndexChanged">
+                            </asp:DropDownList>
+                        </td>
+                        <td align="right" dir="rtl" valign="top">
+                            <asp:DropDownList ID="drop_author" runat="server" DataTextField="name" 
+                                DataValueField="author_id" AutoPostBack="True" width="250"
+                                onselectedindexchanged="drop_author_SelectedIndexChanged">
+                            </asp:DropDownList>
+                        </td>
+                        <td align="right" dir="rtl" valign="top">
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label22" runat="server" Text=" نوع المؤلف:"></asp:Label>
+                        </td>
+                        <td colspan="3" align="right" dir="rtl">
+                            <asp:DropDownList ID="drop_author_type" runat="server" DataTextField="author_type"
+                                DataValueField="id">
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label23" runat="server" Text=" دور المؤلف:"></asp:Label>
+                        </td>
+                        <td colspan="3" align="right" dir="rtl">
+                            <asp:DropDownList ID="drop_role" runat="server" DataTextField="author_role" DataValueField="id">
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <asp:Button ID="Button2" runat="server" Text="أضف" OnClick="Button2_Click" />
+                        </td>
+                    </tr>
+                    <tr align="right">
+                        <td colspan="4" align="right" dir="rtl">
+                            <asp:GridView runat="server" ID="gview_moalf" Visible="false" AutoGenerateColumns="False"
+                                Width="500px" CellPadding="4" ForeColor="#333333" GridLines="None" DataKeyNames="id">
+                                <HeaderStyle BackColor="#D9C69E" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
+                                <Columns>
+                                    <asp:BoundField DataField="name" ShowHeader="true" HeaderText="اسم المؤلف" ItemStyle-HorizontalAlign="Center"
+                                        ItemStyle-BorderColor="Black" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="1px"
+                                        HeaderStyle-BorderColor="Black" HeaderStyle-BorderStyle="Solid" HeaderStyle-BorderWidth="1px"
+                                        HeaderStyle-HorizontalAlign="Center" />
+                                    <asp:BoundField DataField="title" ShowHeader="true" HeaderText="اسم المقالة" ItemStyle-HorizontalAlign="Center"
+                                        ItemStyle-BorderColor="Black" ItemStyle-BorderStyle="Solid" ItemStyle-BorderWidth="1px"
+                                        HeaderStyle-BorderColor="Black" HeaderStyle-BorderStyle="Solid" HeaderStyle-BorderWidth="1px"
+                                        HeaderStyle-HorizontalAlign="Center" />
+                                    <asp:BoundField DataField="author_role" ShowHeader="true" HeaderText="دور المؤلف"
+                                        ItemStyle-HorizontalAlign="Center" ItemStyle-BorderColor="Black" ItemStyle-BorderStyle="Solid"
+                                        ItemStyle-BorderWidth="1px" HeaderStyle-BorderColor="Black" HeaderStyle-BorderStyle="Solid"
+                                        HeaderStyle-BorderWidth="1px" HeaderStyle-HorizontalAlign="Center" />
+                                    <asp:TemplateField HeaderText="حذف" ItemStyle-HorizontalAlign="Center">
+                                        <ItemTemplate>
+                                            <asp:ImageButton ID="imgDelete" CommandName="DeleteItem" CommandArgument='<%# Eval("id") %>'
+                                                OnClick="imgDelete_Click" CausesValidation="false" runat="server" ImageUrl="~/images/delete.gif" OnClientClick="if (confirm('هل تود الحذف نهائياً') == false) return false;">
+                                            </asp:ImageButton>
+                                        </ItemTemplate>
+                                        <HeaderStyle HorizontalAlign="Center" Width="3px" BorderColor="Black" BorderStyle="Solid"
+                                            BorderWidth="1px"></HeaderStyle>
+                                        <ItemStyle HorizontalAlign="Center" Width="3px" BorderColor="Black" BorderStyle="Solid"
+                                            BorderWidth="1px"></ItemStyle>
+                                    </asp:TemplateField>
+                                </Columns>
+                            </asp:GridView>
+                        </td>
+                    </tr> 
+                </table>
+            </asp:Panel>
+        </td>
+    </tr>
+    <tr align="right" id="trlang" runat="server">
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label6" runat="server" Text="لغة الكتاب:" Font-Bold="True"></asp:Label>
+        </td>
+        <td>
+            <asp:DropDownList ID="drop_lang" runat="server" AutoPostBack="false" DataValueField="id"
+                DataTextField="title_ar" Height="18px" Width="130px">
+            </asp:DropDownList>
+        </td>
+        <td dir="rtl">
+            <asp:Label ID="Label10" runat="server" Text=" أخري:"></asp:Label>
+            <asp:TextBox ID="other" runat="server" Enabled="true" Height="23px" Width="134px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr align="right" dir="rtl" id="trpublisher" runat="server">
+        <td rowspan="2" dir="rtl" valign="top">
+            <asp:Label ID="Label3" runat="server" Text="بيانات النشر:" Font-Bold="True"></asp:Label>
+        </td>
+        <td>
+            <asp:Label ID="Label27" runat="server" Text="مكان النشر:"></asp:Label>
+            <asp:TextBox ID="txt_plocation" runat="server" Height="19px" Width="131px"></asp:TextBox>
+        </td>
+        <td>
+            <asp:Label ID="Label4" runat="server" Text="الناشر:"></asp:Label>
+            &nbsp;<asp:TextBox ID="txt_publisher" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr align="justify" id="trdate" runat="server">
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label17" runat="server" Text="سنة النشر:"></asp:Label>
+            <asp:TextBox ID="txt_hdate" runat="server" Height="21px" Width="133px"></asp:TextBox>
+            <asp:Label ID="Label18" runat="server" Text="هـ"></asp:Label>
+            &nbsp;<asp:Label ID="lblError4" runat="server" Text="سنة-(يوم/ شهر /سنة)" ForeColor="Red"
+                            Font-Size="12px"></asp:Label>
+            <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server" FilterType="Custom"
+                TargetControlID="txt_hdate" ValidChars="0123456789/\">
+            </cc1:FilteredTextBoxExtender>
+        </td>
+        <td colspan="1" dir="rtl">
+            <asp:TextBox ID="txt_date" runat="server" Height="20px" Width="164px"></asp:TextBox>
+            <asp:Label ID="Label24" runat="server" Text="م"></asp:Label>
+            &nbsp;<asp:Label ID="lblError3" runat="server" Text="سنة-(يوم/ شهر /سنة)" ForeColor="Red"
+                            Font-Size="12px"></asp:Label>
+            <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" FilterType="Custom"
+                TargetControlID="txt_date" ValidChars="0123456789/\">
+            </cc1:FilteredTextBoxExtender>
+        </td>
+    </tr>
+    <tr align="right" id="trseries" runat="server">
+        <td dir="rtl">
+            <asp:Label ID="Label25" runat="server" Text="السلسلة" Font-Bold="True"></asp:Label>
+        </td>
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label26" runat="server" Text="اسم السلسلة"></asp:Label>
+            <asp:TextBox ID="txt_series" runat="server" Width="135px" Height="17px"></asp:TextBox>
+        </td>
+        <td dir="rtl" align="right">
+            <asp:Label ID="Label7" runat="server" Text="رقمه في السلسلة"></asp:Label>
+            <asp:TextBox ID="txt_series_no" runat="server" Width="102px" Height="22px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr align="right" id="trpublishno" runat="server">
+        <td rowspan="2" dir="rtl" valign="top">
+            <asp:Label ID="Label8" runat="server" Text="الطبعة والترقيم والأجزاء:" Font-Bold="True"></asp:Label>
+        </td>
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label28" runat="server" Text="رقم الطبعة:"></asp:Label>
+            <asp:TextBox ID="txt_publish_no" runat="server" Height="21px" Width="138px"></asp:TextBox>
+        </td>
+        <td dir="rtl" align="right">
+            <asp:Label ID="Label5" runat="server" Text="الصفحات:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txt_from" runat="server" Width="121px" Height="19px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="txt_from"
+                ErrorMessage="هذا الحقل يجب إدخاله" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr align="right" id="trfolderno" runat="server">
+        <td dir="rtl" colspan="1">
+            <asp:Label ID="Label9" runat="server" Text="عدد المجلدات:"></asp:Label>
+            <asp:TextBox ID="txt_folder_no" Width="128px" runat="server" Height="22px"></asp:TextBox>
+        </td>
+        <td dir="rtl">
+            <asp:Label ID="Label11" runat="server" Text="عدد الأجزاء:"></asp:Label>
+            <asp:TextBox ID="txt_createrno" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr id="trorg" runat="server">
+        <td rowspan="2" valign="top" align="right" dir="rtl">
+            <asp:Label ID="Label29" runat="server" Text="جهة الحفظ:" Font-Bold="True"></asp:Label>
+        </td>
+        <td align="right" dir="rtl" colspan="1">
+            <asp:Label ID="Label30" runat="server" Text="الاسم الجهة:"></asp:Label>
+            &nbsp;<asp:TextBox ID="txt_org" runat="server" Height="22px" Width="134px"></asp:TextBox>
+        </td>
+        <td dir="rtl">
+            <asp:Label ID="Label31" runat="server" Text="الدولة:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txt_country" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr id="trcity" runat="server">
+        <td align="right" dir="rtl" colspan="2">
+            <asp:Label ID="Label12" runat="server" Text="المدينة:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txt_city" runat="server" Height="22px" Width="139px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr align="right" id="trno" runat="server">
+        <td rowspan="2" align="justify" dir="rtl">
+            <asp:Label ID="Label32" runat="server" Text=" رقم الحفظ داخل الجهة:"></asp:Label>
+        </td>
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label34" runat="server" Text=" رقم عام:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txt_genno" runat="server" Height="19px" Width="141px"></asp:TextBox>
+        </td>
+        <td dir="rtl">
+            <asp:Label ID="Label35" runat="server" Text=" رقم خاص:"></asp:Label>
+            &nbsp;
+            <asp:TextBox ID="txt_specifno" runat="server" Height="21px" Width="118px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr id="trartno" runat="server">
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label36" runat="server" Text="الفن  :"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txt_art" runat="server" Height="18px" Width="144px"></asp:TextBox>
+        </td>
+        <td dir="rtl">
+            <asp:Label ID="Label37" runat="server" Text="المكتبة الخاصة :"></asp:Label>
+            <asp:TextBox ID="txt_library" runat="server" Height="20px" Width="118px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr id="trnotes" runat="server">
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label33" runat="server" Text=" ملاحظات:"></asp:Label>
+        </td>
+        <td colspan="2" dir="rtl" align="right">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox3" runat="server" Height="63px" TextMode="MultiLine" Width="496px"></asp:TextBox>
+        </td>
+    </tr>
+    <tr id="trtags" runat="server">
+        <td align="right" dir="rtl">
+            <asp:Label ID="Label13" runat="server" Text=" الكلمات الدالة:"></asp:Label>
+        </td>
+        <td colspan="1" dir="rtl">
+            <asp:TextBox ID="txt_tags" runat="server" Height="25px" Width="189px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="txt_tags"
+                ErrorMessage="هذا الحقل يجب إدخاله" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+        <td align="right" dir="rtl">
+            <asp:Label ID="lblDeclaration" runat="server" Font-Size="12px" ForeColor="Red" Text="* يرجى إدخال الكلمات الدالة مفصولة برمز (#) فيما بينها كما بالمثال التالى كلمة دالة 1 # كلمة دالة 2"
+                Width="100px"></asp:Label>
+        </td>
+    </tr>
+    <tr id="trperiods" runat="server">
+        <td colspan="3" dir="rtl" align="right">
+            <asp:Label ID="Label14" runat="server" 
+                Text=" العصر الذي يتناوله/ يرتبط به الكتاب:"></asp:Label>
+        </td>
+    </tr>
+    <tr id="trperiods2" runat="server">
+        <td colspan="2" dir="rtl">
+            <asp:RadioButtonList ID="chk_periods" runat="server" DataValueField="id" DataTextField="title"
+                RepeatDirection="Horizontal">
+            </asp:RadioButtonList>
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator28" runat="server" ErrorMessage="هذا الحقل يجب إدخاله"
+                ControlToValidate="chk_periods" Font-Size="14px" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr id="trpicture" runat="server">
+        <td dir="rtl" rowspan="1" valign="top" align="right">
+            <asp:Label ID="Label15" runat="server" Text="الصورة المرفقة مع الاستمارة   "></asp:Label>
+        </td>
+        <td dir="rtl" align="right">
+            <asp:RadioButtonList ID="rblFormImage" runat="server" RepeatColumns="1" RepeatDirection="Horizontal">
+                <asp:ListItem Text="مرفقة (ورقية / إلكترونية)" Value="1"></asp:ListItem>
+                <asp:ListItem Text="غير متاحة (سيتم توفيرها لاحقا)" Value="2"></asp:ListItem>
+                <asp:ListItem Text="غير متاحة (استخدم الصورة الرمزية)" Value="3"></asp:ListItem>
+            </asp:RadioButtonList>
+        </td>
+        <td align="right" dir="rtl">
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ErrorMessage="هذا الحقل يجب إدخاله"
+                ControlToValidate="rblFormImage" Font-Size="14px" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr id="trcolectorname" runat="server">
+        <td dir="rtl" rowspan="1" valign="top" align="right">
+            <asp:Label ID="Label38" runat="server" Text="اسم جامع بيانات الاستمارة  " Width="150px"
+                Height="26px"></asp:Label>
+        </td>
+        <td dir="rtl" class="style2" rowspan="1" valign="top">
+            <asp:TextBox ID="txtFormDataColectorName" runat="server" Width="270px" />
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="هذا الحقل يجب إدخاله"
+                ControlToValidate="txtFormDataColectorName" Font-Size="14px" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr id="trrevisionname" runat="server">
+        <td dir="rtl" rowspan="1" valign="top" align="right">
+            <asp:Label ID="Label39" runat="server" Text="اسم مراجع بيانات الاستمارة  " Width="155px"
+                Height="26px"></asp:Label>
+        </td>
+        <td dir="rtl" class="style2" rowspan="1" valign="top">
+            <asp:TextBox ID="txtFormDataRevisionName" runat="server" Width="270px" />
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="هذا الحقل يجب إدخاله"
+                ControlToValidate="txtFormDataRevisionName" Font-Size="14px" ValidationGroup="A"></asp:RequiredFieldValidator>
+        </td>
+    </tr>
+    <tr runat="server" id="file_tr">
+        <td dir="rtl" rowspan="1" valign="top" align="right">
+            <asp:Label ID="Label40" runat="server" Text="تحميل الملف "></asp:Label>
+        </td>
+        <td dir="rtl" rowspan="1" valign="top" align="right">
+            <asp:FileUpload ID="uploadfile" runat="server" Width="350px" />
+            &nbsp;
+        </td>
+        <td>
+            <asp:Label ID="labfile" runat="server" Text="Label" Visible="False" Font-Size="14px"
+                ForeColor="Red"></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" dir="rtl" align="center">
+            <asp:Button ID="Button1" runat="server" Text="حفظ" OnClick="Button1_Click" ValidationGroup="A" />
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+                SelectCommand="select  author_role  ,id from dbo.authors_role order by ltrim(author_role) ">
+            </asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+                SelectCommand="SELECT [id], [author_type] FROM [author_type]"></asp:SqlDataSource>
+        </td>
+    </tr>
+</table>

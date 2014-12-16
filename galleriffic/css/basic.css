@@ -1,0 +1,58 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+}
+p, li {
+	line-height: 1.8em;
+}
+h1, h2 {
+	
+	margin: 0 0 10px 0;
+	letter-spacing:-1px;
+}
+h1 {
+	padding: 0;
+	
+	color: #fff;
+}
+h2 {
+	padding-top: 10px;
+	
+}
+pre {
+	
+	line-height: 1.2em;
+	overflow: auto;
+}
+div#page {
+	width:100%;
+	
+	background-image:url(../images/bg.jpg)
+	margin: 0 auto;
+	text-align: left;
+	/*border-color: #fff;*/
+	/*border-style: none solid solid;*/
+	/*border-width: medium 1px 1px;*/
+}
+div#container {
+	padding: 20px;
+}
+div#ads {
+	clear: both;
+	padding: 12px 0 12px 66px;
+}
+div#footer {
+	clear: both;
+	color: #fff;
+	margin: 0 auto;
+	padding: 20px 0 40px;
+	text-align: center;
+}

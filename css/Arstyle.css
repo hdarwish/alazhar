@@ -1,0 +1,49 @@
+﻿body {
+}
+
+
+.headerTitle
+{
+	font-family:Traditional Arabic;
+	color:#9d080d;
+	font-size:30px;
+	background-color:#e1e1e1;
+	padding-right:50px;
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight:bold;
+}
+
+.topMenu
+{
+	font-family:Traditional Arabic;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.topMenu a
+{
+	font-family:Traditional Arabic;
+	color:#ffffff;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.topMenu2 a
+{
+	font-family:Traditional Arabic;
+	color:#fee332;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+p
+{
+	font-family:arial;
+	color:#000000;
+	font-size:14px;
+}

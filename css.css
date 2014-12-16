@@ -1,0 +1,272 @@
+.main-table{
+	background-color:#f6f2e2;
+
+	}
+.menu {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #330;
+	text-align: center;
+	background-image: url(img/bg-main-menu.jpg);
+	padding-top: 8px;
+	padding-right: 30px;
+	padding-bottom: 8px;
+	padding-left: 30px;
+	
+}
+.menu a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #330;
+	text-align: center;
+	
+}
+.menu-roll {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	padding-right: 30px;
+	padding-bottom: 8px;
+	padding-left: 30px;
+	background-color: #ca8860;
+	
+}
+.menu-roll a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+}
+.right-menu {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #000;
+	text-align: right;
+	background-image: url(img/bg-right-menu.jpg);
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+
+}
+.right-menu a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #000;
+	text-align: right;
+}
+
+.right-menu-roll {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	
+	text-align: right;
+    color: #fff;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	background-color: #c6a171;
+	
+	
+
+
+}
+
+.right-menu-roll a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	
+	text-align: right;
+    color: #fff;
+	background-color: #c6a171;
+	
+	
+
+
+}
+.left-menu {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #330;
+	text-align: right;
+	background-image: url(img/bg-left-menu.jpg);
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+
+	
+}
+.left-menu a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #330;
+	text-align: right;
+}
+.right2-menu {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #330;
+	text-align: right;
+	background-image: url(img/bg-left-menu.jpg);
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	
+	
+}
+
+.right2-menu a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #330;
+	text-align: right;
+}
+
+
+.text-table{
+	background-color:#f2eddb;
+	border: 1px solid #decfb4;
+	padding: 0px;	
+	
+	}
+	
+	
+	
+	.text-table2{
+	background-color:#e5e3d3;
+	border: 1px solid #cccccc;
+	padding: 0px;	
+	
+	}
+
+.left-menu-roll {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	
+	text-align: right;
+    color: #000;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	background-color: #e2d3b4;
+}
+
+.left-menu-roll a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	
+	text-align: right;
+    color: #000;
+	background-color: #e2d3b4;
+}
+
+.text{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #1f1911;
+	text-align: right;
+		padding-right: 8px;
+		padding-left: 8px;
+		padding-bottom: 7px;
+		padding-top: 7px;
+		
+
+	}
+	
+.text-nav{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: 800;
+	color: #ad7c54;
+	text-align: right;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+		
+
+	}
+	
+.title{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: ;
+	font-size: 24px;
+	color: #423e2d;
+	padding-right: 8px;
+	text-align: right;
+	padding-bottom: 7px;
+	padding-top: 7px;
+
+	}
+
+.sub-title{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+	text-align: right;
+	padding-right: 8px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+		
+
+	}
+	
+.text2{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #243532;
+	text-align: right;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+		
+
+	}
+
+.title2{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: ;
+	font-size: 24px;
+	color: #2f2a23;
+	padding-right: 8px;
+	text-align: right;
+	padding-bottom: 7px;
+	padding-top: 7px;
+
+	}
+
+.sub-title2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+	text-align: right;
+	padding-right: 8px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+		
+
+	}
+	
+.img{
+	padding-right: 5px;
+	}

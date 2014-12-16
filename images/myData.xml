@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gallery albumMainTitle="الألبوم الأول">
+  <image>
+    <photoFile>images/01-01.jpg</photoFile>
+    <photoTitle>الصورة الأولي</photoTitle>
+    <photoDesc>Descrition for image 01</photoDesc>
+    <itemA idA="المصور">itemA value 1</itemA>
+    <itemB idB="تاريخ الصورة">itemB value 1</itemB>
+    <itemC idC="مكان التصوير">itemC value 1</itemC>
+    <itemD idD="يوم التصوير">itemD value 1</itemD>
+    <itemE idE="العنصر الخامس">itemE value 1</itemE>
+    <itemF idF="العنصر السادس">itemF value 1</itemF>
+    <itemG idG="العنصر السابع">itemG value 1</itemG>
+    <itemH idH="العنصر الثامن">itemH value 1</itemH>
+  </image>
+  <image>
+    <photoFile>images/01-02.jpg</photoFile>
+    <photoTitle>الصورة الثانية</photoTitle>
+    <photoDesc>Descrition for image 02</photoDesc>
+    <itemA idA="المصور">itemA value 2</itemA>
+    <itemB idB="تاريخ الصورة">itemB value 2</itemB>
+    <itemC idC="مكان التصوير">itemC value 2</itemC>
+    <itemD idD="يوم التصوير">itemD value 2</itemD>
+    <itemE idE="العنصر الخامس">itemE value 2</itemE>
+    <itemF idF="العنصر السادس">itemF value 2</itemF>
+    <itemG idG="العنصر السابع">itemG value 2</itemG>
+    <itemH idH="العنصر الثامن">itemH value 2</itemH>
+  </image>
+  <image>
+    <photoFile>images/01-03.jpg</photoFile>
+    <photoTitle>الصورة الثالثة</photoTitle>
+    <photoDesc>Descrition for image 03</photoDesc>
+    <itemA idA="المصور">itemA value 3</itemA>
+    <itemB idB="تاريخ الصورة">itemB value 3</itemB>
+    <itemC idC="مكان التصوير">itemC value 3</itemC>
+    <itemD idD="يوم التصوير">itemD value 3</itemD>
+    <itemE idE="العنصر الخامس">itemE value 3</itemE>
+    <itemF idF="العنصر السادس">itemF value 3</itemF>
+    <itemG idG="العنصر السابع">itemG value 3</itemG>
+    <itemH idH="العنصر الثامن">itemH value 3</itemH>
+  </image>
+  <image>
+    <photoFile>images/01-04.jpg</photoFile>
+    <photoTitle>الصورة الرابعة</photoTitle>
+    <photoDesc>Descrition for image 04</photoDesc>
+    <itemA idA="المصور">itemA value 4</itemA>
+    <itemB idB="تاريخ الصورة">itemB value 4</itemB>
+    <itemC idC="مكان التصوير">itemC value 4</itemC>
+    <itemD idD="يوم التصوير">itemD value 4</itemD>
+    <itemE idE="العنصر الخامس">itemE value 4</itemE>
+    <itemF idF="العنصر السادس">itemF value 4</itemF>
+    <itemG idG="العنصر السابع">itemG value 4</itemG>
+    <itemH idH="العنصر الثامن">itemH value 4</itemH>
+  </image>
+</gallery>

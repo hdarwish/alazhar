@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="azhar">
+</Property><Property Name="Solution File" Value="\\10.1.1.153\d$\azhar\azhar.sln">
+</Property><Property Name="User Options File" Value="\\10.1.1.153\d$\azhar\azhar.suo">
+</Property><Property Name="Date" Value="01 نوفمبر, 2012">
+</Property><Property Name="Time" Value="22:29 م">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="azhar.sln" Description="File successfully backed up as D:\Backup\azhar.sln">
+</Event><Event ErrorLevel="0" Project="" Source="azhar.suo" Description="File successfully backed up as D:\Backup\azhar.suo">
+</Event><Event ErrorLevel="1" Project="azhar" Source="..\azhar" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="" Source="azhar.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="azhar.sln" Description="Converted">
+</Event></UpgradeLog>
